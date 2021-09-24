@@ -1,0 +1,38 @@
+#bkgd-video {
+    position: fixed;
+    z-index: -11;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+	.movie-container {
+		display: inline-block;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		overflow: hidden;
+		background: radial-gradient(circle at bottom, $color-5 0%, $color-2 100%);
+	}
+}
+#video-overlay {
+	position: fixed;
+    z-index: -10;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+	background-color: rgba($color-4, .5);
+	// background: radial-gradient(circle at center, rgba($color-1, .25) 0%, rgba($color-1, .95) 100%);
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+@media only screen and (min-width: 576px) {}
+@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 922px) {}
+@media only screen and (min-width: 1200px) {}

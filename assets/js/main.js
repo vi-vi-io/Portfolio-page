@@ -1,0 +1,96 @@
+$(document).ready(function () {
+
+	resizeMovie(); // optimize movie crop on page load
+
+	// ===  INITIALIZE VIMEO PLAYER ======== >
+	var player_options = {
+		id: 613191318,
+		loop: true,
+		autoplay: true,
+		muted: true,
+		controls: false,
+		responsive: true
+	};
+	var vimeo_player = new Vimeo.Player('vimeo_player', player_options);
+
+});  // END document.ready
+
+var	$window = $(window),
+	$body = $('body'),
+	$html = $('html');
+
+//dynamic movie frame resizing function for optimum crop, based on window dimensions
+function resizeMovie() {
+	var $width = $window.width();
+	var $height = $window.height();
+	var $windowAR = $width / $height;
+	if ($windowAR < 1.7778) {
+		$(".movie-player").height($height);
+		$(".movie-player").width($height * 1.7778);
+		$(".movie-player iframe").height($height);
+		$(".movie-player iframe").width($height * 1.7778);
+	} else {
+		$(".movie-player").height($width * .5625);
+		$(".movie-player").width($width);
+		$(".movie-player iframe").height($width * .5625);
+		$(".movie-player iframe").width($width);
+	}
+};
+$window.on('resize', resizeMovie); // optimize movie crop on window dimension change
+
+//smooth scroll  -->
+	 $(function() {
+		$('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html, body').animate({
+						scrollTop: target.offset().top - 10
+					}, {
+						duration: 600,
+						easing: "swing"
+					});
+					return false;
+				}
+			}
+		});
+	 });
+
+// .content-block bkgd image animations based on scroll position
+	$('.content-block').each(function() {
+
+		var $this = $(this),
+			$primaryImg = $this.find('.image.primary > img'),
+			$bg,
+			options;
+
+		// No primary image? Bail.
+		if ($primaryImg.length == 0)
+			return;
+
+		// Create bg and append it to body.
+		$bg = $('<div class="main-bg" id="' + $this.attr('id') + '-bg"></div>')
+			.css('background-image', (
+				'url("assets/images/overlay.png"), url("' + $primaryImg.attr('src') + '")'
+			))
+			.appendTo($body);
+
+		// Scrollex.
+		options = {
+			mode: 'middle',
+			delay: 0,
+			top: '-15vh',
+			bottom: '-15vh'
+		};
+
+		$bg
+			.css('opacity', 1)
+			.hide();
+
+		options.init = function() { $bg.fadeOut(0); };
+		options.enter = function() { $bg.fadeIn(600); };
+		options.leave = function() { $bg.fadeOut(600); };
+
+		$this.scrollex(options);
+	});

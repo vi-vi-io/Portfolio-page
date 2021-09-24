@@ -1,0 +1,12 @@
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "R. Scott Vivilecchia" # the name of your site, e.g. ACME Corp.
+# sass:
+#     load_paths:
+#         - _sass
+
+email: rscott@vi-vi.io
+# Social icons
+show_social_icons: true
+github_username: vi-vi-io
+twitter_username: someTwitterUser

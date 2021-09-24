@@ -1,0 +1,21 @@
+{
+  "name": "jekyll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vi-vi-io/vi-home.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vi-vi-io/vi-home/issues"
+  },
+  "homepage": "https://github.com/vi-vi-io/vi-home#readme"
+}
