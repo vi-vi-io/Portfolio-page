@@ -26,16 +26,18 @@ html, body {
 // Misc formatting
 
 h1 { 
-    font-weight: 300;
+    font-weight: 100;
     text-align: center;
 	font-size: 5em;
-    color: $color-4;
-    text-shadow: 0px 0px 2px rgba($color-5, .75);
+    color: $color-2;
+    // text-shadow: 0px 0px 2px rgba($color-5, .75);
 }
-h2 {
-	font-weight: 300;
-	font-size: 1.5em;
+.content-block h2 {
+	font-weight: 700;
+	font-size: 1.75em;
+	text-transform: uppercase;
 }
+.content-block h3 {font-size: 1.5em;}
 
 .clearer {clear: both;}
 
@@ -64,6 +66,7 @@ h2 {
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
+	background-size: 2.25em;
 	border-radius: 100%;
 	border: 0;
 	bottom: 10px;
@@ -104,6 +107,23 @@ h2 {
 		opacity: 1;
 	}
 }
+
+// BANNER
+#banner h3 {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $color-2;
+    // text-shadow: 0px 0px 2px rgba($color-5, .75);
+}
+.banner-title {
+	background-color: rgba($color-1, .85);
+	display: inline-block;
+	padding: 20px 30px;
+}
+
+// WORK
+
+
 
 // CONTACT
 /* ///// inputs /////*/
@@ -214,6 +234,8 @@ textarea {
 @media only screen and (min-width: 576px) {
 	
 	html, body { font-size: 12px; }
+	// Next button
+	.goto-next { background-size: 2.5em; }
 
 }
 
