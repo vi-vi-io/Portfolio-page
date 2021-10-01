@@ -1,28 +1,19 @@
-<footer class="py-5">
-	<hr>
-	<div class="container text-center text-info">
-	    <div class="row">
-    		<div class="col">
-				{% if site.show_social_icons %}
-					{% include social_links.html %}
-				{% endif %}
-    		</div>
-    	</div>
-    	<div class="row">
-    		<div class="col">
-        		<p>All content copyright R. Scott Vivilecchia &copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
-    		</div>
-		</div>
-		<div class="row">
-			<div class="col">
-				<p>//P <a href="tel:+16172949493">617 294 9493</a></p>
-				<p>//E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form"">rscott@vi-vi.io</a></p>
-				<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-				<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-				<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-				<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-				<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-    		</div>
+<footer class="">
+	<div class="valign">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col">
+					<div class="banner-title">
+						{% if site.show_social_icons %}
+							{% include social_links.html %}
+						{% endif %}
+						<div class="spacer-20px"></div>
+						<p>All content copyright R. Scott Vivilecchia &copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
+						<p>//P <a href="tel:+16172949493">617 294 9493</a></p>
+						<p>//E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form"">rscott@vi-vi.io</a></p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </footer>

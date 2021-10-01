@@ -96,7 +96,6 @@ $window.on('resize', resizeMovie); // optimize movie crop on window dimension ch
 	});
 
 	// Send AJAX contact form data to Netlify
-	
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		let myForm = document.getElementById('contactForm');

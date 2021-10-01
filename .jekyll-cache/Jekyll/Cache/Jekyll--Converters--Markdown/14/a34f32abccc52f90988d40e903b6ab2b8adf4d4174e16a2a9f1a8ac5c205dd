@@ -1,4 +1,4 @@
-I"‰<section id="banner" class="banner">
+I"`<section id="banner" class="banner">
 	<div class="valign">
 		<div class="container">
 			<div class="row">
@@ -26,29 +26,37 @@
 				<div class="col-12">
 					<div class="">
 						<h2>What I do</h2>
-						<p>Aliquam ante ac id. Adipiscing interdum lorem praesent fusce pellentesque arcu feugiat. Consequat sed ultricies rutrum. Sed adipiscing eu amet interdum lorem blandit vis ac commodo aliquet integer vulputate phasellus lorem ipsum dolor lorem magna consequat sed etiam adipiscing interdum.</p>
-						<hr />
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-12">
+				<div class="col-6">
 					<h3>Featured Project: Dispensary Promo</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae vel rem alias.</p>
 					<div style="padding:56.25% 0 0 0;position:relative;">
 						<iframe src="https://player.vimeo.com/video/618173382?h=b8e521193b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Triple M - Seed to Sale promo"></iframe>
 					</div>
-					<hr />
+				</div>
+				<div class="col-6">
+					
+					<h3><br />2021 Demo Reel</h3>
+					<div style="padding:56.25% 0 0 0;position:relative;">
+						<iframe src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="schizzleReel_2021"></iframe>
+					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<h3>2021 Demo Reel</h3>
-					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae vel rem alias.</p>
-					<div style="padding:56.25% 0 0 0;position:relative;">
-						<iframe src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="schizzleReel_2021"></iframe>
+					<h3>More work</h3>
+				</div>
+				<div class="col-12">
+					<div class="social-links text-center">
+						<a target="_blank" href="https://vimeo.com/user113004102">
+							<i class="fab fa-vimeo fa-2x"></i>
+						</a>
+						<a target="_blank" href="https://github.com/vi-vi-io">
+							<i class="fab fa-github fa-2x"></i>
+						</a>
 					</div>
-					<hr />
 				</div>
 			</div>
 		</div>
@@ -119,18 +127,29 @@
 						</div>
 					</div>
 				</form>
-				<div class="container result valign" id="postSent">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h3 class="text-center">Success!</h3>
+							<div class="result valign" id="postSent">
+								<div>
+									<h4 class="text-center">Thanks for reaching out!</h4>
+									<hr />
+									<p>Your message is on it's way. I'll review your inquiry, and get back to you soon.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container result" id="postError">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<div class="valign">
-								<h2>ERROR.</h2>
+							<div class="valign result" id="postError">
+								<div>
+									<h4 class="text-center">Oh shoot, you broke it!</h4>
+									<hr />
+									<p><strong>Just kidding. It's almost definitely my fault. But I'll be keeping an eye on you....</strong></p>
+									<p>Please <a href="mailto:rscott@vi-vi.io?subject=Error notification from vi-vi.io contact form">email me</a>, and let me know you're having problems</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -138,6 +157,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
+					<div class="spacer-20px"></div>
 					<p class="text-center">Or you can just reach out directly:<br />\\P <a href="tel:+16172949493">617 294 9493</a><br />\\E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form">rscott@vi-vi.io</a></p>
 				</div>
 			</div>
