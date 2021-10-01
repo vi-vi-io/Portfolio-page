@@ -10,7 +10,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<form class="contact" name="vi-vi.io contact" netlify>
+				<form id="contactForm" class="contact" name="vi-vi.io contact" netlify>
 					<div class="container">
 						<!-- <div class="row"></div> -->
 						<div class="row input-container">
@@ -44,23 +44,37 @@
 						</div>
 					</div>
 				</form>
-				<div class="container result post-sent">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h2>Success!</h2>
+							<div class="result valign" id="postSent">
+								<div>
+									<h4 class="text-center">Thanks for reaching out!</h4>
+									<hr>
+									<p>Your message is on it's way. I'll review your inquiry, and get back to you soon.</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="container result post-error">
+				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<h2>ERROR.</h2>
+							<div class="valign result" id="postError">
+								<div>
+									<h4 class="text-center">Oh shoot, you broke it!</h4>
+									<hr>
+									<p><strong>Just kidding. It's almost definitely my fault. But I'll be keeping an eye on you....</strong></p>
+									<p>Please <a href="mailto:rscott@vi-vi.io?subject=Error notification from vi-vi.io contact form">email me</a>, and let me know you're having problems</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12">
+					<div class="spacer-20px"></div>
 					<p class="text-center">Or you can just reach out directly:<br/>\\P <a href="tel:+16172949493">617 294 9493</a><br/>\\E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form">rscott@vi-vi.io</a></p>
 				</div>
 			</div>

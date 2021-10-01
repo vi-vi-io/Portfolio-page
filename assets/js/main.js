@@ -95,32 +95,26 @@ $window.on('resize', resizeMovie); // optimize movie crop on window dimension ch
 		$this.scrollex(options);
 	});
 
-	// Send AJAX Contact form data to Netlify
-	function sendFormData() {
-
-		function sendData() {
-			var XHR = new XMLHttpRequest()
-			var FD = new FormData(form)
-			XHR.addEventListener('load', function(event) {
-				form.classList.add('inactive')
-				var success = document.querySelectorAll('.post-sent')[0]
-				success.classList.add('active')
-			})
-			XHR.addEventListener('error', function(event) {
-				form.classList.add('inactive')
-				var error = document.querySelectorAll('.post-error')[0]
-				error.classList.add('active')
-			})
-			XHR.open('POST', '#')
-			XHR.send(FD)
-		}
-	  
-		var form = document.querySelectorAll('.contact')[0]
-		form.addEventListener('submit', function (e) {
-			e.preventDefault()
-			sendData()
+	// Send AJAX contact form data to Netlify
+	
+	const handleSubmit = (e) => {
+		e.preventDefault()
+		let myForm = document.getElementById('contactForm');
+		let formData = new FormData(myForm)
+		fetch('/', {
+			method: 'POST',
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: new URLSearchParams(formData).toString()
 		})
-	  
+		.then(() => {
+			$(myForm).animate({height: "0px"});
+			let success = document.getElementById('postSent');
+			$(success).animate({height: "200px"});
+		})
+		.catch((error) => {
+			$(myForm).animate({height: "0px"});
+			let formError = document.getElementById('postError');
+			$(formError).animate({height: "200px"});
+		})
 	}
-	  
-	export default sendFormData
+	document.querySelector("form").addEventListener("submit", handleSubmit);
