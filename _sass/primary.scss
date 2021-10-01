@@ -218,6 +218,17 @@ textarea {
     box-shadow: 0 1px 1px 0 rgba($color-5, 0.10),
               0 1px 1px 0 rgba($color-5, 0.09);
 }
+.result {
+	display: none;
+  }
+  
+  .active {
+	display: block;
+  }
+  
+  .inactive {
+	display: none;
+  }
 
 @media (max-width: 768px) {
     .submit-btn {
