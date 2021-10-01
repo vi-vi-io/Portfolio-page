@@ -1,11 +1,14 @@
 .social-links {
   a {
     text-decoration: none;
-    padding-right: 10px;
-
+    padding: 0 10px;
+    font-size: 2em;
+    color: $color-2;
+    transition-duration: .5s;
     &:hover {
-      color: $info;
+      color: $color-6;
       cursor: pointer;
+      transition-duration: .5s;
     }
   }
 }

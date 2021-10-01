@@ -7,7 +7,7 @@ html, body {
     position: relative;
 	scroll-behavior: smooth;
 	.content-box {
-		background-color: rgba($color-1, .85);
+		background-color: rgba($color-4, .85);
 		margin-top: -80px;
 		padding-top: 80px;
 		.content-block {
@@ -16,9 +16,8 @@ html, body {
 			margin-top: 20px;
 			height: calc(100vh - 22px);
 			border-top: 2px solid $color-4;
-			.image.primary {
-				display: none;
-			}
+			.valign {height: calc(100% - 80px);}
+			.image.primary {display: none;}
 			h2 {
 				font-weight: 700;
 				font-size: 1.75em;
@@ -30,6 +29,9 @@ html, body {
 				text-align: center;
 				font-weight: 300;
 			}
+		}
+		#contact {
+			& > .valign {height: 100%;}
 		}
 	}
 }
@@ -90,9 +92,11 @@ h1 {
 	// margin: 10px auto;
 	text-indent: 4em;
 	white-space: nowrap;
+	transition-duration: .5s;
 
 	&:hover {
 		background-color: $color-6;
+		transition-duration: .5s;
 	}
 }
 
@@ -124,18 +128,18 @@ h1 {
     // text-shadow: 0px 0px 2px rgba($color-5, .75);
 }
 .banner-title {
-	background-color: rgba($color-1, .85);
+	background-color: rgba($color-4, .85);
 	display: inline-block;
 	padding: 20px 30px;
 }
 
 // WORK
-#work {
-	a {font-size: 1.5em;}
-}
+#work {}
 
 
 // CONTACT
+
+
 /* ///// inputs /////*/
 
 #contactForm { overflow: hidden; }
