@@ -13,11 +13,59 @@ $(document).ready(function () {
 	};
 	var vimeo_player = new Vimeo.Player('vimeo_player', player_options);
 
+	window.setTimeout(function() {
+		$html.removeClass('is-loading');
+	}, 0);
+
+	function scrollHandler() {
+		var scrollContainer = document.getElementById('banner')
+		var element = document.getElementById('bannerTitle');
+		
+		var distanceToTop = window.pageYOffset + scrollContainer.getBoundingClientRect().top;
+		var elementHeight = scrollContainer.offsetHeight;
+		var scrollTop = document.documentElement.scrollTop;
+		
+		var opacity = 1;
+		
+		if (scrollTop > distanceToTop) {
+			opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+		}
+		
+		if (opacity >= 0) {
+			element.style.opacity = opacity;
+		}}
+	
+	window.addEventListener('scroll', scrollHandler);
+
 });  // END document.ready
+
+// Disable animations/transitions until the page has loaded.
+var $html = $("html");
+$html.addClass('is-loading');
 
 var	$window = $(window),
 	$body = $('body'),
 	$html = $('html');
+
+function scrollHandler() {
+	var scrollContainer = document.getElementById('banner')
+	var element = document.getElementById('bannerTitle');
+	
+	var distanceToTop = window.pageYOffset + scrollContainer.getBoundingClientRect().top;
+	var elementHeight = scrollContainer.offsetHeight;
+	var scrollTop = document.documentElement.scrollTop;
+	
+	var opacity = 1;
+	
+	if (scrollTop > distanceToTop) {
+		opacity = 1 - (scrollTop - distanceToTop) / elementHeight;
+	}
+	
+	if (opacity >= 0) {
+		element.style.opacity = opacity;
+	}}
+
+window.addEventListener('scroll', scrollHandler);
 
 //dynamic movie frame resizing function for optimum crop, based on window dimensions
 function resizeMovie() {

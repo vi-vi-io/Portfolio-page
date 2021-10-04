@@ -1,5 +1,5 @@
-I"&<section id="banner" class="banner">
-	<div class="valign">
+I"1<section id="banner" class="banner">
+	<div class="">
 		<div class="container">
 			<div class="row">
 				<div class="col-12 text-center">
@@ -27,7 +27,7 @@
 					<div class="">
 						<h2>What I do</h2>
 						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions.  On-set or in post, my every decision or action, purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
-						<p>With an unwavering focus on User Experience, for nearly 20 years I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./docs/resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
+						<p>With an unwavering focus on User Experience, for nearly 20 years I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
 						<p>My broad skill set allows me to add value at all project phases—brainstorming, storyboarding/wireframing, writing, design, development, and delivery.</p>
 					</div>
 				</div>
@@ -82,7 +82,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					&lt;button class="btn btn-lrg" onclick="window.location.href=""./docs/resume.pdf"&gt;<i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span>&lt;/button&gt;
+					<button class="btn btn-lrg" onclick="window.location.href='./docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
 				</div>
             </div>
         </div>
