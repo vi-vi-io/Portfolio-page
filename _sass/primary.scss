@@ -31,6 +31,12 @@ html, body {
 				text-align: center;
 				font-weight: 300;
 			}
+			p span.para-intro {
+				color: $color-6;
+				font-family: $font-display;
+				font-size: 1.25em;
+
+			}
 			hr { 
 				border-top: 1px solid $color-2;
 				width: 40%;
@@ -383,5 +389,9 @@ textarea {
 	}
 	textarea { min-height: 10em; }
 }
-@media only screen and (min-width: 922px) {}
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 922px) {
+	html, body { font-size: 18px; }
+}
+@media only screen and (min-width: 1200px) {
+	html, body { font-size: 20px; }
+}
