@@ -19,7 +19,7 @@ html {
 				margin-top: 20px;
 				padding: 100px 0 180px;
 				min-height: calc(100vh - 310px);
-				border-top: 1px solid $color-2;
+				border-top: 1px solid rgba($color-2, .25);
 				& > .valign {min-height: calc(100vh - 310px);}
 				.image.primary {display: none;}
 				h2 {
@@ -37,17 +37,8 @@ html {
 					font-style: italic;
 					font-weight: 700;
 				}
-				a {
-					color: $color-6;
-					font-weight: 500;
-					font-style: italic;
-					transition-duration: .5s;
-					&:hover {
-						transition-duration: .5s
-					}
-				}
 				hr { 
-					border-top: 1px solid $color-2;
+					border-top: 1px solid rgba($color-2, .25);
 					width: 40%;
 					margin: 10px auto 20px;
 				}
@@ -55,6 +46,15 @@ html {
 			#contact {
 				& > .valign {height: 100%;}
 			}
+		}
+	}
+	a {
+		color: $color-6;
+		font-weight: 500;
+		font-style: italic;
+		transition-duration: .5s;
+		&:hover {
+			transition-duration: .5s
 		}
 	}
 	&.is-loading {
@@ -97,7 +97,7 @@ html {
 	margin: 20px auto;
     border-radius: 60px;
     display: block;
-    background-color: $color-2;
+    background-color: $color-6;
     color: $color-4;
     font-size: 1.15em;
 	text-transform: uppercase;
@@ -108,7 +108,7 @@ html {
     transition: all 500ms ease;
 	&:hover {
 		transform: translateY(1px);
-		background-color: $color-6;
+		background-color: $color-3;
 		box-shadow: 0 1px 1px 0 rgba($color-5, 0.10),
 				0 1px 1px 0 rgba($color-5, 0.09);
 		-webkit-transition: all 500ms ease;
@@ -130,8 +130,7 @@ html {
 
 // Next button
 .goto-next {
-	// @include vendor('transition', 'background-color #{_duration(transition)} ease-in-out');
-	background-color: $color-2;
+	background-color: $color-6;
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -148,13 +147,11 @@ html {
 	overflow: hidden;
 	position: absolute;
 	z-index: 10;
-	// margin: 10px auto;
 	text-indent: 4em;
 	white-space: nowrap;
 	transition-duration: .5s;
-
 	&:hover {
-		background-color: $color-6;
+		background-color: $color-3;
 		transition-duration: .5s;
 	}
 }
@@ -378,9 +375,9 @@ textarea {
 }
 .modal-close {
 	position: absolute;
-	bottom: -42px;
+	bottom: -80px;
 	right: 10px;
-	font-size: 3em;
+	font-size: 6em;
 	color: $color-6;
 	z-index: 9999;
 	padding: 7px;
@@ -398,6 +395,7 @@ textarea {
 @media (orientation: landscape) {}
 @media (orientation: portrait) {}
 
+// BOOTSTRAP SMALL
 @media only screen and (min-width: 576px) {
 	
 	html body { 
@@ -419,6 +417,7 @@ textarea {
 	}
 }
 
+// BOOTSTRAP MEDIUM
 @media only screen and (min-width: 768px) {
 	
 	html body { 
@@ -452,7 +451,15 @@ textarea {
 		font-size: 1rem;
 	}
 	textarea { min-height: 10em; }
+	// MODALS
+	.modal-close { 
+		bottom: auto;
+		top: -80px; 
+		font-size: 5em;
+	}
 }
+
+// BOOTSTRAP LARGE
 @media only screen and (min-width: 992px) {
 	html body { 
 		font-size: 17px;
@@ -468,6 +475,8 @@ textarea {
 		h3 {font-size: 1.6em;}
 	}
 }
+
+// BOOTSTRAP x-LARGE
 @media only screen and (min-width: 1200px) {
 	html body {
 		font-size: 18px;

@@ -1,5 +1,9 @@
 footer {
 	height: calc(100vh - 22px);
+	strong {
+		font-weight: 700;
+		color: rgba($color-2, .5);
+	}
 }
 
 
