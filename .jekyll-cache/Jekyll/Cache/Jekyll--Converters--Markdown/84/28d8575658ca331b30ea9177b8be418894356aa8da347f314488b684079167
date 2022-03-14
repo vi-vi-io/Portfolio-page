@@ -1,11 +1,11 @@
-I"%<section id="banner" class="banner">
-	<div class="">
-		<div class="container">
+I"�<section id="banner" class="banner">
+	<div class="valign">
+		<div class="container text-center">
 			<div class="row">
 				<div class="col-12">
-					<div class="banner-title">
+					<div id="bannerTitle" class="banner-title">
 						<h1 class="">R. Scott Vivilecchia</h1>
-						<h3>Ideation \\ Execution \\ Delivery \\ Measurement</h3>
+						<h3>Ideation <span>\\</span> Execution <span>\\</span> Delivery <span>\\</span> Measurement</h3>
 					</div>
 				</div>
 			</div>
@@ -26,21 +26,21 @@
 				<div class="col-10 offset-1">
 					<div class="">
 						<h2>What I do</h2>
-						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions.  On-set or in post, my every decision or action, purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
-						<p>With an unwavering focus on User Experience, for nearly 20 years I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
+						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions.  On-set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
+						<p>With an unwavering focus on User Experience, for nearly 20 years I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
 						<p>My broad skill set allows me to add value at all project phases—brainstorming, storyboarding/wireframing, writing, design, development, and delivery.</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-10 offset-1 col-xl-6 offset-xl-0">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h3><em>Featured Project:</em> Dispensary Promo</h3>
 					<hr />
 					<div class="player-box">
 						<iframe src="https://player.vimeo.com/video/618173382?h=b8e521193b&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Triple M - Seed to Sale promo"></iframe>
 					</div>
 				</div>
-				<div class="col-10 offset-1 col-xl-6 offset-xl-0">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h3><br />2021 Demo Reel</h3>
 					<hr />
 					<div class="player-box">
@@ -76,13 +76,13 @@
 					<div class="">
 						<img src="./assets/images/scott.jpg" alt="picture of Scott" />
 						<h2>About me</h2>
-						<p><span class="para-intro">Hi, my name is Scott.</span> I'm an independent creative, focused on interactive video&mdash;specifically, a deeper integration of code and video to deliver concise, memorable messages through a highly engaging, narrative, user-centered experience. My prior work includes videos and web apps for dozens of well-known, Fortune 500 corporate clients,  city and state governments, and NGO's.</p>
-						<p>When I'm not behind a camera or a computer screen, I try to enjoy sailing, camping and other outdoor exploration, but most of my free time is spent renovating and restoring the historic seaside cottage where I live.</p>
-						<p>As project leader, or as just another cog in the machine, I bring this sense of adventure, a focused ingenuity, and roll-up-the-sleeves tenacity, to every project I work on.</p>
+						<p><span class="para-intro">Hi, my name is Scott.</span> I'm an independent creative, focused on a deeper integration of code and video to deliver concise, memorable messages through highly engaging, narrative, user-centered experience. My prior work includes videos and web apps for dozens of well-known, Fortune 500 corporate clients,  city and state governments, and NGO's.</p>
+						<p>When I'm not behind a camera or a computer screen, I try to enjoy sailing, camping and other outdoor exploration, but most of my free time ends up being spent renovating and restoring the historic seaside cottage where I live. Not a bad tradeoff.</p>
+						<p>I bring this sense of adventure, a focused ingenuity, and roll-up-the-sleeves tenacity, to every project I work on.</p>
 					</div>
 				</div>
 				<div class="col-12">
-					<button class="btn btn-lrg" onclick="window.location.href='./docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
+					<button class="btn btn-lrg" onclick="window.location.href='./assets/docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
 				</div>
             </div>
         </div>
@@ -97,7 +97,8 @@
 			<div class="row">
 				<div class="col-10 offset-1">
 					<h2>Drop me a note</h2>
-					<p>If you've got a project in peril, if your team needs talent, if you have a video without vision, if your website is weak sauce....ok, that's enough.... You know what to do. I look forward to hearing from you.</p>
+					<p>If you've got a project in peril, if your team needs talent, if you have a video without vision, if your website is weak sauce....ok, that's enough.... You know what to do.</p>
+					<p>I look forward to hearing about your project, and discussing how we can accomplish your goals.</p>
 				</div>
 			</div>
 			<div class="row">
