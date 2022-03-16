@@ -1,0 +1,179 @@
+I"�<section id="banner" class="banner">
+	<div class="valign">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-12">
+					<div id="bannerTitle" class="banner-title">
+						<h1 class="">R. Scott Vivilecchia</h1>
+						<h3>Ideation <span>\\</span> Execution <span>\\</span> Delivery <span>\\</span> Measurement</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#work" class="goto-next scrolly">Next</a>
+</section>
+
+<div class="container">
+	<div class="row">
+		<div class="content-box col-10 offset-1 col-md-8 offset-md-2">
+			<!-- Start WORK content -->
+<section id="work" class="content-block">
+	<div class="valign">
+		<span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div class="">
+						<h2>What I do</h2>
+						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions.  On-set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
+						<p>With an unwavering focus on User Experience, for nearly 20 years I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
+						<p>My broad skill set allows me to add value at all project phases—brainstorming, storyboarding/wireframing, writing, design, development, and delivery.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h3><em>Featured Project:</em> Town Government PSA</h3>
+					<hr />
+					<div class="player-box">
+						<iframe src="https://player.vimeo.com/video/688038354?h=80a4692f56&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="dux_dpw_final_web"></iframe>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h3><br />2021 Demo Reel</h3>
+					<hr />
+					<div class="player-box">
+						<iframe src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="schizzleReel_2021"></iframe>
+					</div>
+				</div>
+				<div class="col-12">
+					<h3>More work</h3>
+					<hr />
+					<div class="social-links text-center">
+						<a target="_blank" href="https://vimeo.com/user113004102">
+							<i class="fab fa-vimeo fa-4x">vimeo</i>
+						</a>
+						<a target="_blank" href="https://github.com/vi-vi-io">
+							<i class="fab fa-github fa-4x">github</i>
+						</a>
+					</div>
+				</div>
+				<div class="col-12">
+					<button class="btn btn-lrg" data-toggle="modal" data-target="#about-website-modal"><i class="fas fa-info-circle fa-2x"></i><span>&nbsp;&nbsp;&nbsp;About this website</span></button>
+				</div>
+			</div>
+		</div>
+    </div>
+	<a href="#about" class="goto-next scrolly">Next</a>
+</section><!-- End WORK content -->
+			<!-- Start ABOUT content -->
+<section id="about" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic02.jpg" alt="" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<div class="">
+						<img src="./assets/images/scott.jpg" alt="picture of Scott" />
+						<h2>About me</h2>
+						<p><span class="para-intro">Hi, my name is Scott.</span> I'm an independent creative, focused on a deeper integration of code and video to deliver concise, memorable messages through highly engaging, narrative, user-centered experience. My prior work includes videos and web apps for dozens of well-known, Fortune 500 corporate clients, city and state governments, and NGO's.</p>
+						<p>When I'm not behind a camera or a computer screen, I try to enjoy sailing, camping and other outdoor exploration, but most of my free time ends up being spent renovating and restoring the historic seaside cottage where I live. Not a bad tradeoff.</p>
+						<p>I bring this sense of adventure, a focused ingenuity, and roll-up-the-sleeves tenacity, to every project I work on.</p>
+					</div>
+				</div>
+				<div class="col-12">
+					<button class="btn btn-lrg" onclick="window.location.href='./assets/docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
+				</div>
+            </div>
+        </div>
+    </div>
+	<a href="#contact" class="goto-next scrolly">Next</a>
+</section><!-- End ABOUT content -->
+			<!-- Start CONTACT content -->
+<section id="contact" class="content-block">
+	<div class="valign">
+		<span class="image fit primary"><img src="assets/images/pic03.jpg" alt="" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-10 offset-1">
+					<h2>Drop me a note</h2>
+					<p>If you've got a project in peril, if your team needs talent, if you have a video without vision, if your website is weak sauce....ok, that's enough.... You know what to do.</p>
+					<p>I look forward to hearing about your project, and discussing how we can accomplish your goals.</p>
+				</div>
+			</div>
+			<div class="row">
+				<form id="contactForm" class="contact" name="vi-vi.io contact" netlify="">
+					<div class="container">
+						<!-- <div class="row"></div> -->
+						<div class="row input-container">
+							<div class="col-12">
+								<div class="styled-input wide">
+									<input type="text" required="" />
+									<label>Name</label> 
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-sm-12">
+								<div class="styled-input">
+									<input type="text" required="" />
+									<label>Email</label> 
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-sm-12">
+								<div class="styled-input">
+									<input type="text" required="" />
+									<label>Phone Number</label> 
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="styled-input wide">
+									<textarea required=""></textarea>
+									<label>Message</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-lrg submit-btn"><i class="far fa-paper-plane fa-2x"></i><span>&nbsp;&nbsp;&nbsp;Send Message</span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="container">
+					<div class="row">
+						<div class="col-8 offset-2">
+							<div class="result valign" id="postSent">
+								<div>
+									<h4 class="text-center">Thanks for reaching out!</h4>
+									<hr />
+									<p>Your message is on it's way. I'll review your inquiry, and get back to you soon.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-8 offset-2">
+							<div class="valign result" id="postError">
+								<div>
+									<h4 class="text-center">Oh shoot, you broke it!</h4>
+									<hr />
+									<p><strong>Just kidding. It's almost definitely my fault. But I'll be keeping an eye on you....</strong></p>
+									<p>Please <a href="mailto:rscott@vi-vi.io?subject=Error notification from vi-vi.io contact form">email me</a>, and let me know you're having problems</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="spacer-20px"></div>
+					<p class="text-center">Or you can just reach out directly:<br />//P <a href="tel:+16172949493">617 294 9493</a><br />//E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form">rscott@vi-vi.io</a></p>
+				</div>
+			</div>
+		</div>
+    </div>
+</section><!-- End CONTACT content -->
+		</div>
+	</div>
+</div>
+:ET
