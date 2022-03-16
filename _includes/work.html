@@ -7,9 +7,9 @@
 				<div class="col-10 offset-1">
 					<div class="">
 						<h2>What I do</h2>
-						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions.  On-set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
-						<p>As a developer with an unwavering focus on User Experience, I've worked in front-end and server-side capacities, to create custom, mobile-first web apps. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
-						<p>My broad skill set allows me to add value at all project phases—brainstorming, storyboarding/wireframing, writing, design, development, and delivery.</p>
+						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions. On-set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
+						<p>As a developer with an unwavering focus on User Experience, I create custom, video-based, mobile-first web apps and integrations. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
+						<p>My broad skill set allows me to add value at all project phases&mdash;brainstorming, storyboarding / wireframing, writing & design, production, development, and delivery.</p>
 					</div>
 				</div>
 			</div>
@@ -22,7 +22,7 @@
 					</div>
 				</div>
 				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
-					<h3><br>2021 Demo Reel</h3>
+					<h3><br>Demo Reel</h3>  <!-- <br> tag aligns single line title -->
 					<hr>
 					<div class="player-box">
 						<iframe src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="schizzleReel_2021"></iframe>
@@ -33,10 +33,16 @@
 					<hr>
 					<div class="social-links text-center">
 						<a target="_blank" href="https://vimeo.com/user{{ site.vimeo_username }}">
-							<i class="fab fa-vimeo fa-4x">vimeo</i>
+							<i aria-hidden="true" class="fab fa-vimeo fa-3x" title="my vimeo profile">vimeo</i>
+						</a>
+						<a target="_blank" href="https://www.productionhub.com/profiles/details/354240">
+							<img class="img-fluid" src="./assets/images/prodHub.png" alt="my ProductionHUB profile" />
 						</a>
 						<a target="_blank" href="https://github.com/{{ site.github_username }}">
-							<i class="fab fa-github fa-4x">github</i>
+							<i aria-hidden="true" class="fab fa-github fa-3x" title="my github profile">github</i>
+						</a>
+						<a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
+						  <i aria-hidden="true" class="fab fa-linkedin fa-3x" title="my linkedin profile">linkedin</i>
 						</a>
 					</div>
 				</div>
@@ -46,5 +52,5 @@
 			</div>
 		</div>
     </div>
-	<a href="#about" class="goto-next scrolly">Next</a>
+	<a href="#about" class="goto-next scrolly">scroll to next section</a>
 </section><!-- End WORK content -->
