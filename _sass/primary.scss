@@ -178,14 +178,16 @@ html {
 
 // BANNER
 #banner {
+	display: block;
+	position: relative;
 	height: 100vh;
 	 h3 {
 		text-transform: uppercase;
 		font-weight: 700;
 		font-size: .85em;
-		color: $color-2;
+		color: $color-6;
 		span {
-			// color: $color-3;
+			color: $color-2;
 			font-weight: 100;
 		}
 	 }
@@ -218,6 +220,22 @@ html {
 	}
 }
 
+// ABOUT
+#about {
+	img {
+		width: 40%;
+		height: auto;
+		float: right;
+		border: 1px solid rgba($color-2, .5);
+		margin: 0 0 20px 20px;
+	}
+	h4 {
+		color: $color-3;
+		font-family: $font-display;
+		font-size: 1.4em;
+	}
+}
+
 // WORK
 #work {
 	.player-box {
@@ -228,16 +246,6 @@ html {
 	em {font-weight: 500;}
 }
 
-// ABOUT
-#about {
-	img {
-		width: 40%;
-		height: auto;
-		float: right;
-		border: 1px solid rgba($color-2, .5);
-		margin: 0 0 20px 20px;
-	}
-}
 
 
 
