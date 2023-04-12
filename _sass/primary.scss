@@ -71,6 +71,8 @@ html {
 
 .clearer {clear: both;}
 
+strong {font-weight: 500;}
+
 .spacer-20px {height: 20px;}
 
 .text-clr-1 {color: $color-1;}
@@ -93,7 +95,7 @@ html {
 }
 
 .btn {
-	padding: 8px 25px;
+	padding: 6px 20px 3px;
 	margin: 20px auto;
     border-radius: 60px;
     display: block;
@@ -121,12 +123,15 @@ html {
 		margin-top: 7px;
 	}
 }
-// @media (max-width: 768px) {
-//     .btn { 
-// 		width:100%;
-// 		span { margin-right: 10%; }
-// 	}
-// }
+
+.right-btn {float: right;}
+@media (max-width: 768px) {
+    .right-btn {
+        float: none;
+        text-align:center;
+		margin: .5rem 0;
+    }
+}
 
 // Next button
 .goto-next {
@@ -203,11 +208,13 @@ html {
 	display: inline-block;
     border-radius: 4px;
 	padding: 20px 30px;
+	margin-top: 35%;
 	text-align: center;
 }
 #banner .banner-title {
 	opacity: 0;
 	animation: .75s ease-out forwards slideUpFade;
+	animation-delay: 2000ms;
 }
 @keyframes slideUpFade {
 	0% {
@@ -244,8 +251,27 @@ html {
 		border: 1px solid rgba($color-2, .5);
 	}
 	em {font-weight: 500;}
+	.slideshow {
+		position: relative;
+		overflow: hidden;
+		height: 50px;
+		width: calc(100% + 60px);
+		margin-left: -30px;
+		.slideImages {
+			background: url(../images/logosBanner.png);
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 800%;
+			animation: slideshow 15s linear infinite;
+		}
+	}
+	@keyframes slideshow {
+	  0%    { left: 0; }
+	  100%  { left: -644.5%; }
+	}
 }
-
 
 
 
@@ -323,15 +349,6 @@ textarea {
 .input-container {
     max-width: 100%;
     margin: 20px auto 25px auto;
-}
-
-.submit-btn {float: right;}
-@media (max-width: 768px) {
-    .submit-btn {
-        float: none;
-        text-align:center;
-		margin: .5rem 0;
-    }
 }
 
 #postSent, #postError {
@@ -423,6 +440,16 @@ textarea {
 		h1 {font-size: 2.8em;}
 		h3 {font-size: 1em;}
 	}
+	// WORK
+	#work {
+		.slideshow {
+			.slideImages {}
+		}
+		@keyframes slideshow {
+			0%    { left: 0; }
+			100%  { left: -444.5%; }
+		}
+	}
 }
 
 // BOOTSTRAP MEDIUM
@@ -441,6 +468,16 @@ textarea {
 	#banner {
 		h1 {font-size: 4em;}
 		h3 {font-size: 1.4em;}
+	}
+	// WORK
+	#work {
+		.slideshow {
+			.slideImages {}
+		}
+		@keyframes slideshow {
+			0%    { left: 0; }
+			100%  { left: -417%; }
+		}
 	}
 
 	// CONTACT FORM
@@ -482,6 +519,16 @@ textarea {
 		h1 {font-size: 4.5em;}
 		h3 {font-size: 1.6em;}
 	}
+	// WORK
+	#work {
+		.slideshow {
+			.slideImages {}
+		}
+		@keyframes slideshow {
+			0%    { left: 0; }
+			100%  { left: -312.5%; }
+		}
+	}
 }
 
 // BOOTSTRAP x-LARGE
@@ -498,5 +545,15 @@ textarea {
 	#banner {
 		h1 {font-size: 5.5em;}
 		h3 {font-size: 2em;}
+	}
+	// WORK
+	#work {
+		.slideshow {
+			.slideImages {}
+		}
+		@keyframes slideshow {
+			0%    { left: 0; }
+			100%  { left: -263%; }
+		}
 	}
 }

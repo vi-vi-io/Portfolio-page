@@ -1,4 +1,4 @@
-I"‚"<section id="banner" class="banner">
+I"Ž!<section id="banner" class="banner">
 	<div class="valign">
 		<div class="container text-center">
 			<div class="row">
@@ -19,7 +19,7 @@
 		<div class="content-box col-10 offset-1 col-md-8 offset-md-2">
 			<!-- Start ABOUT content -->
 <section id="about" class="content-block">
-	<div class="valign"><span class="image fit primary"><img src="assets/images/pic02.jpg" alt="decorative image - FedEx plane on a runway at Logan Airport with ship channel marker bouy in the foreground" /></span>
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-10 offset-1">
@@ -27,8 +27,7 @@
 						<img src="./assets/images/scott.jpg" alt="picture of Scott" />
 						<h2>About me</h2>
 						<p><span class="para-intro">Hello, my name is Scott.</span> I'm an independent video producer, with a focus on story, creating memorable messages through highly-engaging, narrative, user-centric experience. My prior work includes video production and web app development for dozens of well-known, Fortune 500 corporate, city and state government, and NGO clients.</p>
-						<p>When I'm not behind a camera or a computer screen, I look for opportunities to enjoy sailing, camping and other outdoor exploration, but most of my free time ends up being spent restoring the historic seaside cottage where I live. Not a bad tradeoff.</p>
-						<h4>I bring this sense of adventure, focused ingenuity, and roll-up-the-sleeves tenacity, to every project that I work on.</h4>
+						<p>When I'm not behind a camera or a computer screen, I look for opportunities to enjoy camping, sailing and other outdoor exploration. <strong>ring this sense of adventure, along with focused ingenuity, and roll-up-the-sleeves tenacity, to every project that I work on</strong>.</p>
 					</div>
 				</div>
 				<div class="col-12">
@@ -42,14 +41,14 @@
 			<!-- Start WORK content -->
 <section id="work" class="content-block">
 	<div class="valign">
-		<span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
+		<span class="image fit primary"><img src="assets/images/pic02.jpg" alt="" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-10 offset-1">
 					<div class="">
 						<h2>What I do</h2>
 						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions. On-set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
-						<p>As a developer with an unwavering focus on User Experience, I create custom, video-based, mobile-first web apps and integrations. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
+						<p>As a developer with an unwavering focus on user experience, I create custom, video-based, mobile-first web apps and integrations. Check out my <a href="./assets/docs/rsVivilecchia_resume.pdf">resume</a> to see the specific technologies that I'm familiar with.</p>
 						<p>My broad skill set allows me to add value at all project phases&mdash;brainstorming, storyboarding / wireframing, writing &amp; design, production, development, and delivery.</p>
 					</div>
 				</div>
@@ -103,8 +102,8 @@
 			<div class="row">
 				<div class="col-10 offset-1">
 					<h2>Drop me a note...</h2>
-					<p>...if you've got a <em>project in peril</em>, if your <em>team needs talent</em>, if you have a <em>video without vision</em>, if your <em>website is weak-sauce</em>....ok, that's enough....You know what to do.</p>
-					<p>I look forward to hearing about your project, and to discussing how we can accomplish your goals.</p>
+					<p>if you've got a <em>project in peril</em>,<br /> if your <em>team needs talent</em>,<br /> if you have a <em>video without vision</em>,<br /> if your <em>website is weak-sauce</em>....</p>
+					<p>I look forward to hearing about your project, and discussing how we can accomplish your goals.</p>
 				</div>
 			</div>
 			<div class="row">
