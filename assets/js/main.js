@@ -13,6 +13,8 @@ $(document).ready(function () {
 	};
 	var vimeo_player = new Vimeo.Player('vimeo_player', player_options);
 
+	
+
 	window.setTimeout(function() {
 		$html.removeClass('is-loading');
 	}, 0);
