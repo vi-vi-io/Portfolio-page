@@ -17,7 +17,7 @@ html {
 				display: block;
 				position: relative;
 				margin-top: 20px;
-				padding: 100px 0 180px;
+				padding: 100px 0 120px;
 				min-height: calc(100vh - 310px);
 				border-top: 1px solid rgba($color-2, .25);
 				& > .valign {min-height: calc(100vh - 310px);}
@@ -251,20 +251,29 @@ strong {font-weight: 500;}
 		border: 1px solid rgba($color-2, .5);
 	}
 	em {font-weight: 500;}
-	.slideshow {
-		position: relative;
-		overflow: hidden;
-		height: 50px;
+	.clientsBox {
+		background-color: rgba(white, .5);
 		width: calc(100% + 60px);
 		margin-left: -30px;
-		.slideImages {
-			background: url(../images/logosBanner.png);
-			position: absolute;
-			left: 0;
-			top: 0;
-			height: 100%;
-			width: 800%;
-			animation: slideshow 15s linear infinite;
+		margin-top: 30px;
+		padding-bottom: 30px;
+		h3 {margin-top: 30px;}
+		.slideshow {
+			position: relative;
+			overflow: hidden;
+			height: 50px;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+			// border-bottom: 1px solid $color-2;
+			.slideImages {
+				background: url(../images/logosBanner.png);
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 800%;
+				animation: slideshow 15s linear infinite;
+			}
 		}
 	}
 	@keyframes slideshow {
