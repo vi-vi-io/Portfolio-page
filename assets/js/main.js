@@ -88,6 +88,16 @@ function resizeMovie() {
 };
 $window.on('resize', resizeMovie); // optimize movie crop on window dimension change
 
+//stop playback on all embedded vimeo videos in a bootstrap modal when it is closed
+$(function(){
+    $('.modal, .close').click(function(){
+        $("iframe").each(function() {
+            var src= $(this).attr('src');
+            $(this).attr('src',src);
+        });
+    });
+});
+
 //smooth scroll  -->
 	 $(function() {
 		$('a[href*="#"]:not([href="#"])').click(function() {
