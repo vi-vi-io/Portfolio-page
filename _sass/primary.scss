@@ -8,7 +8,7 @@ html {
 		padding: 0;
 		position: relative;
 		scroll-behavior: smooth;
-		.content-box {
+		.content-box, .dark-content-box {
 			background-color: rgba($color-4, .925);
 			border-radius: 4px;
 			margin-top: -120px;
@@ -49,9 +49,29 @@ html {
 					width: 40%;
 					margin: 10px auto 20px;
 				}
+				.whiteBox {
+					background-color: rgba(white, .5);
+					width: calc(100% + 60px);
+					margin-left: -30px;
+					margin-top: 30px;
+					padding: 20px 0 20px;
+					h3 {margin: 0;}
+				}
 			}
 			#contact {
 				& > .valign {height: 100%;}
+			}
+		}
+		.dark-content-box {
+			background-color: rgba($color-2, .925);
+			border-radius: 4px;
+			margin-top: 0px;
+			padding-top: 0px;
+			color: $color-4;
+			.content-block {
+				padding: 50px 0 75px;
+				min-height: auto;
+				& > .valign {min-height:auto;}
 			}
 		}
 	}
@@ -141,7 +161,7 @@ strong {font-weight: 500;}
 }
 
 // Next button
-.goto-next {
+.goto-next, .goto-home {
 	background-color: $color-6;
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
@@ -166,6 +186,14 @@ strong {font-weight: 500;}
 		background-color: $color-3;
 		transition-duration: .5s;
 	}
+}
+.goto-home {
+	transform: rotate(90deg);
+	// position: relative;
+	bottom: auto;
+	left: 50px;
+	top: 50px;
+	margin: 0;
 }
 
 /* Main BG */
@@ -193,22 +221,6 @@ strong {font-weight: 500;}
 	display: block;
 	position: relative;
 	height: 100vh;
-	 h3 {
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: .85em;
-		color: $color-6;
-		span {
-			color: $color-2;
-			font-weight: 100;
-		}
-	 }
-	 h1 { 
-		font-weight: 100;
-		text-align: center;
-		font-size: 2.5em;
-		color: $color-2;
-	}
 }
 .banner-title {
 	background-color: rgba($color-4, .925);
@@ -217,6 +229,22 @@ strong {font-weight: 500;}
 	padding: 20px 30px;
 	margin-top: 35%;
 	text-align: center;
+	h3 {
+	   text-transform: uppercase;
+	   font-weight: 700;
+	   font-size: .85em;
+	   color: $color-6;
+	   span {
+		   color: $color-2;
+		   font-weight: 100;
+	   }
+	}
+	h1 { 
+	   font-weight: 100;
+	   text-align: center;
+	   font-size: 2.5em;
+	   color: $color-2;
+   }
 }
 #banner .banner-title {
 	opacity: 0;
@@ -233,6 +261,19 @@ strong {font-weight: 500;}
 		opacity: 1;
 	}
 }
+#subheader.content-block {
+	padding-bottom: 0;
+	.banner-title {
+		margin-top: 30px;
+		width: 100%;
+		h3 {
+			font-size: 1em;
+			margin: 10px auto 10px;
+		}
+		h1 {font-size: 1.8em;}
+	}
+}
+
 
 // ABOUT
 #about {
@@ -263,12 +304,11 @@ strong {font-weight: 500;}
 		overflow: hidden;
 		height: 125px;
 		padding: 0;
-		button {
+		a {
 			border: none;
 			margin:0;
 			padding:0;
 			img {
-				float: right;
 				width: 115%;
 				margin: 0;
 				-webkit-transition: .3s ease-in-out;
@@ -280,6 +320,9 @@ strong {font-weight: 500;}
 					-webkit-filter: blur(3px);
 					filter: blur(3px);
 				}
+			}
+			img.right {
+				float: right;
 			}
 		}
 	}
@@ -447,7 +490,7 @@ textarea {
 	border: 1px solid rgba($color-5, .75);
 	border-radius: 4px;
 }
-.modal-player-caption{
+.player-caption{
 	font-size: .85em;
 	font-weight: 700;
 	color: lighten($color-2, 20%);
@@ -473,6 +516,14 @@ textarea {
 	}
 }
 
+//WORKSUB LAYOUT
+.worksub-player-box {
+	// padding:0;
+	position:relative;
+	border: 1px solid rgba($color-5, .75);
+	border-radius: 4px;
+}
+
 @media (orientation: landscape) {}
 @media (orientation: portrait) {}
 
@@ -495,6 +546,13 @@ textarea {
 	#banner {
 		h1 {font-size: 2.8em;}
 		h3 {font-size: 1em;}
+	}
+	#subheader {
+		.banner-title {
+			margin-top: 30px;
+			h3 {font-size: 1em;}
+			h1 {font-size: 1.8em;}
+		}
 	}
 	// WORK
 	#work {
@@ -527,6 +585,13 @@ textarea {
 	#banner {
 		h1 {font-size: 4em;}
 		h3 {font-size: 1.4em;}
+	}
+	#subheader {
+		.banner-title {
+			margin-top: 20px;
+			h3 {font-size: .65em;}
+			h1 {font-size: 2em;}
+		}
 	}
 	// WORK
 	#work {
@@ -577,6 +642,13 @@ textarea {
 	#banner {
 		h1 {font-size: 4.5em;}
 		h3 {font-size: 1.6em;}
+	}
+	#subheader {
+		.banner-title {
+			margin-top: 0;
+			h3 {font-size: .85em;}
+			h1 {font-size: 2.5em;}
+		}
 	}
 	// WORK
 	#work {

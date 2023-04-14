@@ -1,21 +1,45 @@
-<!--START MODAL CONTENT-->
-
-<div id="govPSA-modal" class="modal fade" role="dialog">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content container">
+I"n<div class="container">
+	<div class="row">
+		<div class="mt-3 dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			<a href="../#work" class="goto-home">return home</a>
+<section id="subheader" class="content-block">
+		<div class="container-fluid">
 			<div class="row">
-				<div class="col-12">
-					<h2><strong>Town Government PSA</strong></h2>
-					<hr>
+				<div class="col-10 offset-1">			
+					<div class="banner-title text-center">
+						<h1 class="">R. Scott Vivilecchia</h1>
+						<h3>Ideation <span>\\</span> Execution <span>\\</span> Delivery <span>\\</span> Measurement</h3>
+					</div>
 				</div>
+			</div>		
+		</div>
+</section>
+			
+<!-- Start DEMO REEL content -->
+<section id="demoReel" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="">
+						<h2>Town Government PSA</h2>
+					</div>
+				</div>
+            </div>
+			<div class="row">
 				<div class="col-12 col-lg-6 col-xl-8">
 					<div class="modal-player-box embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/688038354?h=80a4692f56&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;" title="Town of Duxbury - New DPW"></iframe>
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/688038354?h=80a4692f56&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:100%;height:100%;" title="Town of Duxbury - New DPW"></iframe>
 					</div>
 					<div class="player-caption">Full-length 16:9 version (05:29)</div>
 				</div>
 				<div class="col-12 col-lg-6 col-xl-4">
 					<p>This piece was produced to inform and educate town residents about the need to invest in a new Department of Public Works facility. In the town of Duxbury, MA, large capital expenditures, like a new multi-million dollar DPW facility, require resident approval, through a vote on a warrant item, presented at an annual town meeting. This video was shared via a social campaign, in the months leading up to the vote.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work in filming, editing, and motion graphics, while emphasizing the broad range of production types that I’ve contributed to.</p>
 				</div>
 			</div>
 			<div class="row">
@@ -29,7 +53,7 @@
 				</div>
 				<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 					<div class="modal-player-box embed-responsive embed-responsive-1by1">
-						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/688053929?h=aa865748eb&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;" title="Town of Duxbury - New DPW - social cut"></iframe>
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/688053929?h=aa865748eb&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:100%;height:100%;" title="Town of Duxbury - New DPW - social cut"></iframe>
 					</div>
 					<div class="modal-player-caption">Social version with a 1:1 aspect ratio (01:00)</div>
 				</div>
@@ -43,31 +67,10 @@
 					</ul>
 				</div>
 			</div>
-			<button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
-				<span class="modal-close-x" aria-hidden="true">&times;</span>
-			</button>
+        </div>
+    </div>
+</section><!-- End DEMO REEL content -->
 		</div>
 	</div>
-</div><!--END MODAL #govPSA-modal -->
-
-<div id="about-website-modal" class="modal fade" role="dialog">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<h2>Surprise! I'm also a frontend developer....</h2>
-			<hr>
-			<p><strong>...but don't tell anyone!</strong> These days I'm focused on motion graphics and video production, so unless we're talking about building a well-funded interactive video app, my professional dev days are behind me.</p>
-			<p>That being said, you're <strong>NOT</strong> looking at a site builder template. This single-page web app is custom coded using the <a href="http://jekyllrb.com/">Jekyll</a> static site generation tool, and is hosted on <a href="https://www.netlify.com/">Netlify</a> via continuous deployment from a linked <a href="https://github.com/vi-vi-io/Portfolio-page">GitHub repository</a>.</p>
-			<div class="text-center">
-				<i class="fab fa-html5 fa-2x"></i>&nbsp;&nbsp;&nbsp;
-				<i class="fab fa-markdown fa-2x"></i>&nbsp;&nbsp;&nbsp;
-				<i class="fab fa-css3-alt fa-2x"></i>&nbsp;&nbsp;&nbsp;
-				<i class="fab fa-sass fa-2x"></i>&nbsp;&nbsp;&nbsp;
-				<i class="fab fa-js fa-2x"></i>&nbsp;&nbsp;&nbsp;
-				<i class="far fa-gem fa-2x"></i>
-			</div>
-			<button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
-				<span class="modal-close-x" aria-hidden="true">&times;</span>
-			</button>
-		</div>
-	</div>
-</div><!--END MODAL #about-website-modal -->
+</div>
+:ET

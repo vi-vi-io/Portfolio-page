@@ -2,8 +2,8 @@ $(document).ready(function () {
 
 	resizeMovie(); // optimize movie crop on page load
 
-	// ===  INITIALIZE VIMEO PLAYER ======== >
-	var player_options = {
+	// ===  INITIALIZE home background video VIMEO PLAYER ======== >
+	var home_player_options = {
 		id: 613191318,
 		loop: true,
 		autoplay: true,
@@ -11,7 +11,7 @@ $(document).ready(function () {
 		controls: false,
 		responsive: true
 	};
-	var vimeo_player = new Vimeo.Player('vimeo_player', player_options);
+	var home_vimeo_player = new Vimeo.Player('home_vimeo_player', home_player_options);
 
 	
 
