@@ -457,10 +457,12 @@ textarea {
 }
 
 // MODALS
-.modal-backdrop.fade {
-	background-color: $color-4;
-	opacity:0.4 !important;
-}
+// .modal-backdrop.fade {
+// 	background-color: $color-4;
+// 	opacity:0.7 !important;
+// 	transition: 1s ease-in-out;
+// 	-webkit-transition: 1s ease-in-out;
+// }
 .modal {padding-right: 0 !important;}
 .modal .modal-dialog .modal-content {
 	background-color: $color-2;
@@ -566,7 +568,7 @@ textarea {
 		}
 	}
 	// MODALS
-	.modal-dialog {max-width: 85%;}
+	// .modal-dialog {max-width: 85%;}
 }
 
 // BOOTSTRAP MEDIUM
