@@ -3,7 +3,7 @@ html {
 		font-family: $font;
 		font-size: 17px;
 		color: $color-2;
-		font-weight: 300;
+		font-weight: 500;
 		margin: 0;
 		padding: 0;
 		position: relative;
@@ -98,7 +98,7 @@ html {
 
 .clearer {clear: both;}
 
-strong {font-weight: 500;}
+strong {font-weight: 700;}
 
 .spacer-20px {height: 20px;}
 
@@ -600,11 +600,13 @@ textarea {
 	
 	html body { 
 		font-size: 16px;
+		font-weight: 300;
 		.content-box {
 			margin-top: -85px;
 			padding-top: 85px;
 		}
 	}
+	strong {font-weight: 500;}
 	// Next button
 	.goto-next { bottom: 10px; }
 	//BANNER
