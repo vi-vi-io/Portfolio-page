@@ -98,7 +98,7 @@ html {
 
 .clearer {clear: both;}
 
-strong {font-weight: 700;}
+strong, em {font-weight: 700;}
 
 .spacer-20px {height: 20px;}
 
@@ -606,7 +606,7 @@ textarea {
 			padding-top: 85px;
 		}
 	}
-	strong {font-weight: 500;}
+	strong, em {font-weight: 500;}
 	// Next button
 	.goto-next { bottom: 10px; }
 	//BANNER
