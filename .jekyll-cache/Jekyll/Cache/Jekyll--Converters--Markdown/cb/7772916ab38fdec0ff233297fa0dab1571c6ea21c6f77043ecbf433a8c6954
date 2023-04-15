@@ -1,4 +1,4 @@
-I"|"<section id="banner" class="banner">
+I"à%<section id="banner" class="banner">
 	<div class="valign">
 		<div class="container text-center">
 			<div class="row">
@@ -19,17 +19,19 @@
 		<div class="content-box col-10 offset-1 col-md-8 offset-md-2">
 			<!-- Start ABOUT content -->
 <section id="about" class="content-block">
-	<div class="valign"><span class="image fit primary"><img src="assets/images/pic01.jpg" alt="" /></span>
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic01.jpg" alt="sound insulation texture" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-md-10 offset-md-1">
 					<div class="">
 						<img src="./assets/images/scott.jpg" alt="picture of Scott" />
 						<h2>About me</h2>
-						<p><span class="para-intro">Hello, my name is Scott.</span> I'm a <strong>Visual Storyteller</strong> with demonstrated experience delivering poignant, strategy-driven video content. I'm proficient in concept development, pre-production planning, editing, animation/motion graphics, color grading, and sound design. As a seasoned, independent professional, experinced working with high-profile corporate and governement clients, I'm dedicated to providing top-notch solutions, throughout the production process, ensuring that the outcome meets or exceeds initiative goals.</p>
+						<p><span class="para-intro">Hello, my name is Scott.</span> I'm a <strong>Visual Storyteller</strong> with demonstrated experience delivering poignant, strategy-driven video content. I'm proficient in concept development, pre-production planning, editing, animation/motion graphics, color grading, and sound design. As a seasoned, independent professional, experienced working with high-profile corporate and government clients, I'm dedicated to providing top-notch solutions, throughout the production process, ensuring that the outcome meets or exceeds initiative goals.</p>
 						<p>When I'm not behind a camera or a computer screen, I look for opportunities to enjoy camping, sailing and other outdoor exploration. <br /><strong>I bring this sense of adventure, along with thought leadership and roll-up-the-sleeves tenacity, to every project I work on</strong>.</p>
 					</div>
 				</div>
+			</div>
+			<div class="row whiteBox">
 				<div class="col-12">
 					<button class="btn btn-lrg" onclick="window.location.href='./assets/docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
 				</div>
@@ -41,13 +43,13 @@
 			<!-- Start WORK content -->
 <section id="work" class="content-block">
 	<div class="valign">
-		<span class="image fit primary"><img src="assets/images/pic02.jpg" alt="" /></span>
+		<span class="image fit primary"><img src="assets/images/pic02.jpg" alt="blurred out computer screen showing After Effects timeline" /></span>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-10 offset-1">
+				<div class="col-12 col-md-10 offset-md-1">
 					<div class="">
 						<h2>What I do</h2>
-						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions. My well-honed research process, and compassion for subject/talent, ensure that on set or in post, every decision and action purposefully drives the message, to craft a captivating story that speaks directly to the intended audience.</p>
+						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions. My well-honed research process, and compassion for subject/talent, ensure that on set or in post, every decision and action purposefully drives the message, resulting in a captivating story that connects deeply with the intended audience.</p>
 					</div>
 				</div>
 			</div>
@@ -70,13 +72,15 @@
 				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h4>Town Government PSA</h4>
 					<div class="modalBtn-box">
-						<a href="./govpsa"><img class="right" src="assets/images/workThumb_townPSA.jpg" alt="Town PSA video thumnail depicting a large machine moving snow" /></a>
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./govpsa"><img class="right" src="assets/images/workThumb_townPSA.jpg" alt="Town PSA video thumbnail depicting a large machine moving snow" /></a>
 					</div>
 				</div>
 				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h4>Demo Reel</h4>
 					<div class="modalBtn-box">
-						<a href="./reel"><img src="assets/images/workThumb_demoReel.jpg" alt="" /></a>
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./reel"><img src="assets/images/workThumb_demoReel.jpg" alt="Demo reel thumbnail depicting a woman and dog at the shoreline with the words R. Scott Vivilecchia sitting in the waves" /></a>
 					</div>
 				</div>
 			</div>
@@ -84,13 +88,15 @@
 				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h4>Public TV Series GFX Package</h4>
 					<div class="modalBtn-box">
-						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="" /></a>
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books" /></a>
 					</div>
 				</div>
 				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
 					<h4>Bus Map Concept GFX</h4>
 					<div class="modalBtn-box">
-						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="" /></a>
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="Bus map concept graphics thumbnail showing abstract graphics that look like lines on a city bus map" /></a>
 					</div>
 				</div>
 			</div>
@@ -126,10 +132,10 @@
 			<!-- Start CONTACT content -->
 <section id="contact" class="content-block">
 	<div class="valign">
-		<span class="image fit primary"><img src="assets/images/pic03.jpg" alt="" /></span>
+		<span class="image fit primary"><img src="assets/images/pic03.jpg" alt="tight closeup of computer screen showing color wheels for footage grading" /></span>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-10 offset-1">
+				<div class="col-12 col-md-10 offset-md-1">
 					<h2>Drop me a note...</h2>
 					<p>if you've got a <em>project in peril</em>,<br /> if your <em>team needs talent</em>,<br /> if you have a <em>video without vision</em>,<br /> if your <em>website is weak-sauce</em>....</p>
 					<p>I look forward to hearing about your project, and discussing how we can accomplish your goals.</p>

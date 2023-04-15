@@ -1,6 +1,7 @@
 url: "https://vi-vi.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "VIVI Productions" # the name of your site, e.g. ACME Corp.
+google_analytics: "G-NK9Y362DFM"
 # sass:
 #     load_paths:
 #         - _sass
