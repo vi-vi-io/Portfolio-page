@@ -1,6 +1,12 @@
 ---
 layout: worksub
-title: "VIVI Productions - DEMO REEL"
+title: Demo Reel - VIVI Productions
+description: This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work.
+url: reel
+image:
+  path: assets/images/meta/demoReel.png
+  width: 1200
+  height: 630
 ---
 
 <div class="container">

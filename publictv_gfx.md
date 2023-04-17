@@ -1,6 +1,12 @@
 ---
 layout: worksub
-title: "VIVI Productions - Public TV Series GFX package"
+title: Public TV Series GFX package - VIVI Productions
+description: Project planning is about accurately assessing your available resources, and efficiently leveraging them for the best possible end result.
+url: publictv_gfx
+image:
+  path: assets/images/meta/publicTV_gfx.png
+  width: 1200
+  height: 630
 ---
 
 <div class="container">

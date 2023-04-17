@@ -1,6 +1,12 @@
 ---
 layout: worksub
-title: "VIVI Productions - Bus Map Concept GFX"
+title: Bus Map Concept GFX - VIVI Productions
+description: This package was developed for a public transportation provider, for a piece focused on busing safety.
+url: busmap
+image:
+  path: assets/images/meta/busmap.png
+  width: 1200
+  height: 630
 ---
 
 <div class="container">
