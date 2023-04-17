@@ -1,6 +1,11 @@
 ---
 layout: default
-title: "VIVI Productions - HOME"
+title: R. Scott Vivilecchia - VIVI Productions
+url: /
+image:
+  path: /assets/images/meta/home.webp
+  width: 1200
+  height: 630
 ---
 
 {% include banner.html %}
