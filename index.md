@@ -3,7 +3,7 @@ layout: default
 title: R. Scott Vivilecchia - VIVI Productions
 url:
 image:
-  path: assets/images/meta/home.png
+  path: /assets/images/meta/home.png
   width: 1200
   height: 630
 ---
