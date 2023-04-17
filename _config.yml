@@ -1,7 +1,7 @@
 url: https://vi-vi.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: R. Scott Vivilecchia - VIVI Productions # the name of your site, e.g. ACME Corp.
-description: A snapshot of recent video post-production work
+description: A portfolio of recent video post-production work, including editing, motion graphics, color grading and sound design.
 google_analytics: G-NK9Y362DFM
 # sass:
 #     load_paths:
