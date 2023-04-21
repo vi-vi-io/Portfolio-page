@@ -311,9 +311,10 @@ strong, em {font-weight: 700;}
 			color: $color-6;
 			margin: 10px auto;
 			text-transform: uppercase;
+			white-space: nowrap;
 			&:hover {
 				text-decoration: none;
-				font-size: .95em;
+				transform: scale(1.2,1.2);
 				-webkit-transition: .3s ease-in-out;
 				transition: .3s ease-in-out;
 			}
