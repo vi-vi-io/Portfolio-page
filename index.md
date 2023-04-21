@@ -1,6 +1,6 @@
 ---
 layout: default
-title: R. Scott Vivilecchia - VIVI Productions
+title: R. Scott Vivilecchia - Visual Storyteller
 url:
 image:
   path: /assets/images/meta/home.png

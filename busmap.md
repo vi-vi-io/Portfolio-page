@@ -1,6 +1,6 @@
 ---
 layout: worksub
-title: Bus Map Concept GFX - VIVI Productions
+title: R. Scott Vivilecchia - Bus Map Concept GFX
 description: This package was developed for a public transportation provider, for a piece focused on busing safety.
 url: busmap
 image:

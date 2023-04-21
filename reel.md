@@ -1,6 +1,6 @@
 ---
 layout: worksub
-title: Demo Reel - VIVI Productions
+title: R. Scott Vivilecchia - Demo Reel
 description: This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work.
 url: reel
 image:

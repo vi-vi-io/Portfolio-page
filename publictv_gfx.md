@@ -1,6 +1,6 @@
 ---
 layout: worksub
-title: Public TV Series GFX package - VIVI Productions
+title: R. Scott Vivilecchia - Public TV Series GFX package
 description: Project planning is about accurately assessing your available resources, and efficiently leveraging them for the best possible end result.
 url: publictv_gfx
 image:

@@ -1,4 +1,5 @@
-I"ç%<section id="banner" class="banner">
+I"
+.<section id="banner" class="banner">
 	<div class="valign">
 		<div class="container text-center">
 			<div class="row">
@@ -53,12 +54,49 @@
 					</div>
 				</div>
 			</div>
-			<div class="row clientsBox">
+			<div class="row whiteBox">
 				<div class="col-12">
-					<h3>Brands I've worked with</h3>
+					<h3>My capabilities</h3>
 					<hr />
-					<div class="slideshow">
-						<div class="slideImages"></div>
+				</div>
+				<div class="col-12">
+					<div id="capabilitiesLinks" class="container">
+						<div class="row">
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1">
+								<a href="" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+							</div>
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5">
+								<a href="" class="capabilityLink" id="#capability_2">Video Editing</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1">
+								<a href="" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+							</div>
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5">
+								<a href="" class="capabilityLink" id="#capability_4">Color Grading</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1">
+								<a href="" class="capabilityLink" id="#capability_5">Interviewing, Directing &amp; Camera-op</a>
+							</div>
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5">
+								<a href="" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1">
+								<a href="" class="capabilityLink" id="#capability_7">UI/UX Design</a>
+							</div>
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5">
+								<a href="" class="capabilityLink" id="#capability_8">Front-end web</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5 offset-xl-1"></div>
+							<div class="col-12 col-sm-10 offset-sm-1 col-md-6 offset-md-0 col-xl-5"></div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -100,7 +138,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="row whiteBox mt-5">
+			<div class="row clientsBox mt-5">
+				<div class="col-12">
+					<h3>Brands I've worked with</h3>
+					<hr />
+					<div class="slideshow">
+						<div class="slideImages"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-12">
 					<h3>Professional profiles</h3>
 					<hr />
