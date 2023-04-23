@@ -1,22 +1,26 @@
 .social-links {
   a {
+    display: inline-block;
+    margin: 0 10px;
     text-decoration: none;
     padding: 0 10px;
     color: $color-6;
-    transition-duration: .5s;
+    transition-duration: .3s;
     &:hover {
       color: $color-3;
+      transform: scale(1.1,1.1);
       cursor: pointer;
-      transition-duration: .5s;
+      transition-duration: .3s;
     }
     img {
-      margin-top: -12px;
+      margin-top: -16px;
       height: 55px;
-      transition-duration: .5s;
+      transition-duration: .3s;
       &:hover {
         opacity: 0.5;
+        // transform: scale(1.1,1.1);
         cursor: pointer;
-        transition-duration: .5s;
+        transition-duration: .3s;
       }
     }
   }
