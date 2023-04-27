@@ -72,6 +72,14 @@ html {
 				min-height: auto;
 				& > .valign {min-height:auto;}
 				h4{color: lighten($color-2, 20%);}
+				.whiteBox {
+					margin-top: 10px;
+					margin-bottom: 25px;
+					h4{
+						color: $color-4;
+						margin: 10px auto;
+					}
+				}				
 			}
 		}
 	}
