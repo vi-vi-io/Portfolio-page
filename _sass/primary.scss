@@ -309,25 +309,6 @@ strong, em {font-weight: 700;}
 		position:relative;
 		border: 1px solid rgba($color-2, .5);
 	}
-	#capabilitiesLinks {
-		.capabilityLink {
-			display: block;
-			font-weight: 700;
-			font-size: .85em;
-			font-style: normal;
-			text-align: center;
-			color: $color-6;
-			margin: 10px auto;
-			text-transform: uppercase;
-			white-space: nowrap;
-			&:hover {
-				text-decoration: none;
-				transform: scale(1.2,1.2);
-				-webkit-transition: .3s ease-in-out;
-				transition: .3s ease-in-out;
-			}
-		}
-	}
 	h4 {color: $color-6;}
 	em {font-weight: 500;}
 	.clientsBox { //  https://css-tricks.com/infinite-all-css-scrolling-slideshow/
@@ -409,6 +390,25 @@ strong, em {font-weight: 700;}
 		color: rgba($color-4, .5);
 		// text-shadow: 0 0 10px $color-3;
 		svg {display: block;}
+	}
+}
+#capabilitiesLinks {
+	.capabilityLink {
+		display: block;
+		font-weight: 700;
+		font-size: .85em;
+		font-style: normal;
+		text-align: center;
+		color: $color-6;
+		margin: 10px auto;
+		text-transform: uppercase;
+		white-space: nowrap;
+		&:hover {
+			text-decoration: none;
+			transform: scale(1.2,1.2);
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
 	}
 }
 
