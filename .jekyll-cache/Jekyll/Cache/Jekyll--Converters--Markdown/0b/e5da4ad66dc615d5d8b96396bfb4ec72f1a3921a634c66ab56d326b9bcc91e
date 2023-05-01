@@ -1,4 +1,4 @@
-I"æ<div class="container">
+I"<div class="container">
 	<div class="row">
 		<div class="mt-3 dark-content-box col-10 offset-1 col-md-8 offset-md-2">
 			<a href="../#work" class="goto-home">return home</a>
@@ -15,24 +15,41 @@
 		</div>
 </section>
 			
-<!-- Start Motion Graphics & Animation content -->
-<section id="motion" class="content-block">
-	<div class="valign"><span class="image fit primary"><img src="assets/images/pic02.jpg" alt="blurred out computer screen showing After Effects timeline" /></span>
+<!-- Start Videography gear kit content -->
+<section id="kit" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
 					<div class="text-center">
-						<h2>Motion Graphics &amp; Animation</h2>
-						<h4>Animation that will elevate your video and web content.</h4>
-					<hr />
+						<h2>My Videography gear kit</h2>
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4></h4>
 					</div>
 				</div>
             </div>
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
-					<p>I specialize in creating stunning 2D graphics for lower thirds, brand open/close stingers, and complex info graphics that grab your audience's attention and convey your message with clarity.</p>
-					<p>I'm also skilled in green screen color keying, rotoscoping, basic 3D. Whether you need a simple animation or a complex visual effect, I have the expertise to bring your ideas to life. My tools for video motion graphics are After Effects and Black Magic Fusion.</p>
-					<p>But it's not just about video. I also excel in web vector animation with Adobe Animate, as well as custom SVG animation using Greensock and other JavaScript libraries. From simple icons to intricate illustrations, I can create dynamic animations that enhance your website and engage your audience.</p>
+					<h3>With this small kit, I can stay nimble for one-man-band style gigs, or I can quickly scale up with more equipment and production staff for more complex shoots.</h3>
+					<p><em>Camera</em> - Black Magic Pocket Cinema Camera 4k</p>
+					<p><em>Lens</em> - Sigma 18-35mm f/1.8 DC HSM Art Lens for Canon EF, w/ Benro variable ND</p>
+					<p><em>Lens</em> - Helios 44-2 2/58</p>
+					<p><em>Lens</em> - Canon EF 75-300 f/4-5.6 IS USM</p>
+					<p><em>Speedbooster</em> - Viltrox EF-M2 II Canon EF Lens to Micro Four Thirds Camera Mount Adapter</p>
+					<p><em>Tripod</em> - Manfrotto Befree Live Aluminum Lever-Lock</p>
+					<p><em>Gimbal</em> - DJI Ronin S</p>
+					<p><em>Shoulder rig</em> - CAMVATE Single-Grip w/ smallrig follow-focus</p>
+					<p><em>Data Storage</em> - many, many high-speed GB's in the form of Samsung T5's and Angelbird CFAST cards</p>
+					<p><em>Sound</em> - Zoom H5 4-Input / 4-Track Portable Handy Recorder</p>
+					<p><em>Sound</em> - Sennheiser MKE 600 Shotgun Microphone w/ boom and on-camera mounts</p>
+					<p><em>Sound</em> - Rode Wireless GO Compact Wireless Microphone System (2.4 GHz) w/ Rode smartLav+ mic</p>
+					<p><em>Lights</em> - (x3) Intellytech LiteCloth LC-50 1 x 1' LED Mat Kit (V-Mount) w/ stands</p>
+					<p><em>Lights</em> - Intellytech Pocket Cannon Mini (Daylight spot)</p>
 				</div>
 			</div>
 			<div class="row whiteBox">
@@ -83,7 +100,7 @@
 </div>
         </div>
     </div>
-</section><!-- End Motion Graphics & Animation content -->
+</section><!-- End Videography gear kit content -->
 		</div>
 	</div>
 </div>

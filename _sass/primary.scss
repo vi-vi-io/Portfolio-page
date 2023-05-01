@@ -79,7 +79,8 @@ html {
 						color: $color-4;
 						margin: 10px auto;
 					}
-				}				
+				}
+				a {color: $color-3;}				
 			}
 		}
 	}
@@ -595,6 +596,18 @@ textarea {
 	position:relative;
 	border: 1px solid rgba($color-5, .75);
 	border-radius: 4px;
+}
+
+#kit {
+	h6 {
+		text-align: left;
+		font-size: 1.25em;
+		margin: 30px auto;
+	}
+	em {
+		color: lighten($color-2, 20%);
+		font-weight: 700;
+	}
 }
 
 @media (orientation: landscape) {}
