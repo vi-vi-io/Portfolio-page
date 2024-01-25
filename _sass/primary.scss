@@ -150,7 +150,7 @@ strong, em {font-weight: 700;}
 	&:hover {
 		transform: translateY(1px);
 		transform: scale(1.1,1.1);
-		background-color: $color-3;
+		// background-color: $color-3;
 		box-shadow: 0 1px 1px 0 rgba($color-5, 0.10),
 				0 1px 1px 0 rgba($color-5, 0.09);
 		-webkit-transition: all 500ms ease;
@@ -199,7 +199,7 @@ strong, em {font-weight: 700;}
 	white-space: nowrap;
 	transition-duration: .5s;
 	&:hover {
-		background-color: $color-3;
+		// background-color: $color-3;
 		transform: scale(1.1,1.1);
 		transition-duration: .3s;
 	}
@@ -399,7 +399,7 @@ strong, em {font-weight: 700;}
 	}
 	.link-icon {
 		background-color: rgba($color-6, .7);
-		border: 1px solid rgba($color-4, .5);;
+		border: 1px solid rgba($color-4, .5);
 		padding: 5px;
 		border-radius: 4px;
 		position: absolute;
@@ -421,11 +421,14 @@ strong, em {font-weight: 700;}
 		text-align: center;
 		color: $color-6;
 		margin: 10px auto;
+		padding: 5px 0;
 		text-transform: uppercase;
 		white-space: nowrap;
+		border: 1px solid $color-6;
+		border-radius: 25px;
 		&:hover {
 			text-decoration: none;
-			transform: scale(1.2,1.2);
+			transform: scale(1.05,1.05);
 			-webkit-transition: .3s ease-in-out;
 			transition: .3s ease-in-out;
 		}

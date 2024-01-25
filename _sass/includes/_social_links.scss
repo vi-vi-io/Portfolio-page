@@ -7,13 +7,13 @@
     color: $color-6;
     transition-duration: .3s;
     &:hover {
-      color: $color-3;
+      // color: $color-3;
       transform: scale(1.1,1.1);
       cursor: pointer;
       transition-duration: .3s;
     }
     img {
-      margin-top: 0px;
+      margin: 0px 0 0 -10px;
       height: 55px;
       transition-duration: .3s;
       &:hover {
@@ -22,6 +22,13 @@
         cursor: pointer;
         transition-duration: .3s;
       }
+    }
+  }
+}
+footer {
+  .social-links {
+    a {
+      img {margin: 5px 0 0;}
     }
   }
 }
