@@ -243,7 +243,7 @@ strong, em {font-weight: 700;}
 	height: 100vh;
 }
 .banner-title {
-	background-color: rgba($color-4, .75);
+	background-color: rgba($color-2, .75);
 	display: inline-block;
     border-radius: 4px;
 	padding: 20px 30px;
@@ -253,9 +253,9 @@ strong, em {font-weight: 700;}
 	   text-transform: uppercase;
 	   font-weight: 700;
 	   font-size: .75em;
-	   color: $color-6;
+	   color: $color-3;
 	   span {
-		   color: $color-2;
+		   color: $color-4;
 		   font-weight: 100;
 	   }
 	}
@@ -263,7 +263,7 @@ strong, em {font-weight: 700;}
 	   font-weight: 100;
 	   text-align: center;
 	   font-size: 2em;
-	   color: $color-2;
+	   color: $color-4;
    }
 }
 #banner .banner-title {
@@ -293,7 +293,18 @@ strong, em {font-weight: 700;}
 		h1 {font-size: 1.8em;}
 	}
 }
-
+.dark-content-box, footer {
+	.banner-title {
+		background-color: rgba($color-4, .95);
+		h1 {color: $color-2;}
+		h3 {
+			color: $color-6;
+			span {
+				color: $color-2;
+			}
+		}
+	}
+}
 
 // ABOUT
 #about {
