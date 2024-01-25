@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+p {font-size: 1em;}
+h1 {font-size: 1.75em;}
+h2 {font-size: 1.75em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.5em;}
+h5 {font-size: 1.5em;}
+h6 {font-size: 1.25em;}
+h1.lndg-title {font-size: 2.5em;}
+h1.hero-title {
+	font-size: 2.5em;
+	margin: 40px 0 20px;
+}
+h3.plx-title {font-size: 2em;}
+.bullets {font-size: 1em;}
+.footnote {
+	font-size: .9em;
+	line-height: 1.5em;
+}
+
+/*---- HEADER ----*/
+.headlogo {
+	display: block;
+	margin-top: 3px;
+	min-width: 100px;
+	height: 40px;
+	background: url(../images/xs-voya-logo.png) no-repeat top left;
+	border-style: none;
+}
+.header {
+	max-height: 60px;
+	background-color: #fff;
+	-moz-box-shadow: 0 0px 8px #999;
+	-webkit-box-shadow: 0 0px 8px #999;
+	box-shadow: 0 0px 8px #999;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 100;
+}
+
+/*---- NAV ----*/
+nav {font-size: 1.25em;}
+.navbar-toggle {margin: 4px 15px 4px;}
+.navbar {margin-bottom: 0;}
+.btn-contact {
+	display: none;
+}
+
+/*---- SOLID COLOR CONTAINERS ----*/
+.color-box {
+	color: #fff;
+	padding:50px 0;
+}
+.white-box {
+	padding:70px 0;
+}
+.grey-box {
+	padding: 35px 0;
+}
+
+/*---- HERO ----*/
+.bulb-bkgd {
+	margin: 60px 0 0;
+	background: #d75426;
+	background-size: 85% auto;
+	background-position: center 175px;
+}
+.usa-bkgd {
+	margin: 60px 0 0;
+	background: #ffffff;
+	overflow: hidden;
+}
+.usa-bkgd p, .bulb-bkgd p {
+	text-align: center;
+}
+.vl-bkgd {
+	margin: 30px 0px 0px 0px;
+	background: #f58000;
+	overflow: hidden;
+}
+.vl-bkgd p, h1 {
+	text-align: center;
+}
+img.usa-gfx {
+	width: 120%;
+	height: auto;
+	margin: 0px -10% 20px;
+}
+.xs-bulb {
+	display: block;
+	max-width: 85%;
+	height: auto;
+	margin: 0 auto;
+}
+.bulb-bkgd.lndg-bkgd, .usa-bkgd.lndg-bkgd {
+	height: -moz-calc(100vh - 97px);
+	height: -webkit-calc(100vh - 97px);
+	height: -o-calc(100vh - 97px);
+	height: calc(100vh - 97px);
+	overflow-y: hidden;
+}/*set height of bulb container on landing (index.php) only*/
+.lndg-btn-box {
+	text-align: center;
+}
+
+/*---- FORM BLOCK ----*/
+.contact-title p {
+	color: #fff;
+	text-align: center;
+	font-size: 2em;
+	line-height: 1.1em;
+	font-weight: 100;
+	margin: 50px 0 0 0;
+}
+.contact-footnote p {
+	color: #fff;
+	text-align: right;
+	font-size: .85em;
+	line-height: 1em;
+	font-weight: 700;
+	margin: 0 0 50px 0;
+}
+.form-frame {
+	width: 100%;
+	height: 914px;
+}
+.modal-form-frame {
+	width: 100%;
+	height: 800px;
+}
+
+/*---- MODAL ----*/
+.voya-modal-close {
+	top: -42px;
+	right: 10px;
+	font-size: 3em;
+}
+.voya-modal-unmute {
+	top: -35px;
+	right: 60px;
+	font-size: 1.2em;
+	max-width: 105px;
+}
+
+@media only screen and (min-width: 350px) {
+	p {font-size: 1.15em;}
+	h1 {font-size: 2em;}
+	h2 {font-size: 1.75em;}
+	h3 {font-size: 1.25em;}
+	h4 {font-size: 1.5em;}
+	h5 {font-size: 1.5em;}
+	h6 {font-size: 1.25em;}
+	h1.lndg-title {font-size: 2.5em;}
+	h1.hero-title {
+		font-size: 2.5em;
+		margin-bottom: 20px;
+	}
+	h3.plx-title {font-size: 2em;}
+	.bullets {font-size: 1.15em;}
+	.footnote {font-size: 1em;}
+}
+
+@media only screen and (min-width: 555px) {
+	.modal-form-frame {
+		height: 600px;
+	}	
+}
+
+
+/* -- Small Layout - 768px and up -- */
+
+@media only screen and (min-width: 768px) {
+	p {font-size: 1.3em;}
+	h1 {font-size: 2.5em;}
+	h2 {font-size: 2em;}
+	h3 {font-size: 1.25em;}
+	h4 {font-size: 1.5em;}
+	h5 {font-size: 1.75em;}
+	h6 {font-size: 1.25em;}
+	h1.lndg-title {
+		font-size: 3em;
+		text-align: left;
+	}
+	h1.hero-title {
+		font-size: 3em;
+		text-align: left;
+		margin: 20px 0;
+	}
+    h1.voya-lately {
+        font-size: 4em;
+        text-align: center;
+        margin: 80px 0px 20px 0px;
+	}
+	h3.plx-title {font-size: 2.5em;}
+	.bullets {font-size: 1.3em;}
+	.footnote {font-size: 1.15em;}
+	
+	/*---- PRELOADER ----*/
+	.js div#preloader { }
+	.js div#preloader .loader-container {
+	    top: 40%;
+	    width: 300px;
+	    margin-left: -150px;
+	}
+	.js div#preloader .loader-container img {
+	    display: inline;
+	    margin: 10px;
+	}
+
+	/*---- HEADER ----*/
+	.headlogo {margin-top: 0;}
+	.header {
+		height: 60px;
+		position: relative;
+	}
+	.hdr-left {
+		height: 50px;
+		margin-top: 5px;
+	}
+	.headlogo {
+		min-width: 125px;
+		height: 50px;
+		background: url(../images/hdr-voya-logo.png) no-repeat top left;
+	}
+
+	/*---- NAV ----*/
+	nav {font-size: .89em;}
+	.navbar-nav {float: right !important;}
+	.navbar > .container .navbar-brand {margin-left: 0;}/*Bootstrap style override*/
+	.btn-contact {
+		display: inline-block;
+		padding: 0px;
+	}
+	.navbar-nav>li>a {
+		max-width: 100px;
+		/*background-color: red;*/
+		text-align: center;
+		line-height: 1.25em;
+		padding: 10px 0px;
+		margin-left: 10px;
+	}
+	.navbar-nav>li>a.btn-short {
+		max-width: 100px;
+		padding: 18px 8px;
+	}
+	
+	/*---- SOLID COLOR CONTAINERS ----*/
+	.color-box {
+		padding:60px 0;
+	}
+
+	/*---- HERO ----*/
+	.bulb-bkgd {
+		background: url(../images/page-bkgd/bulb.png) no-repeat top right #d75426;
+		background-size: 50% auto;
+		background-position: 100% center;
+	}
+	.usa-bkgd {}
+	img.usa-gfx {
+		width: 110%;
+		height: auto;
+		margin: 20px 0 20px -10%;
+	}
+	.usa-bkgd p, .bulb-bkgd p {
+		text-align: left;
+	}
+	.lndg-btn-box {
+		text-align: left;
+	}
+	
+	/*---- FORM BLOCK ----*/
+	.contact-title p {
+		font-size: 2em;
+		line-height: 1.1em;
+		margin: 70px 0 0 0;
+	}
+	.contact-footnote p {
+		margin: 0 0 70px 0;
+	}
+	.form-frame {
+		width: 100%;
+		height: 900px;
+	}
+
+	/*---- MODAL ----*/
+	.voya-modal-close {
+		top: 0px;
+		right: -40px;
+	}
+	.voya-modal-unmute {
+		top: 10px;
+	 	left: 10px;
+		font-size: 1em;
+		max-width: 90px;
+	}
+}
+ 
+
+
+
+/* -- Medium Layout - 992px and up -- */
+
+@media only screen and (min-width: 992px) {
+	h1 {font-size: 3em;}
+	h2 {font-size: 2em;}
+	h3 {font-size: 1.5em;}
+	h4 {font-size: 1.75em;}
+	h5 {font-size: 2em;}
+	h6 {font-size: 1.5em;}
+	h1.lndg-title {font-size: 3.5em;}
+	h1.hero-title {font-size: 3.5em;}
+	h3.plx-title {font-size: 2.5em;}	
+
+	/*---- NAV ----*/
+	nav {font-size: 1.15em;}
+	.btn-contact {padding: 10px;}
+	.navbar-nav>li>a {
+		max-width: 140px;
+		padding: 8px 0px;
+		margin-left: 10px;
+	}
+	.navbar-nav>li>a.btn-short {
+		max-width: 130px;
+		padding: 18px 8px;
+	}
+	
+	/*---- HERO ----*/
+	.bulb-bkgd {
+		margin: 71px 0 0;
+		background-size: 50% auto;
+		background-position: 120% center;
+	}
+	.usa-bkgd {margin: 71px 0 0;}
+	img.usa-gfx {
+		width: 120%;
+		height: auto;
+		margin: 20px -10% 20px -10%;
+	}
+	.bulb-bkgd.lndg-bulb {
+		height: -moz-calc(100vh - 108px);
+		height: -webkit-calc(100vh - 108px);
+		height: -o-calc(100vh - 108px);
+		height: calc(100vh - 108px);
+		overflow-y: hidden;
+	}/*set height of bulb container on landing (index.php) only*/
+
+	.center-logo < .row {position: relative;}
+	.center-logo {
+		position: absolute;
+		top: 175px;
+	}
+	
+	/*---- FORM BLOCK ----*/
+	.form-frame {
+		width: 100%;
+		height: 520px;
+	}
+	
+}
+
+/* -- Large Layout - 1200px and up -- */
+
+@media only screen and (min-width: 1200px) {
+	h1 {font-size: 3em;}
+	h2 {font-size: 2.5em;}
+	h3 {font-size: 1.75em;}
+	h4 {font-size: 2em;}
+	h5 {font-size: 2em;}
+	h6 {font-size: 1.75em;}
+	h1.lndg-title {font-size: 4em;}
+	h1.hero-title {
+		font-size: 4em;
+		margin: 60px 0 20px;
+	}
+	h3.plx-title {font-size: 3em;}
+
+	/*---- NAV ----*/
+	nav {font-size: 1.25em;}
+	.navbar-nav>li>a {
+		padding: 7px 0px;
+		margin-left: 20px;
+	}
+
+	/*---- HERO ----*/
+	.bulb-bkgd {
+		background-position: 105% center;
+	}
+	img.usa-gfx {
+		width: 120%;
+		height: auto;
+		margin: 20px -15% 20px -5%;
+	}
+}
+
+/* ---- EXTRA NARROW BANNER WIDTH (<560px) ---- */
+
+@media only screen and (max-width: 480px) {
+	
+}

@@ -11,8 +11,8 @@ html {
 		.content-box, .dark-content-box {
 			background-color: rgba($color-4, .925);
 			border-radius: 4px;
-			margin-top: -120px;
-			padding-top: 120px;
+			margin-top: -60px;
+			padding-top: 60px;
 			.content-block {
 				display: block;
 				position: relative;
@@ -182,16 +182,16 @@ strong, em {font-weight: 700;}
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
-	background-size: 2.25em;
+	background-size: 50%;
 	border-radius: 100%;
 	border: 0;
 	bottom: 10px;
 	display: block;
-	width: 4em;
-	height: 4em;
+	width: 2em;
+	height: 2em;
 	left: 50%;
 	line-height: 4em;
-	margin-left: -2em;
+	margin-left: -1em;
 	overflow: hidden;
 	position: absolute;
 	z-index: 10;
@@ -243,16 +243,16 @@ strong, em {font-weight: 700;}
 	height: 100vh;
 }
 .banner-title {
-	background-color: rgba($color-4, .925);
+	background-color: rgba($color-4, .75);
 	display: inline-block;
     border-radius: 4px;
 	padding: 20px 30px;
-	margin-top: 35%;
+	margin-top: 15%;
 	text-align: center;
 	h3 {
 	   text-transform: uppercase;
 	   font-weight: 700;
-	   font-size: .85em;
+	   font-size: .75em;
 	   color: $color-6;
 	   span {
 		   color: $color-2;
@@ -262,7 +262,7 @@ strong, em {font-weight: 700;}
 	h1 { 
 	   font-weight: 100;
 	   text-align: center;
-	   font-size: 2.5em;
+	   font-size: 2em;
 	   color: $color-2;
    }
 }
@@ -422,7 +422,6 @@ strong, em {font-weight: 700;}
 }
 
 // CONTACT
-
 
 /* ///// inputs /////*/
 
@@ -619,19 +618,20 @@ textarea {
 	html body { 
 		font-size: 17px;
 		.content-box {
-			margin-top: -130px;
-			padding-top: 130px;
+			margin-top: -70px;
+			padding-top: 70px;
 		}
 	}
 	// Next button
 	.goto-next {
-		background-size: 2.5em;
-		bottom: 10px;
+		width: 2.5em;
+		height: 2.5em;
+		margin-left: -1.25em;
 	}
 	//BANNER
 	#banner {
-		h1 {font-size: 2.8em;}
-		h3 {font-size: 1em;}
+		h1 {font-size: 2.25em;}
+		h3 {font-size: .9em;}
 	}
 	#subheader {
 		.banner-title {
@@ -662,17 +662,21 @@ textarea {
 		font-size: 16px;
 		font-weight: 300;
 		.content-box {
-			margin-top: -85px;
-			padding-top: 85px;
+			margin-top: -75px;
+			padding-top: 75px;
 		}
 	}
 	strong, em {font-weight: 500;}
 	// Next button
-	.goto-next { bottom: 10px; }
+	.goto-next {
+		width: 2.75em;
+		height: 2.75em;
+		margin-left: -1.375em;
+	}
 	//BANNER
 	#banner {
-		h1 {font-size: 4em;}
-		h3 {font-size: 1.4em;}
+		h1 {font-size: 3em;}
+		h3 {font-size: 1.2em;}
 	}
 	#subheader {
 		.banner-title {
@@ -721,15 +725,20 @@ textarea {
 	html body { 
 		font-size: 17px;
 		.content-box {
-			margin-top: -90px;
-			padding-top: 90px;
+			margin-top: -80px;
+			padding-top: 80px;
 		}
 	}
-
+	// Next button
+	.goto-next {
+		width: 3em;
+		height: 3em;
+		margin-left: -1.5em;
+	}
 	//BANNER
 	#banner {
-		h1 {font-size: 4.5em;}
-		h3 {font-size: 1.6em;}
+		h1 {font-size: 3.5em;}
+		h3 {font-size: 1.4em;}
 	}
 	#subheader {
 		.banner-title {
@@ -759,15 +768,20 @@ textarea {
 	html body {
 		font-size: 18px;
 		.content-box {
-			margin-top: -100px;
-			padding-top: 100px;
+			margin-top: -90px;
+			padding-top: 90px;
 		}
 	}
-
+	// Next button
+	.goto-next {
+		width: 3.5em;
+		height: 3.5em;
+		margin-left: -1.75em;
+	}
 	//BANNER
 	#banner {
-		h1 {font-size: 5.5em;}
-		h3 {font-size: 2em;}
+		h1 {font-size: 4em;}
+		h3 {font-size: 1.6em;}
 	}
 	// WORK
 	#work {

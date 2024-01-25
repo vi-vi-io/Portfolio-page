@@ -1,0 +1,573 @@
+<!doctype html>
+<html class="js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- <link rel="shortcut icon" href="https://voya.com/sites/unit.voya.com/files/favicon_0.ico" type="image/vnd.microsoft.icon"/> -->
+	<title>Voya Difference</title>
+<!-- LOAD ADOBE TYPEKIT -->
+	<script type="text/javascript" src="https://use.typekit.net/mue3aem.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/fontawesome.all.min.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> -->
+	<link href="./css/main.css" rel="stylesheet" type="text/css">
+	<link href="./css/layout.css" rel="stylesheet" type="text/css">
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+	<script type="text/javascript" src="./js/animations/om.js"></script>
+	<script type="text/javascript" src="./js/animations/planhealth.js"></script>
+	<script type="text/javascript" src="./js/animations/refindex.js"></script>
+
+	<script type="text/javascript" src="./js/animations/greensock/tweenmax.min.js"></script>
+	<script type="text/javascript" src="./js/animations/greensock/plugins/cssplugin.min.js"></script>
+	<script type="text/javascript" src="./js/animations/scrollmagic/uncompressed/scrollmagic.js"></script>
+	<script type="text/javascript" src="./js/animations/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="./js/animations/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/parallax.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.cookie.js"></script>
+
+	<script type="text/javascript" src="https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/43882961/partner_id/1234081"></script>
+
+	<!--[if lt IE 9]>
+			<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="./js/respond.min.js"></script>
+
+
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader-container">
+			<img src="./images/preloader.gif" />
+			<img src="./images/hdr-voya-logo.png" />
+		</div>
+	</div>
+	
+	<!-- Return to Top -->
+	<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="fa fa-chevron-up"></span></a>
+	
+	<header class="">	
+		<nav class="navbar navbar-default navbar-fixed-top box-shad-btm">
+			<div class="container">
+			  	<div class="row">
+					<div class="col-xs-12">
+						<div class="spacer-10"></div>
+						<div class="navbar-header">	
+							<a class="navbar-brand headlogo" href="../" data-ga-event="ga-click-event" data-ga-event-category="Header Logo" data-ga-event-action="Select" data-ga-event-label="Voya Header Logo"></a>
+
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<!--<li>
+									<a href="./home_.php" class="<?php if(basename($_SERVER['SCRIPT_NAME']) == 'home_.php'){echo 'active'; }else { echo ''; } ?> btn-short" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Home link">Home</a>
+								</li>
+								<li>
+									<a href="./voyalately_.php" class="<?php if(basename($_SERVER['SCRIPT_NAME']) == 'voyalately_.php'){echo 'active'; }else { echo ''; } ?> btn-short" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Voya Lately link">Voya Lately</a>
+								</li>
+								<li>
+									<a href="./retirement_.php" class="<?php if(basename($_SERVER['SCRIPT_NAME']) == 'retirement_.php'){echo 'active'; }else { echo ''; } ?> btn-short" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Retirement link">Retirement</a>
+								</li>
+								<li>
+									<a href="./invest_.php" class="<?php if(basename($_SERVER['SCRIPT_NAME']) == 'invest_.php'){echo 'active'; }else { echo ''; } ?>" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Investment Management link">Investment Management</a>
+								</li>
+								<li>
+									<a href="./eb_.php" class="<?php if(basename($_SERVER['SCRIPT_NAME']) == 'eb_.php'){echo 'active'; }else { echo ''; } ?>" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Employee Benefits link">Employee Benefits</a>
+								</li>
+								<li>
+									<a href="#contact" class="btn-contact btn-short" data-ga-event="ga-click-event" data-ga-event-category="Navigation-employer" data-ga-event-action="Select" data-ga-event-label="Contact Us link">Contact Us</a>
+								</li>-->
+							</ul>							
+						</div>
+					</div>
+				</div>
+				<div class="spacer-10"></div>
+			</div>
+		</nav>
+	</header>
+
+	<section id="hero_trigg"></section>
+
+	<section id="usa_bkgd" class="usa-bkgd">
+		<div class="spacer-20 hidden-xs"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-4" id="hero_title">
+					<div class="spacer-30"></div>
+					<h1 class="hero-title orange">A difference that matters</h1>
+					<p class="voya-grey">Tap into leading retirement solutions and  purposeful innovation designed to help your organization achieve its retirement goals.</p>
+					<div class="spacer-30"></div>
+				</div>
+				<div class="col-xs-10 col-xs-offset-1 col-sm-7 col-sm-offset-0 col-md-6 col-lg-7 hero-gfx-box">
+					<img class="usa-gfx" id="usa_gfx" src="./images/page-bkgd/usa-xs.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div class="spacer-400 hidden-xs"></div>
+	</section>
+	
+	<section class="content-white box-shad-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 icon-section">
+					<div class="icon-container center-block content-magenta">
+						<i class="fas fa-clock"></i>
+					</div>
+					<div class="icon-shadow box-shad-top"></div>
+					<div class="icon-spacer"></div>
+					<h2 class="magenta">Built for retirement</h2>
+					<p>With over 40 years of experience, we are proud to be a leader in the retirement industry</p>
+					<div class="lm-btn-container">
+						<a href="#time" class="btn-voya-basic btn-magenta"  data-ga-event="ga-click-event" data-ga-event-category="Top 3 Learn More" data-ga-event-action="Select" data-ga-event-label="Pillar one - Learn More">Learn More</a>
+					</div>
+				</div>
+				<div class="col-md-4 icon-section">
+					<div class="icon-container center-block content-teal">
+						<i class="fa fa-comments"></i>
+					</div>
+					<div class="icon-shadow box-shad-top hidden-sm hidden-xs"></div>
+					<div class="icon-spacer"></div>
+					<h2 class="teal">Tailored solutions</h2>
+					<p>We leverage the best ideas from our diversified client base to find you nimble, creative and innovative solutions that will make an impact.</p>
+					<div class="lm-btn-container">
+						<a href="#set-apart" class="btn-voya-basic btn-teal" data-ga-event="ga-click-event" data-ga-event-category="Top 3 Learn More" data-ga-event-action="Select" data-ga-event-label="Pillar two - Learn More">Learn More</a>
+					</div>
+				</div>
+				<div class="col-md-4 icon-section">
+					<div class="icon-container center-block content-org">
+						<i class="fa fa-rocket"></i>
+					</div>
+					<div class="icon-shadow box-shad-top hidden-sm hidden-xs"></div>
+					<div class="icon-spacer"></div>
+					<h2 class="orange">Purposeful innovation that makes a difference</h2>
+					<p>We are constantly working to find better, easier and more impactful ways to help you help your employees achieve a secure financial future.</p>
+					<div class="lm-btn-container">
+						<a href="#deliver" class="btn-voya-basic btn-orange" data-ga-event="ga-click-event" data-ga-event-category="Top 3 Learn More" data-ga-event-action="Select" data-ga-event-label="Pillar three - Learn More">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="spacer-50"></div>
+	</section>
+	
+	<div id="time" class="section-anchor"></div>
+	<section class="content-magenta color-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="section-header">
+						<i class="fas fa-clock"></i>
+						<h1>Built for the retirement journey</h1>
+						<h2>supporting employers &ndash; every step of the way</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-grey grey-box border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h4 class="magenta border-bt">Did you know? Key facts about Voya</h4>
+				</div>
+				<div class="col-xs-10 col-xs-offset-1">
+					<h3 class="magenta"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="plum"><strong>5 million</strong></span> plan participants<sup>1</sup></h3>
+					<h3 class="magenta"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="plum"><strong>Top 5</strong></span> recordkeeping service provider<sup>2</sup></h3>
+					<h3 class="magenta"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="plum"><strong>Top 4</strong></span> provider in K-12<sup>3</sup></h3>
+                    <h3 class="magenta"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="plum"><strong>48,600</strong></span> plan sponsor clients<sup>4</sup></h3>
+                    <h3 class="magenta"><i class="fas fa-trophy"></i>&nbsp;&nbsp;&nbsp;&nbsp;<span class="plum"><strong>24+ years</strong></span> is our average client relationship<sup>5</sup></h3>
+					<div class="spacer-30"></div>
+				</div>
+				<div class="col-xs-10 col-xs-offset-1">
+					<p class="footnote"><sup>1</sup>As of 12/31/2021</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="content-white white-box box-shad-btm">
+		<div class="container">
+			<div class="row">
+				<div class="visible-xs spacer50"></div>
+			</div>
+			
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h2 class="magenta">Voya was ranked as <span class="plum"><strong>one of the easiest companies to do business with</strong></span><sup>1</sup></h2>
+				</div>
+			</div>
+			
+			<div class="spacer-30"></div>
+			
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p class="footnote"><sup>1</sup>According to a BrightScope survey (2020)</p>
+				</div>
+			</div>
+		</div>z
+	</section>
+
+	<section id="plx-ret-1" class="plx-bkgd-img">
+		<div class="spacer-100"></div>
+		<div class="spacer-50"></div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-4 col-sm-7 col-sm-offset-5 col-md-6 col-md-offset-6">
+					<h3 class="magenta glow plx-title">"Our focus is on making Voya the <span class="plum"><strong>easiest company to do business with</strong></span> for the market and a leader in this space."</h3>
+					<p class="voya-grey"><strong>Heather Lavallee</strong> &nbsp;&nbsp;&nbsp;&vert;&nbsp;&nbsp;&nbsp; President, Tax Exempt Markets &nbsp;&nbsp;&nbsp;&vert;&nbsp;&nbsp;&nbsp; Voya Financial</p>
+					<a id="gs-btn" class="btn-voya-basic btn-magenta btn-modal-vid" data-toggle="modal" data-target="#gs-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar one" data-ga-event-action="Select" data-ga-event-label="Heather Lavallee - View Video"><i class="far fa-play-circle"></i> view video</a>
+				</div>
+			</div>
+		</div>
+		<div class="spacer-100"></div>
+		<div class="spacer-50"></div>
+	</section>
+	
+	<div id="set-apart" class="section-anchor"></div>
+	<section class="content-teal color-box box-shad-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="section-header">
+						<i class="fa fa-comments"></i>
+						<h1>Connect with your employees in a new and more meaningful way</h1>
+						<h2>support for all employees</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-grey grey-box border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-1">
+					<p>We are redefining what it means to be a leading financial services company because we are purpose-driven with a vision to be America’s Retirement Company<sup>&reg;</sup>. This means serving ALL Americans.</p>
+				</div>
+				<div class="col-xs-10 col-xs-offset-1 col-md-5 col-md-offset-0">
+					<p>With <strong>Voya Cares</strong>, a program that provides financial planning support to people with special needs and their caregivers, and <strong>The Voya Behavioral Finance Institute for Innovation</strong> you’ll be empowered to connect with your employees in a new and more meaningful way.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="content-white white-box box-shad-btm">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h4 class="teal">Voya Cares</h4>
+					<p>Most employers are surprised to learn more than 1 in 5 American workers also act as caregivers to a loved one with special needs or disabilities<sup>1</sup>. People with special needs, disabilities and their caregivers make up the third-largest demographic in the nation, but are often overlooked and vastly underserved.</p>
+					<p>Voya Cares provides holistic financial wellness and retirement planning solutions to help all employees move closer to the future they envision. This program helps employers create a more diverse, inclusive and supportive environment by improving awareness and addressing the unique planning challenges faced by people with special needs and their caregivers.</p>
+					<p>Voya Cares looks to bridge this gap by providing employers with access to resources, support and guidance to make a positive difference in the lives of their employees facing special needs challenges. Voya Cares is committed to making a secure financial future for ALL Americans — starting with your employees.</p>
+					<a id="ret_voyacares_bro" class="btn-voya-basic btn-teal locked" data-toggle="modal" data-target="#short-form-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar two" data-ga-event-action="Select" data-ga-event-label="Voya Cares - Unlock form start" target="_blank">download voya cares brochure</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="spacer-20"></div>
+				<div class="col-xs-10 col-xs-offset-1">
+					<p class="footnote"><sup>1</sup>U.S. Department of Health and Human Services. Caregiver Resources &amp; Long-Term Care, 2017 </p>
+                    <div class="spacer-50"></div>
+                    <h4 class="teal">Recruit, reward and retain top talent with Nonqualified Plan Services</h4>
+					<p>Key executives are valuable &ndash; and their benefits compensation package should express their value to an organization.</p>
+					<p>This is why Voya Financial has tailored nonqualified defined contribution (NQDC) plan packages. These key attraction and retention tools demonstrate the unparalleled value we place on your key executives.</p>
+					<p>We offer a seamless experience from start to finish. Regardless of the option, it will be backed by Voya’s exceptional service.</p>
+                    <div class="spacer-50"></div>
+                    <p><img src="./images/tailored_design_graphic.png" width="940" class="img-responsive"></p>
+                    <div class="spacer-50"></div>
+                	<p>Learn how to increase leads and drive deeper wallet share with NQDC planning tools:</p>
+					<a id="ret_nqdc_bro" class="btn-voya-basic btn-teal locked" data-toggle="modal" data-target="#short-form-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar two" data-ga-event-action="Select" data-ga-event-label="NQDC - Unlock form start" target="_blank">Download the NQDC Capabilities Brochure</a>
+                    <div class="spacer-20"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="plx-ret-2" class="plx-bkgd-img">
+		<div class="spacer-50"></div>
+		<div class="spacer-100"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-1 col-md-7 col-md-offset-0">
+					<h3 class="teal glow plx-title text-right">&ldquo;Every American has a different set of needs and <span class="drkblue"><strong>we need to address each one of those</strong></span>.&rdquo;</h3>
+					<p class="voya-grey glow"><strong>Bill Harmon</strong>&nbsp;&nbsp;&nbsp;&vert;&nbsp;&nbsp;&nbsp;President, Corporate Markets&nbsp;&nbsp;&nbsp;&vert;&nbsp;&nbsp;&nbsp;Voya Financial</p>
+					<a id="bharmon-btn" class="btn-voya-basic btn-teal btn-modal-vid pull-right" data-toggle="modal" data-target="#bharmon-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar two" data-ga-event-action="Select" data-ga-event-label="Voya Cares - View Video"><i class="far fa-play-circle"></i> view video</a>
+				</div>
+			</div>
+		</div>
+		<div class="spacer-50"></div>
+		<div class="spacer-100"></div>
+	</section>
+
+	<div id="befi" class="section-anchor"></div>
+	<section class="content-white white-box box-shad-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">			
+				<h4 class="teal">The Voya Behavioral Finance Institute for Innovation</h4>
+				<p>Effective retirement plan solutions are grounded in an understanding of the employees within the plan. And while surveys have been traditionally used to tell us the “who, what and why?”, we realize that what people say they are going to do—while well-intended—doesn’t always mirror actual behaviors.</p>
+				<p>The Voya Behavioral Finance Institute for Innovation is focused on improving retirement outcomes for plan participants by gaining a deeper understanding of the financial planning decision-making and behaviors of plan participants.</p>
+                <div class="spacer-20"></div>
+                <a id="befi-website" class="btn-voya-basic btn-teal" href="https://forprofessionals.voya.com/behavioral-finance" data-ga-event="ga-click-event" data-ga-event-category="Befi" data-ga-event-action="Select" data-ga-event-label="befi website" target="_blank">Behavioral Finance Institute for Innovation</a>
+				<div class="spacer-30"></div>
+				<h6 class="drkblue">How would a behavioral scientist look at your retirement plans?</h6>
+				<p>Our Institute’s unique measurement system, known as the Reflection Index, enables you to make more informed plan design and communication decisions by better understanding how your retirement plan participants are making retirement decisions.</p>
+ 
+				<p>The Reflection Index is designed around the general consensus among behavioral economists that there are two modes of decision making: instinctive and reflective. Most behavior is governed by the instinctive system, such as when driving or hitting a baseball. Some behavior, however, engages the reflective system and is more slow and deliberate (such as when taking the SAT). Using these concepts, we’ve created a digital measurement system to diagnose how your plan participants have approached decision making activities in the last year.</p>
+				<div class="spacer-30"></div>
+				<ul class="bullets">
+					<li>Gain insight into how your employees are making retirement decisions </li>
+					<li>Make informed recommendations to improve plan health</li>
+				</ul>
+				<div id="refindex_canvas_container" data-anititle="refindex">
+					<canvas class="anim-canvas" id="refindex_canvas"></canvas>
+				</div>
+				<p>See how Voya is using insights to improve retirement outcomes.</p>
+				<a id="ret_befi_wp" class="btn-voya-basic btn-teal locked" data-toggle="modal" data-target="#short-form-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar two" data-ga-event-action="Select" data-ga-event-label="Improve outcomes - Unlock form start" target="_blank">download whitepaper</a>
+				<div class="spacer-30"></div>
+				
+			</div>
+		</div>
+	</section>
+
+	<div id="deliver" class="section-anchor"></div>
+	<section class="content-org color-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div class="section-header">
+						<i class="fa fa-rocket"></i>
+						<h1>Innovating the way forward </h1>
+						<h2>purposeful innovation</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="content-grey grey-box border-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<p>Making things simple—yet impactful—is the approach we take across the board. It is this commitment to simplicity, and keeping behavioral science and digital insights at the core of everything we do, that allows us to innovate successfully.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div id="myorangemoney" class="section-anchor"></div>
+	<section class="content-white white-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h4 class="drkorange">myOrangeMoney<sup>&reg;</sup></h4>
+					<p>Voya’s myOrangeMoney interactive, educational online experience is able to estimate for participants the income they will likely need in retirement and show the progress they've made toward that goal. With integrated special needs planning resources, myOrangeMoney makes it easy for all Americans to see how much they’re saving today and what that means for tomorrow.</p>
+				</div>
+			</div><!-- END .row -->
+			<div class="spacer-50"></div>
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-1 col-xs-8 col-xs-offset-2">
+					<div id="om_canvas_container" data-anititle="om">
+						<canvas class="anim-canvas" id="om_canvas"></canvas>
+					</div>
+				</div>
+				<div class="visible-xs spacer50"></div>
+				<div class="col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+					<h3 class="orange">myOrangeMoney users are saving on average <span class="drkorange"><strong>61% more</strong></span> than non-users for retirement*</h3>
+					<p class="footnote">*The OrangeMoney Datamart, 12 months ending September 2017</p>
+				</div>
+			</div><!-- END .row -->
+			<div class="spacer-50"></div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<a id="om-demo-btn" class="btn-voya-basic btn-drkorange btn-modal-vid" href="https://demos.voyacdn.com/ease/"  data-ga-event="ga-click-event" data-ga-event-category="Pillar three" data-ga-event-action="Select" data-ga-event-label="Orange Money - View Demo" target="_blank"><i class="far fa-play-circle"></i> view demo</a>
+				</div>
+			</div>
+			<div id="planhealth" class="section-anchor"></div><!-- END .row -->
+		</div><!-- END .container -->
+		<div class="spacer-100"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h4 class="drkorange">Plan Health</h4>
+					<p>In a very simplified way, you can view your plan holistically, gather actionable intelligence on plan health and answer this important question, “Are my employees on track to meet their retirement goals?”</p>
+					<p>Similar to Voya’s myOrangeMoney experience, Voya’s Plan Health tool also allows you to very transparently understand where you are today, and how we are moving the needle.</p>
+					<h3 class="orange">Easily visualize your plan trends, key metrics and benchmarks <br> 
+					with our "best-in-class" diagnostic tool </h3>
+				</div>
+			</div><!-- END .row -->
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<div id="planhealth_canvas_container" data-anititle="planhealth">
+						<canvas class="anim-canvas" id="planhealth_canvas"></canvas>
+					</div>
+				</div>
+			</div><!-- END .row -->
+			<div class="spacer-50"></div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<a id="ret_ph_flyer" class="btn-voya-basic btn-drkorange locked" data-toggle="modal" data-target="#short-form-modal" href="" data-ga-event="ga-click-event" data-ga-event-category="Pillar three" data-ga-event-action="Select" data-ga-event-label="Plan Health - Unlock form start" target="_blank">Download Plan Health Flyer</a>
+					<div class="spacer-30"></div>
+			</div><!-- END .row -->
+		</div><!-- END .container -->
+	</section>
+	
+	<section class="top-border">
+		<div class="container">
+			<div class="spacer-50"></div>
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1">
+					<h5>Contact Voya Retirement:</h5>
+					<div class="spacer-10"></div>
+					<p style="text-align: center;"><a href="tel:+1-866-481-3653">(866) 481-3653</a> Option #4</p>
+				</div>
+			</div>
+			<div class="spacer-50"></div>
+		</div>
+	</section>
+	
+	<section id="contact" class="content-drkblue color-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 section-header">
+					<h1 class="no-underline">Contact Us</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="form-section" class="content-ltblue">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 contact-title">
+					<p class="white">Please complete this form to be contacted by Voya Retirement to see how we can help make a difference in your retirement plans.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- <iframe id="form-frame" class="form-frame" src="https://pages.e.voyafinancial.com/page.aspx?QS=2e4c31a3756cb9407f55a58d99d059c09e74aa299a8b287c" frameborder="0" scrolling="no"></iframe> -->
+
+	</section>
+
+<!--START MODAL CONTENT-->
+
+	<div id="gs-modal" class="modal fade voya-modal vid-modal" role="dialog" data-entryid="1_sic6qsfe" data-modtitle="gs">
+		<div class="modal-dialog">
+			<button type="button" class="close voya-modal-close" data-dismiss="modal" aria-label="Close">
+	        	<span class="modal-close-x" aria-hidden="true">&times;</span>
+	        </button>
+	        <button type="button" class="voya-modal-unmute">
+		        <span class="modal-close-x" aria-hidden="true"><i class="fal  fa-volume-off"></i>&nbsp;&nbsp;UNMUTE</span>
+		    </button>
+			<div class="modal-content">
+				<div id="gs-vid-wrap" class="vid-wrap"></div>
+			</div>
+		</div>
+	</div><!--END MODAL growth story vid-->
+
+	<div id="bharmon-modal" class="modal fade voya-modal vid-modal" role="dialog" data-entryid="1_50bw11cw" data-modtitle="bharmon">
+		<div class="modal-dialog">
+			<button type="button" class="close voya-modal-close" data-dismiss="modal" aria-label="Close">
+	        	<span class="modal-close-x" aria-hidden="true">&times;</span>
+	        </button>
+	        <button type="button" class="voya-modal-unmute">
+		        <span class="modal-close-x" aria-hidden="true"><i class="fal  fa-volume-off"></i>&nbsp;&nbsp;UNMUTE</span>
+		    </button>
+			<div class="modal-content">
+				<div id="bharmon-vid-wrap" class="vid-wrap"></div>
+			</div>
+		</div>
+	</div><!--END MODAL B Harmon PA Voya Cares interview-->
+
+	<!-- <div id="om-demo-modal" class="modal fade voya-modal vid-modal" role="dialog" data-modtitle="om-demo">
+		<div class="modal-dialog">
+			<button type="button" class="close voya-modal-close" data-dismiss="modal" aria-label="Close">
+	        	<span class="modal-close-x" aria-hidden="true">&times;</span>
+	        </button>
+	        <button type="button" class="voya-modal-unmute">
+		        <span class="modal-close-x" aria-hidden="true">UNMUTE</span>
+		    </button>
+			<div class="modal-content">
+				<div id="om-demo-vid-wrap" class="vid-wrap"></div>
+			</div>
+		</div>
+	</div> --><!--END MODAL myOrangeMoney demo-->
+
+	<div id="short-form-modal" class="modal fade voya-form-modal" role="dialog">
+		<div class="modal-dialog">
+			<button type="button" class="close voya-modal-close" data-dismiss="modal" aria-label="Close">
+	        	<span class="modal-close-x" aria-hidden="true">&times;</span>
+	        </button>
+			<div class="modal-content">
+				<h4 class="white">Content unlock form</h4>
+				<!-- <iframe id="modal-form-frame" class="modal-form-frame" src="https://pages.e.voyafinancial.com/page.aspx?QS=2e4c31a3756cb9407f55a58d99d059c09e74aa299a8b287c" frameborder="0" scrolling="no"></iframe> -->
+				<div class="spacer-30"></div>
+			</div>
+		</div>
+	</div><!--END MODAL short lead gen form-->
+
+	<script src="./js/animate.js"></script>
+	
+    <!-- DISCLAIMER / LEGAL BLOCK -->
+		
+		<section class="content-ltgrey box-shad-top">
+			
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 dsclsr-box">
+						<p class='footnote'><strong>Principal Risks</strong></p>
+						<p class='footnote'><sup>1</sup> All investing involves risks of fluctuating prices and the uncertainties of rates of return and yield inherent in investing. <strong>High-Yield Securities</strong>, or “junk bonds”, are rated lower than investment-grade bonds because there is a greater possibility that the issuer may be unable to make interest and principal payments on those securities. To the extent that the Fund invests in <strong>Mortgage-Related Securities</strong>, its exposure to prepayment and extension risks may be greater than investments in other fixed-income securities. The Fund may use <strong>Derivatives</strong>, such as options and futures, which can be illiquid, may disproportionately increase losses and have a potentially large impact on Fund performance. <strong>Foreign Investing</strong> does pose special risks including currency fluctuation, economic and political risks not found in investments that are solely domestic. As <strong>Interest Rates</strong> rise, bond prices fall, reducing the value of the Fund's share price. <strong>Other risks of the Fund include but are not limited to: Bank Instruments; Company; Credit; Credit Default Swaps; Currency; Floating Rate Loans; Interest in Loans; Interest Rate; Investment Models; Liquidity; Market; Market Capitalization; Municipal Securities; Other Investment Companies; Prepayment and Extension; Price Volatility; U.S. Government Securities and Obligations; Portfolio Turnover; and Securities Lending Risks. Investors should consult the Fund's Prospectus and Statement of Additional Information for a more detailed discussion of the Fund's risks.</strong></p>
+						<p class='footnote'><sup>2</sup> All investing involves risks of fluctuating prices and the uncertainties of rates of return and yield inherent in investing. <strong>Growth stocks</strong> may be more volatile than value stocks due to their relatively high valuations, and growth investing may fall out of favor with investors. An investment in securities of <strong>Larger Companies</strong> carries with it the risk that the company (and its earnings) may grow more slowly than the economy as a whole or not at all. <strong>Foreign Investing</strong> does pose special risks including currency fluctuation, economic and political risks not found in investments that are solely domestic. Other risks of the Fund include but are not limited to: <strong>Initial Public Offerings Risks; Market Trends Risks; Other Investment Companies Risks; Price Volatility Risks; Inability to Sell Securities Risks; and Securities Lending Risks. Investors should consult the Fund's Prospectus and Statement of Additional Information for a more detailed discussion of the Fund's risks.</strong></p>
+						<p class='footnote'><sup>3</sup> All investing involves risks of fluctuating prices and the uncertainties of rates of return and yield inherent in investing. <strong>Foreign Investing</strong> does pose special risks including currency fluctuation, economic and political risks not found in investments that are solely domestic. Investing in stocks of <strong>Mid-Sized Companies</strong> may entail greater volatility and less liquidity than larger companies. The Fund may use <strong>Derivatives</strong>, such as options and futures, which can be illiquid, may disproportionately increase losses and have a potentially large impact on Fund performance. Other risks of the Fund include but are not limited to: <strong>Growth Investing Risks; Market Trends Risks; Other Investment Companies Risks; Price Volatility Risks; Inability to Sell Securities Risks; Securities Lending Risks; and Portfolio Turnover Risks. Investors should consult the Fund's Prospectus and Statement of Additional Information for a more detailed discussion of the Fund's risks.</strong></p>
+						<p class='footnote'><strong><sup>4</sup> There is no guarantee that any investment option will achieve its stated objective. Principal value fluctuates and there is no guarantee of value at any time, including the target date.</strong></p>
+						<p class='footnote'>The “target date” is the approximate date when an investor plans to start withdrawing their money. When their target date is reached, they may have more or less than the original amount invested. For each target-date portfolio, until the day prior to its target date, the portfolio will seek to provide total returns consistent with an asset allocation targeted for an investor who is retiring in approximately each portfolio’s designated target year. On the target date, the portfolio will seek to provide a combination of total return and stability of principal.</p>
+						<p class='footnote'>Stocks are more volatile than bonds, and portfolios with a higher concentration of stocks are more likely to experience greater fluctuations in value than portfolios with a higher concentration in bonds. Foreign stocks and small- and mid-cap stocks may be more volatile than large-cap stocks. Investing in bonds also, entails credit risk and interest rate risk. Generally investors with longer timeframes can consider assuming more risk in their investment portfolio.</p>
+						<p class='footnote'>As with any portfolio, you could lose money on your investment in a Voya Target Retirement Fund. Although asset allocation seeks to optimize returns given various levels of risk tolerance, you still may lose money and experience volatility. Market and asset class performance and the assumptions used form the asset allocations for the Voya Target Retirement Fund. There is risk that you could achieve better returns in an underlying portfolio or other portfolios representing a single asset class than in the Voya Target Retirement Fund. Important factors to consider when planning for retirement include your expected expenses, sources of income, and available assets. Before investing in the Voya Target Retirement Fund, weigh your objectives, time horizon, and risk tolerance. The Voya Target Retirement Fund invests in many underlying portfolios which are exposed to the risks of different areas of the market. The higher a portfolio’s allocation to stocks, the greater the risk. Diversification cannot assure a profit or protect against loss in a declining market.</p>
+						<p class='footnote'><sup>5</sup> All investing involves risks of fluctuating prices and the uncertainties of rates of return and yield inherent in investing. <strong>Foreign Investing</strong> does pose special risks including currency fluctuation, economic and political risks not found in investments that are solely domestic. <strong>Emerging Market</strong> stocks may be especially volatile. Stock of an issuer in the Fund's portfolio may decline in price if the issuer fails to make anticipated <strong>Dividend Payments</strong> because, among other reasons, the issuer of the security experiences a decline in its financial condition. Securities of <strong>Small- and Mid-Sized Companies</strong> may entail greater price volatility and less liquidity than investing in stocks of larger companies. Other risks of the Fund include but are not limited to: <strong>Convertible Securities Risks; Market Trends Risks; Other Investment Companies Risks; Price Volatility Risks; Inability to Sell Securities Risks; and Securities Lending Risks. Investors should consult the Fund's Prospectus and Statement of Additional Information for a more detailed discussion of the Fund's risks.</strong></p>
+						<p class='footnote'><strong>Risks specific to Managed Payment:</strong><br>The Fund is expected to make monthly payments under its Managed Payment Policy regardless of the Fund's investment performance. Because these payments will be made from Fund assets, the Fund's monthly payments may reduce the amount of assets available for investment by the Fund. It is possible for the Fund to suffer substantial investment losses and simultaneously experience additional asset reductions as a result of its payments to shareholders under the Managed Payment Policy. The Fund may, under its Managed Payment Policy, return capital to shareholders which will decrease their costs basis in the Fund and will affect the amount of any capital gain or loss that shareholders realize when selling or exchanging their Fund shares.</p>
+						<p class='footnote'><strong>Your clients should consider the investment objectives, risks, charges and expenses of the Fund carefully before investing. For a free copy of the Fund's prospectus, which contains this and other information, visit us at <a class='orange' href='http://investments.voya.com/' target='_blank'>voyainvestments.com</a> or call Voya Investment Management at 1 (800) 992-0180. Please instruct your clients to read the prospectus carefully before investing.</strong></p>-->";
+					</div>
+
+					<div class="spacer50"></div><!-- ensures bottom-most main content is not bloked by fixed footer -->
+
+				</div><!-- END .row -->
+			</div><!-- END .container -->
+
+		</section>
+		
+		<footer>
+		
+			<div class="container-fluid">
+				<div class="row footer">
+			 		<div class="col-xs-8 ftr-left">
+				    	<a class="ftrbarlogo" href="http://voya.com/" data-ga-event="ga-click-event" data-ga-event-category="Footer Nav" data-ga-event-action="Select" data-ga-event-label="Voya Logo"></a>
+				  	</div>
+				  	<div class="col-xs-4 ftr-right">
+					  	<a class="socialmedia" id="ftr-fb-icn" href="https://www.facebook.com/pages/Voya/215714485107840" data-ga-event="ga-click-event" data-ga-event-category="Footer Nav" data-ga-event-action="Select" data-ga-event-label="facebook"></a>
+				    	<a class="socialmedia" id="ftr-twit-icn" href="https://twitter.com/Voya" data-ga-event="ga-click-event" data-ga-event-category="Footer Nav" data-ga-event-action="Select" data-ga-event-label="twitter"></a>
+				    	<a class="socialmedia" id="ftr-ytube-icn" href="https://www.youtube.com/channel/UCbWNAJD8kl_rQOZTP0mvxtw" data-ga-event="ga-click-event" data-ga-event-category="Footer Nav" data-ga-event-action="Select" data-ga-event-label="youtube"></a>
+				    	<a class="socialmedia" id="ftr-google-icn" href="https://plus.google.com/u/0/112192803357111843501/posts" data-ga-event="ga-click-event" data-ga-event-category="Footer Nav" data-ga-event-action="Select" data-ga-event-label="google plus"></a>
+				    	<div class="clearer"></div>
+				  	</div>
+				  	<div class="clearer"></div>
+				</div><!-- END .row -->
+			</div><!-- END .container-fluid -->
+
+		</footer>
+
+		<script src="./js/main.js"></script>
+		
+	</body>
+</html>
