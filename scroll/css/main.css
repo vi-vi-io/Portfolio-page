@@ -65,6 +65,10 @@ h5 {
 	padding: 0;
 }
 h6 {font-weight: 700;}
+.footnote {
+	font-size: .85em;
+	text-align: center;
+}
 
 .bullets {color: #888888;}
 
@@ -162,7 +166,7 @@ h6 {font-weight: 700;}
 .drkblue {color: #145a7b;}
 .ltblue {color: #76c5e4;}
 .white {color: #fff;}
-.voya-grey {color: #333;}
+.vivi-grey {color: #333;}
 .ltgrey {color: #ddd;}
 
 
@@ -224,7 +228,7 @@ h6 {font-weight: 700;}
 	text-decoration: none !important;
 }
 /*---- basic colored buttons ----*/
-.btn-voya-basic {
+.btn-vivi-basic {
 	color: #fff;
 	font-size: 1.0em;
 	padding: 15px;
@@ -237,7 +241,7 @@ h6 {font-weight: 700;}
 	-moz-border-radius: 3px 3px 3px 3px;
 	-webkit-border-radius: 3px 3px 3px 3px;
 }
-.btn-voya-basic:hover {
+.btn-vivi-basic:hover {
 	color: #fff;
 	text-decoration: none;
 }
@@ -288,7 +292,7 @@ h6 {font-weight: 700;}
 	background-color: #fff;
 }
 .btn-white:hover {background-color: #ccc;}
-.btn-voya-basic>i {
+.btn-vivi-basic>i {
 	font-size: 1.75em;
 	display: block;
 	float: left;
@@ -342,7 +346,7 @@ nav {
 }
 .icon-section {
 	text-align: center;
-	min-height: 325px;
+	/* min-height: 325px; */
 }
 .icon-section-small {
 	text-align: center;
@@ -522,10 +526,10 @@ h1.no-underline {
 }
 
 /*====VIDEO MODAL====*/
-.voya-modal .modal-dialog {
+.vivi-modal .modal-dialog {
 	padding: 0;
 }
-.voya-modal .modal-dialog .modal-content {
+.vivi-modal .modal-dialog .modal-content {
 	background-color: #fff;
 	padding: 0;
 	height: auto;
@@ -537,24 +541,24 @@ h1.no-underline {
 	-moz-box-shadow: 0px 10px 15px 0px rgba(31,23,3,0.15);
 	box-shadow: 0px 10px 15px 0px rgba(31,23,3,0.15);
 }
-.voya-modal-close, .voya-modal-unmute {
+.vivi-modal-close, .vivi-modal-unmute {
 	position: absolute;
 	color: #f58000;
 	z-index: 9999;
 }
-.voya-modal-close:hover, .voya-modal-unmute:hover {
+.vivi-modal-close:hover, .vivi-modal-unmute:hover {
 	color: #666;
 	text-decoration: none;
 	cursor: pointer;
 }
-.voya-modal-close {
+.vivi-modal-close {
 	padding: 7px;
 	text-shadow: 0 0 3px #666;
 	background-color: rgba(0,0,0,0);
 	opacity: 1;
 	font-weight: 100;
 }
-.voya-modal-unmute {
+.vivi-modal-unmute {
 	cursor: pointer;
 	background: transparent;
 	border: 1px solid #f58000;
@@ -597,10 +601,10 @@ h1.no-underline {
 }/*====VIDEO MODAL====*/
 
 /*====FORM MODAL====*/
-.voya-form-modal .modal-dialog {
+.vivi-form-modal .modal-dialog {
 	padding: 0;
 }
-.voya-form-modal .modal-dialog .modal-content {
+.vivi-form-modal .modal-dialog .modal-content {
 	background-color: #76c5e4;
 	padding: 0;
 	height: auto;

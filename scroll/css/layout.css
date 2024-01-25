@@ -25,7 +25,7 @@ h3.plx-title {font-size: 2em;}
 	margin-top: 3px;
 	min-width: 100px;
 	height: 40px;
-	background: url(../images/xs-voya-logo.png) no-repeat top left;
+	background: url(../images/xs-vivi-logo.png) no-repeat top left;
 	border-style: none;
 }
 .header {
@@ -133,12 +133,12 @@ img.usa-gfx {
 }
 
 /*---- MODAL ----*/
-.voya-modal-close {
+.vivi-modal-close {
 	top: -42px;
 	right: 10px;
 	font-size: 3em;
 }
-.voya-modal-unmute {
+.vivi-modal-unmute {
 	top: -35px;
 	right: 60px;
 	font-size: 1.2em;
@@ -173,7 +173,7 @@ img.usa-gfx {
 /* -- Small Layout - 768px and up -- */
 
 @media only screen and (min-width: 768px) {
-	p {font-size: 1.3em;}
+	p {font-size: 1.2em;}
 	h1 {font-size: 2.5em;}
 	h2 {font-size: 2em;}
 	h3 {font-size: 1.25em;}
@@ -189,7 +189,7 @@ img.usa-gfx {
 		text-align: left;
 		margin: 20px 0;
 	}
-    h1.voya-lately {
+    h1.vivi-lately {
         font-size: 4em;
         text-align: center;
         margin: 80px 0px 20px 0px;
@@ -223,7 +223,7 @@ img.usa-gfx {
 	.headlogo {
 		min-width: 125px;
 		height: 50px;
-		background: url(../images/hdr-voya-logo.png) no-repeat top left;
+		background: url(../images/hdr-vivi-logo.png) no-repeat top left;
 	}
 
 	/*---- NAV ----*/
@@ -286,11 +286,11 @@ img.usa-gfx {
 	}
 
 	/*---- MODAL ----*/
-	.voya-modal-close {
+	.vivi-modal-close {
 		top: 0px;
 		right: -40px;
 	}
-	.voya-modal-unmute {
+	.vivi-modal-unmute {
 		top: 10px;
 	 	left: 10px;
 		font-size: 1em;
@@ -304,6 +304,7 @@ img.usa-gfx {
 /* -- Medium Layout - 992px and up -- */
 
 @media only screen and (min-width: 992px) {
+	p {font-size: 1.3em;}
 	h1 {font-size: 3em;}
 	h2 {font-size: 2em;}
 	h3 {font-size: 1.5em;}
@@ -311,7 +312,7 @@ img.usa-gfx {
 	h5 {font-size: 2em;}
 	h6 {font-size: 1.5em;}
 	h1.lndg-title {font-size: 3.5em;}
-	h1.hero-title {font-size: 3.5em;}
+	h1.hero-title {font-size: 3.25em;}
 	h3.plx-title {font-size: 2.5em;}	
 
 	/*---- NAV ----*/
@@ -364,6 +365,7 @@ img.usa-gfx {
 /* -- Large Layout - 1200px and up -- */
 
 @media only screen and (min-width: 1200px) {
+	p {font-size: 1.5em;}
 	h1 {font-size: 3em;}
 	h2 {font-size: 2.5em;}
 	h3 {font-size: 1.75em;}
