@@ -80,7 +80,10 @@ html {
 						margin: 10px auto;
 					}
 				}
-				a {color: $color-3;}				
+				a {color: $color-3;}
+				.img-full-width {
+					margin: 0 0 20px;
+				}				
 			}
 		}
 	}
