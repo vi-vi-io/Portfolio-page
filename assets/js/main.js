@@ -117,6 +117,32 @@ $(function(){
 		});
 	 });
 
+//header nav fade animations
+	
+	 // Store the current scroll position
+	var scrollPos = 0;
+
+	// Get the navigation bar element
+	var navBar = document.querySelector('.navbar');
+
+	// Listen for scroll events
+	window.addEventListener('scroll', function() {
+	// Determine the new scroll position
+	var newScrollPos = window.scrollY || document.documentElement.scrollTop;
+	
+	// Check if user scrolled down by at least 500px
+	if (newScrollPos > scrollPos && newScrollPos > 250) {
+		// Fade out the navigation bar
+		navBar.style.opacity = '0';
+	} else {
+		// Fade in the navigation bar
+		navBar.style.opacity = '1';
+	}
+	
+	// Update the scroll position
+	scrollPos = newScrollPos;
+	}); 
+
 // .content-block bkgd image animations based on scroll position
 	$('.content-block').each(function() {
 

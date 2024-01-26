@@ -240,6 +240,43 @@ strong, em {font-weight: 700;}
 	}
 }
 
+//HEADER
+.navbar.navbar-dark {
+	transition: opacity 0.3s ease-in-out;
+	background-color: rgba($color-2, .75);
+	a.navbar-brand {
+		font-weight: 100;
+		font-style: normal;
+		font-size: 1.25em;
+	}
+	.nav-item {
+		.nav-link {
+			color: $color-4;
+			font-weight: 700;
+			font-style: normal;
+			&:active {
+				color: $color-4;
+			}
+			&:hover {
+				color: $color-3;
+			}
+		}
+	}
+	.nav-item.active {color: $color-4;}
+	.dropdown {
+		.dropdown-menu {
+			background-color: rgba($color-2, .75);
+			.dropdown-item {
+				color: $color-4;
+				&:hover {
+					background-color: $color-3;
+					color: $color-5;
+				}
+			}
+		}
+	}
+}
+
 // BANNER
 #banner {
 	display: block;
