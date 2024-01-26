@@ -1,0 +1,82 @@
+I"Ò<div class="container">
+	<div class="row">
+		<div class="mt-3 dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
+<!-- Start Video Editing content -->
+<section id="editing" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Video Editing</h2>
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>A Visual Storyteller with demonstrated experience delivering poignant, strategy-driven video content.</h4>
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>My over 10 years professional editing experience was acquired partly at an in-house corporate agency and then as an established freelancer working on a broad range of production types. Unscripted editing is is one of my signature skills. I thrive on the challenge of working through primary and b-roll footage to shape a cohesive story arc that captivates audiences.</p>
+					<p>My specialty lies in documentary, journalistic, corporate, and educational films. With a well-honed research process and thoughtful storytelling, I can craft candid and captivating video messaging that resonates with your target audience.</p>
+					<p>My primary tools for post productions are in Adobe Premiere/After Effects and Davinci Resolve, but Iâ€™m comfortable working in any NLE system that is established in your organization.</p>
+				</div>
+			</div>
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./ui" class="capabilityLink" id="#capability_7">UI/UX Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section><!-- End Video Editing content -->
+		</div>
+	</div>
+</div>
+:ET

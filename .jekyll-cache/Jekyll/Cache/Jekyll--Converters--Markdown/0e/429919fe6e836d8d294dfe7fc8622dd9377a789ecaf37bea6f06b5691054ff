@@ -1,0 +1,59 @@
+I"!<div class="container">
+	<div class="row">
+		<div class="mt-3 dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			<section id="subheader">
+	
+</section>
+			
+<!-- Start Bus Map GFX package content -->
+<section id="busmap" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Bus Map Concept GFX</h2>
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-12">
+					<div class="modal-player-box embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/806794717?h=289f1270a8&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:100%;height:100%;" title="Bus Map Concept GFX"></iframe>
+					</div>
+					<div class="player-caption">Bus map concept GFX (00:38)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>This package was developed for a public transportation provider, for a piece focused on busing safety. The design features moving and crossing lines, in the brand color scheme, as a reference to busing route maps, and to the action of buses moving around a city center.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>The bus window design in the lower third build animation takes the simile a step further. Notice the scintillating colors on the speaker's name that give a subtle reminder of the diversity of the customer base.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Demo Reel</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./reel"><img src="assets/images/workThumb_demoReel.jpg" alt="Demo reel thumbnail depicting a woman and dog at the shoreline with the words R. Scott Vivilecchia sitting in the waves" /></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Public TV Series GFX Package</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books" /></a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section><!-- End DEMO REEL content -->
+		</div>
+	</div>
+</div>
+:ET

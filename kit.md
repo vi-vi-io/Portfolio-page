@@ -11,8 +11,7 @@ image:
 
 <div class="container">
 	<div class="row">
-		<div class="mt-3 dark-content-box col-10 offset-1 col-md-8 offset-md-2">
-			{% include subheader.html %}
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
 			{% include kit_content.html %}
 		</div>
 	</div>
