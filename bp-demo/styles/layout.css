@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+
+
+/* ---- Breakpoints set up for Bootstrap ---- */
+
+/* ---- EXTRA NARROW BANNER WIDTH (<560px) ---- */
+
+@media only screen and (max-width: 560px) {
+
+}
+
+@media only screen and (min-width: 561px) {
+
+}
+
+/* -- Extra Small Layout - 767px and below -- */
+
+
+
+/*---- BOUNCING ARROW ARROW ----*/
+.wakeup-arrow {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-left:-25px;
+  width: 50px;
+  height: 50px;
+  z-index: 500;
+  background-image: url(../images/wakeup-arrow.png);
+  -webkit-animation:bounce 1s infinite;
+}
+@-webkit-keyframes bounce {
+  0%       { bottom:5vh; }
+  25%, 75% { bottom:6vh; }
+  50%      { bottom:8vh; }
+  100%     { bottom:4vh; }
+}
+
+.js div#preloader { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff;
+}
+.js div#preloader .loader-container { 
+    position: inherit;
+    top: 30%;
+    left: 50%;
+    width: 150px;
+    margin-left: -75px;
+}
+.js div#preloader .loader-container img {
+    display: block;
+    margin: 30px auto;
+}
+
+h1 {font-size: 4.5em;}
+h2 {font-size: 2em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 3em;}
+h5 {font-size: 1.25em;}
+h6 {font-size: 1.15em;}
+
+
+/*---- HEADER ----*/
+.header {
+	height: 60px;
+	background-color: #fff;
+	-moz-box-shadow: 0 0px 8px #999;
+	-webkit-box-shadow: 0 0px 8px #999;
+	box-shadow: 0 0px 8px #999;
+	margin: 0;
+	width: 100%;
+	position: relative;
+	top: 0;
+	z-index: 100;
+}
+.hdr-left {
+	height: 40px;
+	margin-top: 10px;
+	/*margin-left: 0;*/
+	padding-left: 0px;
+}
+.headlogo {
+	display: block;
+	min-width: 100px;
+	height: 40px;
+	background: url(../images/xs-voya-logo.png) no-repeat top left;
+	border-style: none;
+}
+.hdr-right {
+	height: 40px;
+	margin-top: 10px;
+	/*margin-left: 0;*/
+	padding-left: 0px;
+}
+.headlogo-client {
+	display: block;
+	float: right;
+	min-width: 118px;
+	height: 40px;
+	background: url(../images/xs-client-logo.png) no-repeat top right;
+	border-style: none;
+}
+.hdr-right * {
+	margin: 0;
+	overflow: all;
+}
+
+
+/*---- SOLID COLOR CONTAINERS ----*/
+.color-box {
+	color: #fff;
+	padding:30px 0;
+}
+.cb-desc {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 100;
+	margin: 30px 0;
+}
+.cb-footnote {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 100;
+	text-align: center;
+	margin: 30px 0;
+}
+.cb-btn:link {
+	display: block;
+	margin: 30px auto;
+	padding: 10px;
+	width: 200px;	
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.15em;
+	font-weight: 500;
+	border: 1px solid #fff;
+	outline: 0;
+	background-color: rgba(255,255,255,0);
+	transition-duration: 0.5s;
+}
+.cb-btn:visited {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	transition-duration: 0.5s;
+}
+.cb-btn:hover {
+	color: #ffffff;
+	text-decoration: none;
+	outline: 0;
+	border: 1px solid #ffffff;
+	background-color: rgba(255,255,255,.25);
+	transition-duration: 0.5s;
+}
+.cb-btn:active {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	transition-duration: 0.5s;
+}
+
+
+/*---- PARALLAX IMAGE AREA STYLES ----*/
+#plx-1 {
+	height: -moz-calc(100vh - 60px);
+	height: -webkit-calc(100vh - 60px);
+	height: -o-calc(100vh - 60px);
+	height: calc(100vh - 60px);
+	width: 100%;
+	display: table;
+	background: transparent;
+	overflow-x: hidden;
+}
+#plx-2 {
+	height: 90vh;
+	width: 100%;
+	display: table;
+	background: transparent;
+	overflow-x: hidden;
+}
+#plx-3 {
+	height: 450px;
+	width: 100%;
+	display: table;
+	background: transparent;
+	overflow-x: hidden;
+}
+#plx-4 {
+	height: 450px;
+	width: 100%;
+	display: table;
+	background: transparent;
+	overflow-x: hidden;
+}
+#plx-5 {
+	height: 450px;
+	width: 100%;
+	display: table;
+	background: transparent;
+	overflow-x: hidden;
+}
+
+.plx-content {
+	display: table-cell;
+	vertical-align: middle;
+}
+.plx-btn, .plx-btn:link {
+	display: block;
+	margin: 25px auto;
+	padding: 10px;
+	width: 200px;	
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.15em;
+	font-weight: 500;
+	border: 1px solid #fff;
+	outline: 0;
+	background-color: rgba(245,128,0,0);
+	transition-duration: 0.5s;
+}
+.plx-btn:visited {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	transition-duration: 0.5s;
+}
+.plx-btn:hover {
+	color: #ffffff;
+	text-decoration: none;
+	outline: 0;
+	border: 1px solid #ffffff;
+	background-color: rgba(245,128,0,1);
+	transition-duration: 0.5s;
+}
+.plx-btn:active {
+	color: #fff;
+	text-decoration: none;
+	outline: 0;
+	transition-duration: 0.5s;
+}
+
+
+/*---- BLOCK SPECIFIC STYLES ----*/
+
+/*- video block -*/
+.movie-container {
+  width: 100%;
+  margin: 75px 0;
+  display: inline-block;
+  position: relative;
+}
+.movie-frame {
+  margin: 0;
+  -webkit-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.35);
+  -moz-box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.35);
+  box-shadow: 0px 0px 15px 4px rgba(0,0,0,0.35);
+}
+
+/*- tools block -*/
+#pfd_block_container {
+	width: 70%;
+	margin: 0 auto;
+}
+#mobile_block_container {
+	width: 70%;
+	margin: 0 auto;
+}
+
+/*- contact block -*/
+.contact-box {
+	margin: 0;
+}
+
+.contact-btn {
+	text-align: center;
+	width: 100%;
+	padding: 40px 0;
+	margin-bottom: 30px;
+	display: table;
+	transition-duration: 0.5s;
+}
+.contact-btn:hover {
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.contact-btn a {
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(255, 255, 255, 1);
+	font-size: 1.3em;
+	font-weight: 300;
+	line-height: 20px;
+}
+.contact-btn a:hover {
+	outline: none;
+	color: rgba(255, 255, 255, .8);
+	text-decoration: none;
+}
+.contact-btn a:focus {
+	outline: none;
+	color: rgba(255, 255, 255, .8);
+	text-decoration: none;
+}
+
+.contact-btn i.fa {
+	display: block;
+	font-size: 5em;
+	padding: 0;
+	margin-bottom: 15px;
+}
+
+
+
+
+/*---- FOOTER ----*/
+.dsclsr-box {
+	padding: 40px;
+	color: #6e6e6e;
+	font-size: .85em;
+}
+.footer {
+	border-top: 1px solid #e2e2e2;
+	background-color: #fff;
+	height: 36px;
+	width: 100%;
+	margin: 0;
+	/*position:fixed;*/
+	bottom: 0px;
+	clear: both;
+}
+.ftr-left {
+	height: 36px;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+.ftr-right {
+	height: 36px;
+	overflow: hidden;
+}
+.socialmedia{
+	display: block;
+	width: 27px;
+	height: 36px;
+	float: left;
+	border-style: none;
+}
+#ftr-fb-icn {
+	background: url(../images/footer/xs-fb.png) no-repeat top left;
+}
+#ftr-twit-icn {
+	background: url(../images/footer/xs-twit.png) no-repeat top left;
+}
+#ftr-ytube-icn {
+	background: url(../images/footer/xs-ytube.png) no-repeat top left;
+}
+#ftr-google-icn {
+	background: url(../images/footer/xs-google.png) no-repeat top left;
+}
+.ftrbarlogo {
+	display: block;
+	float: right;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 36px;
+	border-style: none;
+	background: url(../images/footer/xs-lowerbar.png) no-repeat top right #f58000;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- Small Layout - 768px and up -- */
+
+@media only screen and (min-width: 768px) {
+
+	.js div#preloader { }
+	.js div#preloader .loader-container {
+	    top: 40%;
+	    width: 300px;
+	    margin-left: -150px;
+	}
+	.js div#preloader .loader-container img {
+	    display: inline;
+	    margin: 10px;
+	}
+
+	h1 {font-size: 6.5em;}
+	h2 {font-size: 3em;}
+	h3 {font-size: 1.8em;}
+	h4 {font-size: 4.5em;}
+	h5 {font-size: 1.5em;}
+	h6 {font-size: 1.15em;} 
+
+
+	/*---- HEADER ----*/
+	.header {
+		height: 60px;
+		position: relative;
+	}
+	.hdr-left {
+		height: 50px;
+		margin-top: 5px;
+	}
+	.headlogo {
+		min-width: 125px;
+		height: 50px;
+		background: url(../images/hdr-voya-logo.png) no-repeat top left;
+	}
+	.hdr-right {
+		height: 50px;
+		margin-top: 5px;
+	}
+	.headlogo-client {
+		min-width: 150px;
+		height: 50px;
+		background: url(../images/hdr-client-logo.png) no-repeat top right;
+	}
+
+
+	/*---- SOLID COLOR CONTAINERS ----*/
+	.color-box {
+		padding:60px 0;
+	}
+	.cb-desc {
+		font-size: 1.5em;
+	}
+	.cb-footnote {
+		font-size: 1.2em;
+	}
+	.cb-btn:link {
+		margin: 30px 0;
+	}
+
+
+	/*---- BLOCK SPECIFIC STYLES ----*/
+
+	/*- tools block -*/
+	#pfd_block_container {
+		width: 60%;
+		margin: 0;
+	}
+	#mobile_block_container {
+		width: 60%;
+		margin: 0;
+	}
+
+	/*- contact block -*/
+	.contact-box {
+}
+
+
+
+
+
+
+
+
+
+
+
+/* -- Medium Layout - 992px and up -- */
+
+@media only screen and (min-width: 992px) {}
+
+
+
+
+
+
+
+
+
+
+
+/* -- Large Layout - 1200px and up -- */
+
+@media only screen and (min-width: 1200px) {}
