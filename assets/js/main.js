@@ -131,7 +131,7 @@ $(function(){
 	var newScrollPos = window.scrollY || document.documentElement.scrollTop;
 	
 	// Check if user scrolled down by at least 500px
-	if (newScrollPos > scrollPos && newScrollPos > 250) {
+	if (newScrollPos > scrollPos && newScrollPos > 150) {
 		// Fade out the navigation bar
 		navBar.style.opacity = '0';
 	} else {

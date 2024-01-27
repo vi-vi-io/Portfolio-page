@@ -1,0 +1,91 @@
+I"y<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
+<!-- Start Graphic Design & Illustration content -->
+<section id="design" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Graphic Design &amp; Illustration</h2>
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>Design is at the heart of all my work.</h4>
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>Starting my career as a classically trained Graphic Designer, I worked primarily on print projects, including presentations, packaging, flyers and trade show booths. This was during an era that was before the rise of inexpensive stock art that you can download in seconds, so many of my designs feature custom art/illustration.</p>
+					<p>As my career exposure grew, I quickly fell in love with user interactivity on the web, as well as animation, design for motion and video production, but I have never left behind my foundational training as a Graphic Designer. These design skills are still very much the basis of my current work in motion graphics and UX/UI.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						ONE
+						<a href="./reel"><img src="assets/images/designThumb_iBirth.png" alt="" /></a>
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">TWO</div>
+			</div>
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./ui" class="capabilityLink" id="#capability_7">UI/UX Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section><!-- End Graphic Design & Illustration content -->
+		</div>
+	</div>
+</div>
+:ET
