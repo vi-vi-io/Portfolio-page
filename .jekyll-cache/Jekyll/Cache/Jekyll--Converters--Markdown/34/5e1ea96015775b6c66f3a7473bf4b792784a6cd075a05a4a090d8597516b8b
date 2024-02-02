@@ -1,0 +1,280 @@
+I"†0<section id="banner" class="banner">
+	<div class="valign">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-12">
+					<div id="bannerTitle" class="banner-title">
+						<h1 class="">R. Scott Vivilecchia</h1>
+						<h3>Ideation <span>\\</span> Execution <span>\\</span> Delivery <span>\\</span> Measurement</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<a href="#about" class="goto-next scrolly">scroll to next section</a>
+</section>
+
+<div class="container">
+	<div class="row">
+		<div class="content-box col-10 offset-1 col-md-8 offset-md-2">
+			<!-- Start ABOUT content -->
+<section id="about" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<div class="">
+						<img src="./assets/images/scott.jpg" alt="picture of Scott" />
+						<h2>About me</h2>
+						<p><span class="para-intro">Hello, my name is Scott.</span> I'm a <strong>Visual Storyteller</strong> with demonstrated experience delivering poignant, strategy-driven video content. I'm proficient in concept development, pre-production planning, editing, animation/motion graphics, color grading, and sound design.</p>
+						<p>As a seasoned, independent professional, experienced working with high-profile corporate and government clients, I'm dedicated to providing top-notch solutions, throughout the production process, ensuring that the outcome meets or exceeds goals.</p>
+						<p>When I'm not behind a camera or at a computer screen, I look for opportunities to enjoy camping, sailing and other outdoor exploration. <strong>I&nbsp;bring this spirit of adventure, along with thought leadership and roll-up-the-sleeves tenacity, to every project I work on</strong>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="row whiteBox">
+				<div class="col-12">
+					<button class="btn btn-lrg" onclick="window.location.href='./assets/docs/rsVivilecchia_resume.pdf';"><i class="far fa-file-pdf fa-2x"></i><span>&nbsp;&nbsp;&nbsp;my resume</span></button>
+				</div>
+            </div>
+        </div>
+    </div>
+	<a href="#work" class="goto-next scrolly">scroll to next section</a>
+</section><!-- End ABOUT content -->
+			<!-- Start WORK content -->
+<section id="work" class="content-block">
+	<div class="valign">
+		<span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<div class="">
+						<h2>What I do</h2>
+						<p>As a seasoned filmmaker, my work spans testimonial, educational, interview, documentary and promotional productions. My well-honed research process, and compassion for subject/talent, ensure that on set or in post, every decision and action purposefully drives the message, resulting in a captivating story that connects deeply with the intended audience.</p>
+					</div>
+				</div>
+			</div>
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./ui" class="capabilityLink" id="#capability_7">UI/UX Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+			<div class="row">
+				<div class="col-12">
+					<h3>Recent work</h3>
+					<hr />
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Town Government PSA</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./govpsa"><img class="right" src="assets/images/workThumb_townPSA.jpg" alt="Town PSA video thumbnail depicting a large machine moving snow"></a>
+					</div>
+				</div> -->
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-3">
+					<h4>Demo Reel</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./reel"><img src="assets/images/workThumb_demoReel.jpg" alt="Demo reel thumbnail depicting a woman and dog at the shoreline with the words R. Scott Vivilecchia sitting in the waves" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Public TV Series GFX Package</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books" /></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Bus Map Concept GFX</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="Bus map concept graphics thumbnail showing abstract graphics that look like lines on a city bus map" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="row clientsBox mt-5">
+				<div class="col-12">
+					<h3>Brands I've worked with</h3>
+					<hr />
+					<div class="slideshow">
+						<div class="slideImages"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<h3>Professional profiles</h3>
+					<hr />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					
+									<div class="row social-links">
+				<div class="col-3 text-center">
+					<a target="_blank" href="https://vimeo.com/user113004102">
+						<i aria-hidden="true" class="fab fa-vimeo fa-3x" title="my vimeo profile">vimeo</i>
+					</a>
+				</div>
+				<div class="col-3 text-center">
+					<a target="_blank" href="https://www.productionhub.com/profiles/details/354240">
+						<img class="img" src="./assets/images/prodHub.png" alt="my ProductionHUB profile" />
+					</a>
+				</div>
+				<div class="col-3 text-center">
+					<a target="_blank" href="https://github.com/vi-vi-io">
+						<i aria-hidden="true" class="fab fa-github fa-3x" title="my github profile">github</i>
+					</a>
+				</div>
+				<div class="col-3 text-center">
+					<a target="_blank" href="https://www.linkedin.com/in/vi-vi-io">
+						<i aria-hidden="true" class="fab fa-linkedin fa-3x" title="my linkedin profile">linkedin</i>
+					</a>
+				</div>
+			</div>
+					
+				</div>
+			</div>			
+			<div class="row mt-5">
+				<div class="col-12">
+					<button class="btn btn-lrg right-btn" data-toggle="modal" data-target="#about-website-modal"><i class="fas fa-info-circle fa-2x"></i><span>&nbsp;&nbsp;&nbsp;About this website</span></button>
+				</div>
+			</div>
+		</div>
+    </div>
+	<a href="#contact" class="goto-next scrolly">scroll to next section</a>
+</section><!-- End WORK content -->
+			<!-- Start CONTACT content -->
+<section id="contact" class="content-block">
+	<div class="valign">
+		<span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1">
+					<h2>Drop me a note...</h2>
+					<p>if you've got a <em>project in peril</em>,<br /> if your <em>team needs talent</em>,<br /> if you have a <em>video without vision</em>,<br /> if your <em>website is weak-sauce</em>....</p>
+					<p>I look forward to hearing about your project, and discussing how we can accomplish your goals.</p>
+				</div>
+			</div>
+			<div class="row whiteBox">
+				<form id="contactForm" class="contact" name="vi-vi.io contact" netlify="">
+					<div class="container">
+						<!-- <div class="row"></div> -->
+						<div class="row input-container">
+							<div class="col-12">
+								<div class="styled-input wide">
+									<input type="text" required="" />
+									<label>Name</label> 
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-sm-12">
+								<div class="styled-input">
+									<input type="text" required="" />
+									<label>Email</label> 
+								</div>
+							</div>
+							<div class="col-12 col-md-6 col-sm-12">
+								<div class="styled-input">
+									<input type="text" required="" />
+									<label>Phone Number</label> 
+								</div>
+							</div>
+							<div class="col-12">
+								<div class="styled-input wide">
+									<textarea required=""></textarea>
+									<label>Message</label>
+								</div>
+							</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-lrg right-btn"><i class="far fa-paper-plane fa-2x"></i><span>&nbsp;&nbsp;&nbsp;Send Message</span></button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="container">
+					<div class="row">
+						<div class="col-8 offset-2">
+							<div class="result valign" id="postSent">
+								<div>
+									<h4 class="text-center">Thanks for reaching out!</h4>
+									<hr />
+									<p>Your message is on it's way. I'll review your inquiry, and get back to you soon.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-8 offset-2">
+							<div class="valign result" id="postError">
+								<div>
+									<h4 class="text-center">Oh shoot, you broke it!</h4>
+									<hr />
+									<p><strong>Just kidding. It's almost definitely my fault. But I'll be keeping an eye on you.... ;-)</strong></p>
+									<p>Please <a href="mailto:rscott@vi-vi.io?subject=Error notification from vi-vi.io contact form">email me</a>, and let me know you're having problems</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<div class="spacer-20px"></div>
+					<p class="text-center">Or you can just reach out directly:<br />//P <a href="tel:+16176784222">617 678 4222</a><br />//E <a href="mailto:rscott@vi-vi.io?subject=Mail from vi-vi.io contact form">rscott@vi-vi.io</a></p>
+				</div>
+			</div>
+		</div>
+    </div>
+</section><!-- End CONTACT content -->
+		</div>
+	</div>
+</div>
+:ET

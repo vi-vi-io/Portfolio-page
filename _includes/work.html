@@ -65,28 +65,13 @@
 					<hr>
 				</div>
 			</div>
-			<div class="row social-links">
-				<div class="col-3 col-md-2 offset-md-2">
-					<a target="_blank" href="https://vimeo.com/user{{ site.vimeo_username }}">
-						<i aria-hidden="true" class="fab fa-vimeo fa-3x" title="my vimeo profile">vimeo</i>
-					</a>
+			<div class="row">
+				<div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+					{% if site.show_social_icons %}
+						{% include social_links.html %}
+					{% endif %}
 				</div>
-				<div class="col-3 col-md-2">
-					<a target="_blank" href="https://www.productionhub.com/profiles/details/354240">
-						<img class="img" src="./assets/images/prodHub.png" alt="my ProductionHUB profile" />
-					</a>
-				</div>
-				<div class="col-3 col-md-2">
-					<a target="_blank" href="https://github.com/{{ site.github_username }}">
-						<i aria-hidden="true" class="fab fa-github fa-3x" title="my github profile">github</i>
-					</a>
-				</div>
-				<div class="col-3 col-md-2">
-					<a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username }}">
-						<i aria-hidden="true" class="fab fa-linkedin fa-3x" title="my linkedin profile">linkedin</i>
-					</a>
-				</div>
-			</div>
+			</div>			
 			<div class="row mt-5">
 				<div class="col-12">
 					<button class="btn btn-lrg right-btn" data-toggle="modal" data-target="#about-website-modal"><i class="fas fa-info-circle fa-2x"></i><span>&nbsp;&nbsp;&nbsp;About this website</span></button>
