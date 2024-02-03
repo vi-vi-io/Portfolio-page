@@ -23,7 +23,7 @@ $(document).ready(function () {
 		var scrollContainer = document.getElementById('banner')
 		var element = document.getElementById('bannerTitle');
 		
-		var distanceToTop = window.pageYOffset + scrollContainer.getBoundingClientRect().top;
+		var distanceToTop = window.scrollY + scrollContainer.getBoundingClientRect().top;
 		var elementHeight = scrollContainer.offsetHeight;
 		var scrollTop = document.documentElement.scrollTop;
 		
@@ -53,7 +53,7 @@ function scrollHandler() {
 	var scrollContainer = document.getElementById('banner')
 	var element = document.getElementById('bannerTitle');
 	
-	var distanceToTop = window.pageYOffset + scrollContainer.getBoundingClientRect().top;
+	var distanceToTop = window.scrollY + scrollContainer.getBoundingClientRect().top;
 	var elementHeight = scrollContainer.offsetHeight;
 	var scrollTop = document.documentElement.scrollTop;
 	
@@ -202,4 +202,7 @@ $(function(){
 			$(formError).animate({height: "200px"});
 		})
 	}
-	document.querySelector("form").addEventListener("submit", handleSubmit);
+	const conForm = document.querySelector("form") !== null; //If form exists on page, conForm = true
+	if (conForm) {
+		document.querySelector("form").addEventListener("submit", handleSubmit);
+	}
