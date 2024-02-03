@@ -17,10 +17,10 @@ html {
 				display: block;
 				position: relative;
 				margin-top: 20px;
-				padding: 100px 0 120px;
-				min-height: calc(100vh - 310px);
-				border-top: 1px solid rgba($color-2, .25);
-				& > .valign {min-height: calc(100vh - 310px);}
+				padding: 100px 0;
+				// min-height: calc(100vh - 310px);
+				border-top: 1px solid rgba($color-1, .75);
+				// & > .valign {min-height: calc(100vh - 310px);}
 				.image.primary {display: none;}
 				h2 {
 					font-weight: 700;
@@ -29,7 +29,7 @@ html {
 				}
 				h3 {
 					font-size: 1.5em; 
-					margin: 60px auto 10px;
+					margin: 40px auto 10px;
 					text-align: center;
 					font-weight: 300;
 				}
@@ -48,7 +48,7 @@ html {
 					font-weight: 700;
 				}
 				hr { 
-					border-top: 1px solid rgba($color-2, .25);
+					border-top: 1px solid rgba($color-1, .5);
 					width: 40%;
 					margin: 10px auto 20px;
 				}
@@ -72,17 +72,28 @@ html {
 			padding-top: 0px;
 			color: $color-4;
 			.content-block {
-				padding: 20px 0 75px;
+				padding: 50px 0 75px;
 				min-height: auto;
 				& > .valign {min-height:auto;}
 				h4{color: lighten($color-2, 20%);}
 				.whiteBox {
 					margin-top: 10px;
 					margin-bottom: 25px;
+					h3 {color: $color-2;}
 					h4{
-						color: $color-4;
+						color: $color-2;
 						margin: 10px auto;
 						font-size: 1.15em;
+						strong {font-style: italic;}
+					}
+					hr {border-top: 1px solid rgba($color-2, .75);}
+					.btn {
+						color: $color-1;
+						background-color: $color-2;
+						&:hover {
+							color: $color-3;
+							border: 1px solid $color-3;
+						}
 					}
 				}
 				a {color: $color-3;}
@@ -92,9 +103,9 @@ html {
 			}
 			#capabilitiesLinks {
 				.capabilityLink {
-					color: $color-4;
-					border: 1px solid $color-6;
-					&:hover {color: $color-6;}
+					color: $color-1;
+					background-color: $color-2;
+					&:hover {color: $color-3;}
 				}
 			}
 			.modalBtn-box {
@@ -158,9 +169,12 @@ strong, em {font-weight: 700;}
 	margin: 20px auto;
     border-radius: 60px;
     display: block;
-    background-color: $color-6;
-    color: $color-4;
-    font-size: 1.15em;
+    background-color: $color-3;
+    color: $color-2;
+	font-weight: 700;
+	font-size: .75em;
+	font-style: normal;
+    // font-size: 1.15em;
 	text-transform: uppercase;
     cursor: pointer;
     box-shadow: 0 2px 5px 0 rgba($color-5, 0.06),
@@ -180,7 +194,7 @@ strong, em {font-weight: 700;}
 	span { 
 		display: block;
 		float: right;
-		margin-top: 7px;
+		margin-top: 4px;
 	}
 }
 
@@ -199,7 +213,7 @@ strong, em {font-weight: 700;}
 
 // Next button
 .goto-next, .goto-home {
-	background-color: $color-6;
+	background-color: $color-3;
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -392,7 +406,7 @@ strong, em {font-weight: 700;}
 		position:relative;
 		border: 1px solid rgba($color-2, .5);
 	}
-	h4 {color: $color-6;}
+	h4 {color: $color-4;}
 	em {font-weight: 500;}
 	.clientsBox { //  https://css-tricks.com/infinite-all-css-scrolling-slideshow/
 		background-color: rgba(white, .5);
@@ -400,7 +414,7 @@ strong, em {font-weight: 700;}
 		margin-left: -30px;
 		margin-top: 30px;
 		padding-bottom: 30px;
-		h3 {margin-top: 30px;}
+		// h3 {margin-top: 30px;}
 		.slideshow {
 			position: relative;
 			overflow: hidden;
@@ -491,9 +505,10 @@ strong, em {font-weight: 700;}
 		padding: 5px 0;
 		text-transform: uppercase;
 		white-space: nowrap;
-		border: 1px solid $color-6;
+		border: 1px solid $color-2;
 		border-radius: 25px;
 		&:hover {
+			border: 1px solid $color-3;
 			text-decoration: none;
 			transform: scale(1.05,1.05);
 			-webkit-transition: .3s ease-in-out;
