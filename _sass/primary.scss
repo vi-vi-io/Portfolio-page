@@ -132,6 +132,7 @@ html {
 strong, em {font-weight: 700;}
 
 .spacer-20px {height: 20px;}
+.spacer-50px {height: 50px;}
 
 .text-clr-1 {color: $color-1;}
 .text-clr-2 {color: $color-2;}
@@ -482,7 +483,7 @@ strong, em {font-weight: 700;}
 	.capabilityLink {
 		display: block;
 		font-weight: 700;
-		font-size: .85em;
+		font-size: .75em;
 		font-style: normal;
 		text-align: center;
 		color: $color-6;
@@ -772,7 +773,7 @@ textarea {
 			.modalBtn-box {height: 418px;}
 		}
 	}
-	strong, em {font-weight: 500;}
+	// strong, em {font-weight: 500;}
 	// Next button
 	.goto-next {
 		width: 2.75em;
