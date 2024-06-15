@@ -1,29 +1,40 @@
-I"Y	<div class="container">
+I"
+<div class="container">
 	<div class="row">
 		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
 			
 <!-- Start DEMO REEL content -->
+<section id="banner">
+	<div id="bannerTitle"></div>
+</section>
 <section id="demoReel" class="content-block">
 	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
 					<div class="text-center">
-						<h2>Demo Reel</h2>						
+						<h2>Saving for Retirment Best Practice video series</h2>						
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>This video series is highlights the importance of saving for retirment, in the voices and from the perspective of plan participants.</h4>
 					</div>
 				</div>
             </div>
 			<div class="row">
 				<div class="col-12">
 					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="DEMO REEL"></iframe>
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552024634?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="BEST_PRACTICE_MASTER_v1_(Source)"></iframe>
 					</div>
 					<div class="player-caption">Demo Reel (01:20)</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
-					<p>This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work in filming, editing, and motion graphics, while emphasizing the broad range of production types that I’ve contributed to.</p>
+					<p>This video series is highlights the importance of saving for retirment, in the voices and from the perspective of plan participants.</p>
 				</div>
 			</div>
 			<div class="row">

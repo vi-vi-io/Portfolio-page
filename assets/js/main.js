@@ -166,8 +166,8 @@ $(function(){
 		options = {
 			mode: 'middle',
 			delay: 0,
-			top: '-15vh',
-			bottom: '-15vh'
+			top: '-25vh',
+			bottom: '-25vh'
 		};
 
 		$bg
