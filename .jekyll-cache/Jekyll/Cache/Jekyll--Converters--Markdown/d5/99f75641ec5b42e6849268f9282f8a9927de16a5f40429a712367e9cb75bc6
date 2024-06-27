@@ -1,4 +1,4 @@
-I"Â<div class="container">
+I"¸<div class="container">
 	<div class="row">
 		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
 			
@@ -6,7 +6,7 @@
 <section id="banner">
 	<div id="bannerTitle"></div>
 </section>
-<section id="demoReel" class="content-block">
+<section class="content-block">
 	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
 		<div class="container-fluid">
 			<div class="row">
@@ -29,7 +29,7 @@
 					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552024634?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="BEST_PRACTICE_MASTER_v1_(Source)"></iframe>
 					</div>
-					<div class="player-caption">Demo Reel (03:15)</div>
+					<div class="player-caption">Series pilot (03:15)</div>
 				</div>
 			</div>
 			<div class="row">
@@ -43,7 +43,7 @@
 					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
 						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552023370?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="JoCo VIGNETTE Zack - MB looks 3"></iframe>
 					</div>
-					<div class="player-caption">Zack Davis vignette (01:21)</div>
+					<div class="player-caption">Zack vignette (01:21)</div>
 				</div>
 			</div>
 			<div class="row">
@@ -55,9 +55,9 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552024634?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="BEST_PRACTICE_MASTER_v1_(Source)"></iframe>
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552022858?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="JoCo_VIGNETTE_Kari_Ann_(Source)"></iframe>
 					</div>
-					<div class="player-caption">Demo Reel (01:20)</div>
+					<div class="player-caption">Kari Ann vignette (01:08)</div>
 				</div>
 			</div>
 			<div class="row">

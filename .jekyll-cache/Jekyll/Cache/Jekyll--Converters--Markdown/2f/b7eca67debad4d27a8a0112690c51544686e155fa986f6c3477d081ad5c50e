@@ -1,0 +1,66 @@
+I"ÿ	<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
+<!-- Start INSTINCTIVE BIRTH BRAND content -->
+<section id="banner">
+	<div id="bannerTitle"></div>
+</section>
+<section id="demoReel" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Instinctive Birth brand</h2>						
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>This video series is highlights the importance of saving for retirment, in the voices and from the perspective of plan participants.</h4>
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-12 col-lg-6">
+					<div>
+						<img src="assets/images/iBirth-logotype-normAndRev.png" alt="Instictive Birth brand logotype, displaying normal and reverse versions" />
+					</div>
+				</div>
+				<div class="col-12 col-lg-6">
+					<div>
+						<img src="assets/images/iBirth-logo-normAndRev.png" alt="Normal and reverse versions of the Instictive Birth brand logo, featuring the silhouette of a pregnant figure, superimposed on a lowercase letter i" />
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Public TV Series GFX Package</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books" /></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Bus Map Concept GFX</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="Bus map concept graphics thumbnail showing abstract graphics that look like lines on a city bus map" /></a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section><!-- End INSTINCTIVE BIRTH BRAND content -->
+		</div>
+	</div>
+</div>
+:ET
