@@ -34,10 +34,10 @@ html {
 					font-weight: 300;
 				}
 				h4 {
-					font-weight: 700;
+					font-weight: 500;
 					font-size: .9em;
 					margin: 40px auto 10px;
-					text-transform: uppercase;
+					// text-transform: uppercase;
 				}
 				p {
 					font-size: .85em;
@@ -143,6 +143,7 @@ html {
 strong, em {font-weight: 700;}
 
 .spacer-20px {height: 20px;}
+.spacer-30px {height: 30px;}
 .spacer-50px {height: 50px;}
 
 .text-clr-1 {color: $color-1;}
