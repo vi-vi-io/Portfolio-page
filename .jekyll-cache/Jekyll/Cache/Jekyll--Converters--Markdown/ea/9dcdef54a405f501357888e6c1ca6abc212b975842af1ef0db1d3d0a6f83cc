@@ -1,78 +1,39 @@
-I"è<div class="container">
+I"ô<div class="container">
 	<div class="row">
 		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
 			
-<!-- Start INSTINCTIVE BIRTH BRAND content -->
+<!-- Start Strategy & Planning content -->
 <section id="banner">
 	<div id="bannerTitle"></div>
 </section>
-<section class="content-block">
+<section id="strategy" class="content-block">
 	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
 					<div class="text-center">
-						<h2>Instinctive Birth brand</h2>						
+						<h2>Strategy &amp; Planning</h2>
 					</div>
 				</div>
             </div>
 			<div class="row whiteBox">
 				<div class="col-12 col-sm-10 offset-sm-1">
 					<div class="text-center">
-						<h4>A compelling and cohesive brand identity for a company dedicated to empowering women, through the philosophy of natural childbirth and the techniques that enable a satisfying, relaxing, and safe birth experience.</h4>
+						<h4>At the heart of any successful project is a great idea and a deliberate strategy.</h4>
 					</div>
 				</div>
             </div>
 			<div class="row">
-				<div class="col-12 col-lg-6">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-logotype-normAndRev.png" alt="Instictive Birth brand logotype, displaying normal and reverse versions" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-logo-normAndRev.png" alt="Normal and reverse versions of the Instictive Birth brand logo, featuring the silhouette of a pregnant figure, superimposed on a lowercase letter i" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12">
-					<p>Crafting a cohesive brand identity for Instinctive Birth required me to delve into the emotional and psychological aspects of the target audience, ensuring that every visual and textual element resonated with the themes of empowerment, natural harmony, calm, and support. Overall, the process of building the brand guidelines for Instinctive Birth has been an enriching experience that honed my skills in creating a holistic and impactful brand identity. It underscored the importance of a thoughtful and strategic approach to design, where every detail contributes to a compelling and cohesive brand story.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-lg-3">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-portMobile.jpg" alt="Website screenshot as displayed on a mobile device in portrait orientation" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-9">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-smDesktop.jpg" alt="Website screenshot as displayed on a typical desktop or laptop screen" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-lg-6">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-colorGuide.png" alt="" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-				<div class="col-12 col-lg-6">
-					<div>
-						<img class="img-fluid" src="assets/images/iBirth-typeGuide.png" alt="A style guide page showing the brand fonts Open Sans and Merriweather" />
-						<div class="spacer-30px"></div>
-					</div>
-				</div>
-			</div>			
-			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
-					<p></p>
+					<p>As a skilled story-boarder, I can help you bring your ideas to life visually. But it's not just about the visuals. Strategy is key to ensuring that your video achieves its intended purpose. That's why I work closely with clients to understand their goals, so we can develop a strategy that aligns with their brand and message.</p>
+					<p>Once we have a solid plan in place, the script becomes the backbone of the video production process. Developed with years of experience on-set and in post, I have a grasp of what "works" for video. This fundamental understanding will help us craft a script that its not only engaging, but also informative, ensuring that your message comes across loud and clear.</p>
+					<!-- <p><strong>SAMPLE STORYBOARD:</strong></p> -->
+				</div>
+			</div>
+			<!-- <img class="img-fluid img-full-width" src="./assets/images/strategy_storyboardEx.jpg" alt=""> -->
+			<div class="row no-gutters g-0">
+				<div class="col-12">
+					
 				</div>
 			</div>
 			<div id="capabilities" class="row whiteBox">
@@ -123,7 +84,7 @@
 </div>
         </div>
     </div>
-</section><!-- End INSTINCTIVE BIRTH BRAND content -->
+</section><!-- End Strategy & Planning content -->
 		</div>
 	</div>
 </div>
