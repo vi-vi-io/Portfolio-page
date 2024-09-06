@@ -1,4 +1,7 @@
-<!-- Start Public TV Series GFX package content -->
+I"›<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			<!-- Start Public TV Series GFX package content -->
 <section id="banner">
 	<div id="bannerTitle"></div>
 </section>
@@ -15,7 +18,7 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="modal-player-box embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/811459668?h=040edd20d6&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;" title="GFX package - Public TV Series"></iframe>
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/811459668?h=040edd20d6&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen" allowfullscreen="" style="width:100%;height:100%;" title="GFX package - Public TV Series"></iframe>
 					</div>
 					<div class="player-caption">The Register's Report GFX package (00:47)</div>
 				</div>
@@ -66,7 +69,56 @@
 					</div>
 				</div>
 			</div> -->
-			{% include capabilities.html %}
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./digital" class="capabilityLink" id="#capability_7">Digital Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </section><!-- End DEMO REEL content -->
+		</div>
+	</div>
+</div>
+:ET

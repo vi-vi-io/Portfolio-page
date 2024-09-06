@@ -1,0 +1,101 @@
+I"d<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
+<!-- Start DEMO REEL content -->
+<section id="banner">
+	<div id="bannerTitle"></div>
+</section>
+<section id="demoReel" class="content-block">
+	<div class="valign">
+		<span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Demo Reel</h2>						
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="col-12">
+					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/549096543?h=a249ab683c&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="DEMO REEL"></iframe>
+					</div>
+					<div class="player-caption">Demo Reel (01:20)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work in filming, editing, and motion graphics, while emphasizing the broad range of production types that I’ve contributed to.</p>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Public TV Series GFX Package</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books"></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Bus Map Concept GFX</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="Bus map concept graphics thumbnail showing abstract graphics that look like lines on a city bus map"></a>
+					</div>
+				</div>
+			</div> -->
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./digital" class="capabilityLink" id="#capability_7">Digital Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</section><!-- End DEMO REEL content -->
+		</div>
+	</div>
+</div>
+:ET
