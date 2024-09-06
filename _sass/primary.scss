@@ -1,7 +1,7 @@
 html {
 	body {
 		font-family: $font;
-		font-size: 17px;
+		font-size: 15px;
 		color: $color-2;
 		font-weight: 500;
 		margin: 0;
@@ -40,8 +40,8 @@ html {
 					// text-transform: uppercase;
 				}
 				p {
-					font-size: .85em;
-					line-height: 1.75em;
+					font-size: .75em;
+					line-height: 2em;
 				}
 				p span.para-intro {
 					font-style: italic;
@@ -79,11 +79,12 @@ html {
 				.whiteBox {
 					margin-top: 10px;
 					margin-bottom: 25px;
+					a {color: $color-6;}
 					h3 {color: $color-2;}
-					h4{
+					h4 {
 						color: $color-2;
 						margin: 10px auto;
-						font-size: 1.15em;
+						font-size: 1em;
 						strong {font-style: italic;}
 					}
 					hr {border-top: 1px solid rgba($color-2, .75);}
@@ -139,6 +140,17 @@ html {
 // Misc formatting
 
 .clearer {clear: both;}
+
+.no-gutters {
+	margin-right: 0;
+	margin-left: 0;
+  
+	> .col,
+	> [class*="col-"] {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
 
 strong, em {font-weight: 700;}
 
@@ -698,6 +710,11 @@ textarea {
 	position:relative;
 	border: 1px solid rgba($color-5, .75);
 	border-radius: 4px;
+}
+.devicesImg {
+	width: calc(100% + 60px);
+	margin-left: -30px;
+	margin-top: -15px;
 }
 
 #kit {
