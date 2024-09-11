@@ -1,0 +1,87 @@
+I"•<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
+<!-- Start Retirement Best Practice video series content -->
+<section class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h2>Saving for Retirment Best Practice video series</h2>						
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>This video series is highlights the importance of saving for retirment, in the voices and from the perspective of plan participants.</h4>
+					</div>
+				</div>
+            </div>
+			<!-- Primary video -->
+			<div class="row">
+				<div class="col-12">
+					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552024634?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="BEST_PRACTICE_MASTER_v1_(Source)"></iframe>
+					</div>
+					<div class="player-caption">Series pilot (03:15)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p>This video series is highlights the importance of saving for retirment, in the voices and from the perspective of plan participants.</p>
+				</div>
+			</div>
+			<!-- vignette one -->
+			<div class="row">
+				<div class="col-12">
+					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552023370?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="JoCo VIGNETTE Zack - MB looks 3"></iframe>
+					</div>
+					<div class="player-caption">Zack vignette (01:21)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p></p>
+				</div>
+			</div>
+			<!-- vignette two -->
+			<div class="row">
+				<div class="col-12">
+					<div class="worksub-player-box embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/552022858?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="" style="width:100%;height:100%;" title="JoCo_VIGNETTE_Kari_Ann_(Source)"></iframe>
+					</div>
+					<div class="player-caption">Kari Ann vignette (01:08)</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<p></p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Public TV Series GFX Package</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./publictv_gfx"><img src="assets/images/workThumb_publictv_gfx.jpg" alt="Public TV graphics package thumbnail showing The Register's Report show title super emposed over a shelf full of books" /></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-10 offset-sm-1 col-xl-6 offset-xl-0">
+					<h4>Bus Map Concept GFX</h4>
+					<div class="modalBtn-box">
+						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
+						<a href="./busmap"><img src="assets/images/workThumb_busmap.jpg" alt="Bus map concept graphics thumbnail showing abstract graphics that look like lines on a city bus map" /></a>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</section><!-- End DEMO REEL content -->
+		</div>
+	</div>
+</div>
+:ET

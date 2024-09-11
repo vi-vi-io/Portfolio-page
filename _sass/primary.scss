@@ -13,13 +13,13 @@ html {
 			border-radius: 4px;
 			margin-top: -90px;
 			padding-top: 90px;
+			.content-block:not(:first-child) {border-top: 1px solid rgba($color-1, .75);}
 			.content-block {
 				display: block;
 				position: relative;
-				margin-top: 20px;
+				// margin-top: 20px;
 				padding: 100px 0;
 				// min-height: calc(100vh - 310px);
-				border-top: 1px solid rgba($color-1, .75);
 				// & > .valign {min-height: calc(100vh - 310px);}
 				.image.primary {display: none;}
 				h2 {
@@ -331,13 +331,19 @@ strong, em {font-weight: 700;}
 	display: block;
 	position: relative;
 	height: 100vh;
+	.row {height: 100vh;}
 }
 .banner-title {
 	background-color: rgba($color-2, .75);
 	display: inline-block;
     border-radius: 4px;
 	padding: 20px 30px;
-	margin-top: 15%;
+	position: absolute;
+	bottom: 120px;
+	left: 0;
+	width: 100%;
+	margin: 0 0%;
+	// margin-top: 50%;
 	text-align: center;
 	h3 {
 	   text-transform: uppercase;
@@ -421,36 +427,7 @@ strong, em {font-weight: 700;}
 	}
 	h4 {color: $color-4;}
 	em {font-weight: 500;}
-	.clientsBox { //  https://css-tricks.com/infinite-all-css-scrolling-slideshow/
-		background-color: rgba(white, .5);
-		width: calc(100% + 60px);
-		margin-left: -30px;
-		margin-top: 30px;
-		padding-bottom: 30px;
-		// h3 {margin-top: 30px;}
-		.slideshow {
-			position: relative;
-			overflow: hidden;
-			height: 50px;
-			width: calc(100% + 30px);
-			margin-left: -15px;
-			// border-bottom: 1px solid $color-2;
-			.slideImages {
-				background: url(../images/logosBanner.png);
-				position: absolute;
-				left: 0;
-				top: 0;
-				height: 100%;
-				width: 800%;
-				animation: slideshow 30s linear infinite;
-			}
-		}
-		// .goto-next {}
-	}
-	@keyframes slideshow {
-	  0%    { left: 0; }
-	  100%  { left: -644.5%; }
-	}
+	
 	.modalBtn-box {height: 150px;}
 }
 
@@ -483,13 +460,32 @@ strong, em {font-weight: 700;}
 				width: 105%;
 				height: 105%;
 				margin: -2.5%;
-				-webkit-filter: blur(3px);
-				filter: blur(3px);
+				-webkit-filter: blur(5px);
+				filter: blur(5px);
 			}
 		}
+		
 		// img.right {
 		// 	float: right;
 		// }
+	}
+	a:hover + .modalBtn-label {opacity: 1;}
+	.modalBtn-label {
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		position: absolute;
+		opacity: 0;
+		z-index: 10;
+		font-size: 1.25em;
+		font-weight: 900;
+		padding: 5px 10px;
+		text-align: right;
+		border-radius: 4px;
+		top: 5px;
+		right: 5px;
+		background-color: rgba($color-6, .7);
+		border: 1px solid rgba($color-4, .5);
+		max-width: 75%;
 	}
 	.link-icon {
 		background-color: rgba($color-6, .7);
@@ -704,6 +700,36 @@ textarea {
 	}
 }
 
+//INFINITE SCROLLING SLIDESHOW
+.clientsBox { //  https://css-tricks.com/infinite-all-css-scrolling-slideshow/
+	background-color: rgba(white, .5);
+	width: calc(100% + 60px);
+	margin-left: -30px;
+	margin-top: 30px;
+	padding-bottom: 30px;
+	.slideshow {
+		position: relative;
+		overflow: hidden;
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		// border-bottom: 1px solid $color-2;
+		.slideImages {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+			width: 800%;
+			animation: slideshow 30s linear infinite;
+		}
+		.logoImages {background: url(../images/logosBanner.png);}
+	}
+}
+#work .clientsBox .slideshow {height: 50px;}
+@keyframes slideshow {
+  0%    { left: 0; }
+  100%  { left: -644.5%; }
+}
+
 //WORKSUB LAYOUT
 .worksub-player-box {
 	// padding:0;
@@ -728,6 +754,8 @@ textarea {
 		font-weight: 700;
 	}
 }
+
+// MEDIA QUERIES
 
 @media (orientation: landscape) {}
 @media (orientation: portrait) {}
@@ -883,6 +911,12 @@ textarea {
 		margin-left: -1.5em;
 	}
 	//BANNER
+	.banner-title {
+		bottom: 120px;
+		left: 0;
+		width: 90%;
+		margin: 0 5%;
+	}
 	.banner {
 		h1 {font-size: 3.5em;}
 		h3 {font-size: 1.4em;}
@@ -929,6 +963,12 @@ textarea {
 		margin-left: -1.75em;
 	}
 	//BANNER
+	.banner-title {
+		bottom: 120px;
+		left: 0;
+		width: 80%;
+		margin: 0 10%;
+	}
 	.banner {
 		h1 {font-size: 4em;}
 		h3 {font-size: 1.6em;}
