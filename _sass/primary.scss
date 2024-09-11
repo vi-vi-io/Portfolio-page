@@ -1,7 +1,7 @@
 html {
 	body {
 		font-family: $font;
-		font-size: 15px;
+		font-size: 18px;
 		color: $color-2;
 		font-weight: 500;
 		margin: 0;
@@ -478,7 +478,7 @@ strong, em {font-weight: 700;}
 		z-index: 10;
 		font-size: 1.25em;
 		font-weight: 900;
-		padding: 5px 10px;
+		padding: 0px 5px;
 		text-align: right;
 		border-radius: 4px;
 		top: 5px;
@@ -502,6 +502,7 @@ strong, em {font-weight: 700;}
 		svg {display: block;}
 	}
 }
+.modalBtn-exLabel {display: none;}
 #capabilitiesLinks {
 	.capabilityLink {
 		display: block;
@@ -755,14 +756,20 @@ textarea {
 	}
 }
 
+//**************************************************
 // MEDIA QUERIES
-
+//**************************************************
 @media (orientation: landscape) {}
 @media (orientation: portrait) {}
 
+//target touch screens
+@media (hover: none) {
+	.modalBtn-exLabel{display: inline;}
+}
+
 // tiny!!!
 @media only screen and (min-width: 370px) {
-	html body { 
+	html body {
 		.dark-content-box {
 			.modalBtn-box {height: 275px;}
 		}
@@ -780,7 +787,7 @@ textarea {
 @media only screen and (min-width: 576px) {
 	
 	html body { 
-		font-size: 17px;
+		font-size: 19px;
 		.content-box {
 			margin-top: -100px;
 			padding-top: 100px;
@@ -964,7 +971,7 @@ textarea {
 	}
 	//BANNER
 	.banner-title {
-		bottom: 120px;
+		bottom: 150px;
 		left: 0;
 		width: 80%;
 		margin: 0 10%;
