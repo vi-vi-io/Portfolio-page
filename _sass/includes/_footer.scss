@@ -1,15 +1,16 @@
 footer {
 	height: calc(100vh - 22px);
 	strong {font-weight: 700;}
-	.banner-title {
+	.footer-box {
+		padding: 30px 30px 10px;
 		background-color: rgba($color-2, .75);
 		color: $color-4;
 		a {color: $color-3;}
 	}
-	.social-links a img {
-		height:50px;
-		margin: 5px 0 0 0;
-	}
+	// .social-links a img {
+	// 	height:50px;
+	// 	margin: 5px 0 0 0;
+	// }
 }
 
 
