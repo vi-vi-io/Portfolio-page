@@ -1,7 +1,7 @@
 html {
 	body {
 		font-family: $font;
-		font-size: 18px;
+		font-size: 22px;
 		color: $color-2;
 		font-weight: 500;
 		margin: 0;
@@ -803,7 +803,7 @@ textarea {
 @media only screen and (min-width: 576px) {
 	
 	html body { 
-		font-size: 19px;
+		font-size: 20px;
 		.content-box {
 			margin-top: -100px;
 			padding-top: 100px;
@@ -821,7 +821,7 @@ textarea {
 	//BANNER
 	.banner {
 		h1 {font-size: 2.25em;}
-		h3 {font-size: .9em;}
+		h3 {font-size: .8em;}
 	}
 	#subheader {
 		.banner-title {
@@ -850,7 +850,7 @@ textarea {
 @media only screen and (min-width: 768px) {
 	
 	html body { 
-		font-size: 16px;
+		font-size: 18px;
 		// font-weight: 300;
 		.content-box {
 			margin-top: -110px;
@@ -870,7 +870,7 @@ textarea {
 	//BANNER
 	.banner {
 		h1 {font-size: 3em;}
-		h3 {font-size: 1.2em;}
+		h3 {font-size: 1.1em;}
 	}
 	#subheader {
 		.banner-title {
@@ -920,7 +920,7 @@ textarea {
 // BOOTSTRAP LARGE
 @media only screen and (min-width: 992px) {
 	html body { 
-		font-size: 17px;
+		font-size: 19px;
 		.content-box {
 			margin-top: -120px;
 			padding-top: 120px;
@@ -944,7 +944,7 @@ textarea {
 	}
 	.banner {
 		h1 {font-size: 3.5em;}
-		h3 {font-size: 1.4em;}
+		h3 {font-size: 1.3em;}
 	}
 	#subheader {
 		.banner-title {
@@ -972,7 +972,7 @@ textarea {
 // BOOTSTRAP x-LARGE
 @media only screen and (min-width: 1200px) {
 	html body {
-		font-size: 18px;
+		font-size: 20px;
 		.content-box {
 			margin-top: -120px;
 			padding-top: 120px;
@@ -996,7 +996,7 @@ textarea {
 	}
 	.banner {
 		h1 {font-size: 4em;}
-		h3 {font-size: 1.6em;}
+		h3 {font-size: 1.4em;}
 	}
 	// WORK
 	#work {
