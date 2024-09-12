@@ -411,6 +411,12 @@ strong, em {font-weight: 700;}
 		border: 1px solid rgba($color-2, .5);
 		margin: 10px 0 0px 20px;
 	}
+	h1 {
+		font-weight: 100;
+		font-style: italic;
+		color: $color-2;
+		font-size: 1.5em;
+	}
 	h4 {
 		color: $color-3;
 		font-family: $font-display;
