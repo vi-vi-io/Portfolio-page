@@ -490,22 +490,23 @@ strong, em {font-weight: 700;}
 		position: absolute;
 		opacity: 0;
 		z-index: 10;
+		color: $color-2;
 		font-size: 1em;
-		font-weight: 300;
+		font-weight: 500;
 		padding: 0px 5px;
 		text-align: center;
 		// border-radius: 4px;
 		top: calc(50% - 15px);
 		// right: 5px;
-		background-color: rgba($color-6, .7);
-		border-top: 1px solid rgba($color-4, .5);
-		border-bottom: 1px solid rgba($color-4, .5);
+		background-color: rgba($color-3, 1);
+		border-top: 1px solid rgba($color-2, 1);
+		border-bottom: 1px solid rgba($color-2, 1);
 		width: 100%;
 		pointer-events: none;
 	}
 	.link-icon {
-		background-color: rgba($color-6, .7);
-		border: 1px solid rgba($color-4, .5);
+		background-color: rgba($color-3, 1);
+		border: 1px solid rgba($color-2, 1);
 		padding: 5px;
 		border-radius: 4px;
 		position: absolute;
@@ -513,7 +514,7 @@ strong, em {font-weight: 700;}
 		font-size: 2em;
 		bottom: 5px;
 		left: 5px;
-		color: rgba($color-4, .5);
+		color: rgba($color-2, 1);
 		// text-shadow: 0 0 10px $color-3;
 		svg {display: block;}
 		pointer-events: none;
@@ -782,7 +783,7 @@ textarea {
 //target touch screens
 @media (hover: none) {
 	.modalBtn-container {
-		border-top: 1px solid $color-4;
+		border-top: 1px solid rgba($color-1, .5);
 		margin-top: 15px;
 		padding-top: 5px;
 	}
