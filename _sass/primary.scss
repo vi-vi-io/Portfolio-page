@@ -181,6 +181,7 @@ strong, em {font-weight: 700;}
 	padding: 6px 20px 3px;
 	margin: 20px auto;
     border-radius: 60px;
+	border: 1px solid $color-1;
     display: block;
     background-color: $color-3;
     color: $color-2;
@@ -197,7 +198,9 @@ strong, em {font-weight: 700;}
 	&:hover {
 		transform: translateY(1px);
 		transform: scale(1.1,1.1);
-		// background-color: $color-3;
+		background-color: $color-1;
+		border: 1px solid $color-3;
+		color: $color-3;
 		box-shadow: 0 1px 1px 0 rgba($color-5, 0.10),
 				0 1px 1px 0 rgba($color-5, 0.09);
 		-webkit-transition: all 500ms ease;
@@ -227,12 +230,12 @@ strong, em {font-weight: 700;}
 // Next button
 .goto-next, .goto-home {
 	background-color: $color-3;
+	border: 1px solid $color-1;
 	background-image: url('../images/arrow.svg');
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 50%;
 	border-radius: 100%;
-	border: 0;
 	bottom: 40px;
 	display: block;
 	width: 2em;
@@ -247,9 +250,12 @@ strong, em {font-weight: 700;}
 	white-space: nowrap;
 	transition-duration: .5s;
 	&:hover {
-		// background-color: $color-3;
+		// background-image-color: $color-3;
 		transform: scale(1.1,1.1);
 		transition-duration: .3s;
+		background-color: $color-1;
+		border: 1px solid $color-3;
+		color: $color-3;
 	}
 }
 .goto-home {
@@ -415,7 +421,8 @@ strong, em {font-weight: 700;}
 		font-weight: 100;
 		font-style: italic;
 		color: $color-2;
-		font-size: 1.5em;
+		font-size: 1.25em;
+		font-family: $font;
 	}
 	h4 {
 		color: $color-3;
@@ -871,6 +878,8 @@ textarea {
 			h1 {font-size: 2em;}
 		}
 	}
+	// About
+	#about {h1 {font-size: 1.5em;}}
 	// WORK
 	#work {
 		// .slideshow {
