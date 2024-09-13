@@ -1,27 +1,30 @@
-.social-links {
-  a {
-    // display: inline-block;
-    margin: 0;
-    text-decoration: none;
-    padding: 0;
-    color: $color-6;
-    transition-duration: .3s;
-    font-size: .6em;
-    &:hover {
-      // color: $color-3;
-      transform: scale(1.1,1.1);
-      cursor: pointer;
+#social {
+  .social-links {
+    a {
+      // display: inline-block;
+      margin: 0;
+      text-decoration: none;
+      padding: 0;
+      color: $color-3;
       transition-duration: .3s;
-    }
-    img {
-      margin: 5px 0 0 0;
-      height: 35px;
-      transition-duration: .3s;
+      font-size: .6em;
       &:hover {
-        // opacity: 0.5;
-        // transform: scale(1.1,1.1);
+        color: $color-4;
+        transform: scale(1.1,1.1);
         cursor: pointer;
         transition-duration: .3s;
+      }
+      img {
+        margin: 5px 0 0 0;
+        height: 35px;
+        transition-duration: .3s;
+        &:hover {
+          // opacity: 0.5;
+          // transform: scale(1.1,1.1);
+          filter: brightness(2) saturate(0);
+          cursor: pointer;
+          transition-duration: .3s;
+        }
       }
     }
   }
@@ -31,18 +34,22 @@
 @media (orientation: portrait) {}
 
 @media only screen and (min-width: 576px) {
-  .social-links {
-    a {
-      font-size: .85em;
-      img {height: 45px;}
+  #social {
+    .social-links {
+      a {
+        font-size: .85em;
+        img {height: 45px;}
+      }
     }
   }
 }
 @media only screen and (min-width: 768px) {
-  .social-links {
-    a {
-      font-size: 1.1em;
-      img {height: 55px;}
+  #social {
+    .social-links {
+      a {
+        font-size: 1.1em;
+        img {height: 55px;}
+      }
     }
   }
 }

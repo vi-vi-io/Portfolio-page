@@ -13,7 +13,7 @@ html {
 			border-radius: 4px;
 			margin-top: -90px;
 			padding-top: 90px;
-			.content-block:not(:first-child) {border-top: 1px solid rgba($color-1, .75);}
+			.content-block:not(:first-child) {border-top: 1px solid rgba($color-1, .5);}
 			.content-block {
 				display: block;
 				position: relative;
@@ -25,10 +25,12 @@ html {
 				h2 {
 					font-weight: 700;
 					font-size: 2em;
+					color: rgba($color-1, .5);
 					text-transform: uppercase;
 				}
 				h3 {
-					font-size: 1.5em; 
+					font-size: 1.5em;
+					color: rgba($color-1, .5);
 					margin: 40px auto 10px;
 					text-align: center;
 					font-weight: 300;
@@ -66,7 +68,7 @@ html {
 			}
 		}
 		.dark-content-box {
-			background-color: rgba($color-2, .75);
+			background-color: rgba($color-2, .9);
 			border-radius: 4px;
 			margin-top: 90px;
 			padding-top: 0px;
@@ -97,7 +99,10 @@ html {
 						}
 					}
 				}
-				a {color: $color-3;}
+				a {
+					color: $color-3;
+					// &:hover { color: $color-1; }
+				}
 				.img-full-width {
 					margin: 0 0 20px;
 				}				
@@ -314,7 +319,7 @@ strong, em {font-weight: 700;}
 				&:hover {
 					color: $color-3;
 				}
-			}
+			}			
 		}
 		.nav-item.active {color: $color-4;}
 		.dropdown {
@@ -331,6 +336,37 @@ strong, em {font-weight: 700;}
 		}
 	}
 }
+
+//Google Custom Search
+div.gsc-control-cse.gsc-control-cse-en {
+	background-color: rgba($color-1, 0);
+	border: none;
+	padding: 0;
+	.gsc-input-box {
+		background-color: rgba($color-1, 0);
+		border: none;
+		input {
+			background-color: rgba($color-1, .25);
+			border: solid 1px $color-3 !important;
+			color: $color-4;
+			padding: 5px 10px !important;
+		}
+		a.gsst_a { display: none; }
+	}
+	.gsc-input { padding: 0; }
+	button.gsc-search-button.gsc-search-button-v2 { 
+		padding: 6px !important;
+		background-color: rgba($color-3, 1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		&:hover { 
+			background-color: rgba($color-4, 1);
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+	}
+}
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gcsc-more-maybe-branding-root > a > div {display: none;}
 
 // BANNER
 .banner {
@@ -769,7 +805,7 @@ textarea {
 		margin: 30px auto;
 	}
 	em {
-		color: lighten($color-2, 20%);
+		color: $color-3;
 		font-weight: 700;
 	}
 }

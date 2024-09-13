@@ -38,8 +38,11 @@ $(document).ready(function () {
 		}}
 	
 	window.addEventListener('scroll', scrollHandler);
+	
+	$('#gsc-i-id1').attr('placeholder', 'Search...');
 
 });  // END document.ready
+
 
 // Disable animations/transitions until the page has loaded.
 var $html = $("html");
