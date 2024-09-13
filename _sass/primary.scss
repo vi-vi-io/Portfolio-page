@@ -351,6 +351,13 @@ div.gsc-control-cse.gsc-control-cse-en {
 			color: $color-4;
 			padding: 5px 10px !important;
 		}
+		::placeholder {
+			color: $color-3;
+			opacity: 1; /* Firefox */
+		  }
+		::-ms-input-placeholder { /* Edge 12 -18 */
+			color: $color-3;
+		  }
 		a.gsst_a { display: none; }
 	}
 	.gsc-input { padding: 0; }
@@ -367,6 +374,7 @@ div.gsc-control-cse.gsc-control-cse-en {
 	}
 }
 #___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gcsc-more-maybe-branding-root > a > div {display: none;}
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gcsc-find-more-on-google-root > div {display: none;}
 
 // BANNER
 .banner {
