@@ -1,0 +1,37 @@
+// ABOUT
+#about {
+	img {
+		width: 100%;
+		// height: auto;
+		// float: right;
+		border-radius: 4px;
+		border: 1px solid rgba($color-2, .5);
+		margin: 0 0 20px;
+	}
+	h1 {
+		font-weight: 300;
+		font-style: italic;
+		color: $color-2;
+		font-size: 1.25em;
+		font-family: $font;
+	}
+	h4 {
+		color: $color-3;
+		font-family: $font-display;
+		font-size: 1.4em;
+	}
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+// BOOTSTRAP SMALL
+@media only screen and (min-width: 576px) {}
+// BOOTSTRAP MEDIUM
+@media only screen and (min-width: 768px) {
+    #about {h1 {font-size: 1.5em;}}
+}
+// BOOTSTRAP LARGE
+@media only screen and (min-width: 922px) {}
+// BOOTSTRAP X-LARGE
+@media only screen and (min-width: 1200px) {}

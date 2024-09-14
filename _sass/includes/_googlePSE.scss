@@ -1,0 +1,62 @@
+//Google Custom Search
+div.gsc-control-cse.gsc-control-cse-en {
+	background-color: rgba($color-1, 0);
+	border: none;
+	padding: 0;
+	.gsc-input-box {
+		background-color: rgba($color-1, 0);
+		border: none;
+		input {
+			background-color: rgba($color-1, .25);
+			border: solid 1px $color-3 !important;
+			color: $color-4;
+			padding: 5px 10px !important;
+		}
+		::placeholder {
+			color: $color-3;
+			opacity: 1; /* Firefox */
+		  }
+		::-ms-input-placeholder { /* Edge 12 -18 */
+			color: $color-3;
+		  }
+		a.gsst_a { display: none; }
+	}
+	.gsc-input { padding: 0; }
+	button.gsc-search-button.gsc-search-button-v2 { 
+		padding: 6px !important;
+		background-color: rgba($color-3, 1);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		&:hover { 
+			background-color: rgba($color-4, 1);
+			-webkit-transition: .3s ease-in-out;
+			transition: .3s ease-in-out;
+		}
+	}
+}
+// remove "search on Google" button from results
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gcsc-more-maybe-branding-root > a > div {display: none;}
+// remove "search on Google" button from results - -mobile
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gcsc-find-more-on-google-root > div {display: none;}
+// modal background overlay
+#___gcse_0 > div > div > div.gsc-modal-background-image.gsc-modal-background-image-visible { background-color: rgba($color-1, 1); }
+// modal box results
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible { background-color: rgba($color-2, .75); }
+
+#resInfo-0 {color: $color-1;}
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-above-wrapper-area > table > tbody > tr > td.gsc-orderby-container > div > div.gsc-orderby-label.gsc-inline-block {color: $color-1;}
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-results-close-btn.gsc-results-close-btn-visible { color: $color-3 !important; }
+// result container
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gsc-expansionArea > div { 
+	background-color: rgba($color-1, 0);
+	border: none;
+}
+// result title and link
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gsc-expansionArea > div > div > div.gsc-thumbnail-inside > div > a { color: $color-3; }
+// result path
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gsc-expansionArea > div > div > div.gsc-url-top > div.gs-bidi-start-align.gs-visibleUrl.gs-visibleUrl-breadcrumb > span { 
+	color: $color-1;
+	font-weight: 700;
+}
+// result snippet
+#___gcse_0 > div > div > div.gsc-results-wrapper-overlay.gsc-results-wrapper-visible > div.gsc-wrapper > div.gsc-resultsbox-visible > div > div > div.gsc-expansionArea > div > div > div.gsc-table-result > div > div.gs-bidi-start-align.gs-snippet { color: $color-4; }

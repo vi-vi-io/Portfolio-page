@@ -1,0 +1,123 @@
+// CONTACT
+
+/* ///// inputs /////*/
+
+#contactForm { overflow: hidden; }
+
+input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+    font-size: 0.65em;
+    color: $color-4;
+    top: 2px;
+    -webkit-transition: all 0.225s ease;
+    transition: all 0.225s ease;
+}
+
+.styled-input {
+    float: left;
+    width: 100%;
+    margin: .5rem 0;
+    position: relative;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px){
+    .styled-input {
+        width:100%;
+    }
+}
+
+.styled-input label {
+    color: #aaa;
+    padding: 0 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    pointer-events: none;
+}
+
+.styled-input.wide { 
+    width: 100%;
+    max-width: 100%;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    font-size: 1rem;
+    background-color: rgba($color-2, .75);
+    color: $color-4;
+    border-radius: 4px;
+}
+
+// input:focus,
+// textarea:focus { outline: 0; }
+
+input:focus ~ span,
+textarea:focus ~ span {
+    width: 100%;
+    -webkit-transition: all 0.075s ease;
+    transition: all 0.075s ease;
+}
+
+textarea {
+    width: 100%;
+    min-height: 8em;
+}
+
+.input-container {
+    max-width: 100%;
+    margin: 20px auto 25px auto;
+}
+
+#postSent, #postError {
+	height: 0;
+	width: 100%;
+	overflow: hidden;
+    background-color: rgba($color-2, .75);
+	color: $color-4;
+    border-radius: 4px;
+	padding: 0px 40px;
+	h4 {
+		width: 100%;
+		font-weight: 700;
+		font-size: 2em;
+	}
+	hr { 
+		border-top: 1px solid $color-1;
+		width: 40%;
+		margin: 25px auto;
+	}
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+// BOOTSTRAP SMALL
+@media only screen and (min-width: 576px) {}
+// BOOTSTRAP MEDIUM
+@media only screen and (min-width: 768px) {
+  // CONTACT FORM
+	input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
+		font-size: 0.75em;
+		top: -5px;
+	}
+	.styled-input {	margin: 1rem 0; }
+	.styled-input label {
+		padding: 1.3rem 30px 1rem 30px;
+		top: 10px;
+	}
+	input,
+	textarea {
+		padding: 30px;
+		font-size: 1rem;
+	}
+	textarea { min-height: 10em; }
+}
+// BOOTSTRAP LARGE
+@media only screen and (min-width: 922px) {}
+// BOOTSTRAP X-LARGE
+@media only screen and (min-width: 1200px) {}

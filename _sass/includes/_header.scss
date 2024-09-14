@@ -1,0 +1,53 @@
+//HEADER
+.navbar.navbar-dark {
+	transition: opacity 0.3s ease-in-out;
+	background-color: rgba($color-2, .75);
+	a.navbar-brand {
+		margin-left: 30px;
+		font-weight: 100;
+		font-style: normal;
+		font-size: 1.5em;
+	}
+	ul.navbar-nav {
+		margin-right: 30px;
+		.nav-item {
+			margin-right: 15px;
+			.nav-link {
+				color: $color-4;
+				font-weight: 700;
+				font-style: normal;
+				&:active {
+					color: $color-4;
+				}
+				&:hover {
+					color: $color-3;
+				}
+			}			
+		}
+		.nav-item.active {color: $color-4;}
+		.dropdown {
+			.dropdown-menu {
+				background-color: rgba($color-2, .75);
+				.dropdown-item {
+					color: $color-4;
+					&:hover {
+						background-color: $color-3;
+						color: $color-5;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+// BOOTSTRAP SMALL
+@media only screen and (min-width: 576px) {}
+// BOOTSTRAP MEDIUM
+@media only screen and (min-width: 768px) {}
+// BOOTSTRAP LARGE
+@media only screen and (min-width: 922px) {}
+// BOOTSTRAP X-LARGE
+@media only screen and (min-width: 1200px) {}

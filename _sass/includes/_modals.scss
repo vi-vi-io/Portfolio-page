@@ -1,0 +1,96 @@
+// MODALS
+// .modal-backdrop.fade {
+// 	background-color: $color-4;
+// 	opacity:0.7 !important;
+// 	transition: 1s ease-in-out;
+// 	-webkit-transition: 1s ease-in-out;
+// }
+.modal {padding-right: 0 !important;}
+.modal .modal-dialog .modal-content {
+	background-color: $color-2;
+	color: $color-1;
+	padding: 60px;
+	height: auto;
+	h2 {text-align: center;}
+	a {
+		color: $color-3;
+		font-weight: 500;
+		font-style: italic;
+	}
+	hr { 
+		border-top: 1px solid $color-1;
+		width: 40%;
+		margin: 15px auto 25px;
+	}
+	p {
+		strong {font-weight: 700;}
+	}
+}
+.modal-content {
+	-webkit-box-shadow: 0px 10px 15px 0px rgba($color-5,0.25);
+	-moz-box-shadow: 0px 10px 15px 0px rgba($color-5,0.25);
+	box-shadow: 0px 10px 15px 0px rgba($color-5,0.25);
+}
+.modal-player-box {
+	// padding:0;
+	position:relative;
+	border: 1px solid rgba($color-5, .75);
+	border-radius: 4px;
+}
+.player-caption{
+	font-size: .85em;
+	font-weight: 700;
+	color: lighten($color-2, 20%);
+	text-align: center;
+	margin:5px 0 15px;
+}
+.modal-close {
+	position: absolute;
+	display: block;
+	bottom: -80px;
+	right: 10px;
+	font-size: 6em;
+	color: $color-3;
+	z-index: 9999;
+	padding: 7px;
+	text-shadow: 0 0 3px #666;
+	background-color: rgba(0,0,0,0);
+	opacity: 1;
+	font-weight: 100;
+	outline: none;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	&:hover {
+		color: white;
+		text-decoration: none;
+		cursor: pointer;
+		transform: scale(1.3,1.3);
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+	}
+	&:focus {
+		outline: none;
+		box-shadow: none;
+	}
+}
+
+@media (orientation: landscape) {}
+@media (orientation: portrait) {}
+
+// BOOTSTRAP SMALL
+@media only screen and (min-width: 576px) {
+    // .modal-dialog {max-width: 85%;}
+}
+// BOOTSTRAP MEDIUM
+@media only screen and (min-width: 768px) {
+    .modal-close { 
+		bottom: auto;
+		top: -20px; 
+		right: -50px;
+		font-size: 5em;
+	}
+}
+// BOOTSTRAP LARGE
+@media only screen and (min-width: 922px) {}
+// BOOTSTRAP X-LARGE
+@media only screen and (min-width: 1200px) {}
