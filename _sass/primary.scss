@@ -31,7 +31,7 @@ html {
 				h3 {
 					font-size: 1.5em;
 					color: rgba($color-1, .5);
-					margin: 40px auto 10px;
+					margin: 10px auto;
 					text-align: center;
 					font-weight: 300;
 				}
@@ -115,7 +115,8 @@ html {
 				}
 				.img-full-width {
 					margin: 0 0 20px;
-				}				
+				}
+				img.txt-wrap {max-width: 100%;}				
 			}
 			#capabilitiesLinks {
 				.capabilityLink {
@@ -330,7 +331,12 @@ strong, em {font-weight: 700;}
 						.link-icon {font-size: 1em;}
 					}
 				}
-			}
+				img.txt-wrap {
+					max-width: 60%;
+					float: right;
+					margin-left: 15px;
+				}
+			}	
 		}
 	}	
 }
