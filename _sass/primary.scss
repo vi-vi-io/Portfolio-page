@@ -68,7 +68,7 @@ html {
 			}
 		}
 		.dark-content-box {
-			background-color: rgba($color-2, .9);
+			background-color: rgba($color-2, .95);
 			border-radius: 4px;
 			margin-top: 90px;
 			padding-top: 0px;
@@ -82,6 +82,13 @@ html {
 					margin-top: 10px;
 					margin-bottom: 25px;
 					a {color: $color-6;}
+					h1 {
+						font-weight: 300;
+						font-style: italic;
+						color: $color-2;
+						font-size: 1.25em;
+						font-family: $font;
+					}
 					h3 {color: $color-2;}
 					h4 {
 						color: $color-2;
@@ -98,6 +105,9 @@ html {
 							border: 1px solid $color-3;
 						}
 					}
+				}
+				.landscapeThumb {
+					.modalBtn-box {height: 150px;}
 				}
 				a {
 					color: $color-3;
@@ -263,6 +273,9 @@ strong, em {font-weight: 700;}
 	html body { 
 		.dark-content-box {
 			.modalBtn-box {height: 300px;}
+			.content-block {
+				.landscapeThumb {}
+			}
 		}
 	}
 }
@@ -276,6 +289,11 @@ strong, em {font-weight: 700;}
 		}
 		.dark-content-box {
 			.modalBtn-box {height: 388px;}
+			.content-block {
+				.landscapeThumb {
+					.modalBtn-box {height: 175px;}
+				}
+			}
 		}
 	}
 }
@@ -289,6 +307,9 @@ strong, em {font-weight: 700;}
 		}
 		.dark-content-box {
 			.modalBtn-box {height: 418px;}
+			.content-block {
+				.landscapeThumb {}
+			}
 		}
 	}
 }
@@ -302,6 +323,14 @@ strong, em {font-weight: 700;}
 		}
 		.dark-content-box {
 			.modalBtn-box {height: 273px;}
+			.content-block {
+				.landscapeThumb {
+					.modalBtn-box {
+						height: 250px;
+						.link-icon {font-size: 1em;}
+					}
+				}
+			}
 		}
 	}	
 }
@@ -315,6 +344,11 @@ strong, em {font-weight: 700;}
 		}
 		.dark-content-box {
 			.modalBtn-box {height: 335px;}
+			.content-block {
+				.landscapeThumb {
+					.modalBtn-box {height: 185px;}
+				}
+			}
 		}
 	}
 }
