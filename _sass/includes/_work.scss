@@ -7,8 +7,6 @@
 	}
 	h4 {color: $color-4;}
 	em {font-weight: 500;}
-	
-	.modalBtn-box {height: 150px;}
 }
 //INFINITE SCROLLING SLIDESHOW
 .clientsBox { //  https://css-tricks.com/infinite-all-css-scrolling-slideshow/
@@ -53,7 +51,6 @@
 			0%    { left: 0; }
 			100%  { left: -444.5%; }
 		}
-		.modalBtn-box {height: 175px;}
 	}
 }
 // BOOTSTRAP MEDIUM
@@ -78,10 +75,6 @@
 			0%    { left: 0; }
 			100%  { left: -312.5%; }
 		}
-		.modalBtn-box {
-			height: 250px;
-			.link-icon {font-size: 1em;}
-		}
 	}
 }
 // BOOTSTRAP X-LARGE
@@ -95,6 +88,5 @@
 			0%    { left: 0; }
 			100%  { left: -263%; }
 		}
-		.modalBtn-box {height: 185px;}
 	}
 }

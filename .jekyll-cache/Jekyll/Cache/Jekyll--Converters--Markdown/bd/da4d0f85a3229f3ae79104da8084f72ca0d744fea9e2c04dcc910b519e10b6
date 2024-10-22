@@ -1,4 +1,7 @@
-
+I"È<div class="container">
+	<div class="row">
+		<div class="dark-content-box col-10 offset-1 col-md-8 offset-md-2">
+			
 <!-- Start Academic Community content -->
 <section id="academics" class="content-block">
 	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
@@ -29,7 +32,7 @@
             </div>
 			<div class="row">
 				<div class="col-12 col-sm-10 offset-sm-1">
-					<img class="txt-wrap" src="./assets/images/pic01.jpg" alt="">
+					<img class="txt-wrap" src="./assets/images/pic01.jpg" alt="" />
 					<p>During <a href="./interviewing">production</a>, my adept handling of camera, sound, and lighting setups is complemented by my role as an <a href="./interviewing">interviewer</a>, where my approachable and empathetic demeanor fosters an environment of comfort, confidence, and clarity for the speaker. While many academic professionals are seasoned public speakers, the presence of cameras can induce a momentary lapse in composure. I am dedicated to cultivating a stress-free atmosphere, allowing speakers to pause and rephrase as needed, ensuring they project their utmost confidence. Multiple takes are often captured to guarantee the speaker's optimal presentation.</p>
 					<p>Post-production is a critical phase where I enhance the captured footage through meticulous <a href="color">color grading</a>, followed by the strategic <a href="./editing">editing and trimming</a> of interview sound bites and b-roll to craft a succinct monologue or dialogue. I integrate opening and closing graphics, lower-thirds for speaker identification, and <a href="./motion">animated infographics</a> to facilitate the audience's comprehension of complex topics. Throughout this process, stakeholders are invited to provide feedback at key stages, ensuring the final product remains aligned with its objectives and resonates with its intended audience.</p>
 				</div>
@@ -37,7 +40,7 @@
 			<div class="row">
 				<div class="col-12">
 					<h3>Relevant examples</h3>
-					<hr>
+					<hr />
 				</div>
 			</div>
 			<div class="landscapeThumb row">
@@ -45,7 +48,7 @@
 					<h4 class="modalBtn-exLabel">Behavioral Finance interview</h4>
 					<div class="modalBtn-box">
 						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
-						<a href="./befi"><img src="assets/images/workThumb_befi.jpg" alt="Behavioral Finance expert Shlomo Benartzi"></a>
+						<a href="./befi"><img src="assets/images/workThumb_befi.jpg" alt="Behavioral Finance expert Shlomo Benartzi" /></a>
 						<div class="modalBtn-label">Behavioral Finance interview</div>
 					</div>
 				</div>
@@ -53,7 +56,7 @@
 					<h4 class="modalBtn-exLabel">Blockchain Technology lecture</h4>
 					<div class="modalBtn-box">
 						<div class="link-icon"><i class="fas fa-external-link-alt"></i></div>
-						<a href="./blockchain"><img src="assets/images/workThumb_blockchain.jpg" alt="Blockchain expert Issam Ocean"></a>
+						<a href="./blockchain"><img src="assets/images/workThumb_blockchain.jpg" alt="Blockchain expert Issam Ocean" /></a>
 						<div class="modalBtn-label">Blockchain Technology lecture</div>
 					</div>
 				</div>
@@ -65,7 +68,56 @@
 					<p>Producing a video of professional caliber can be a complex endeavor. Without a solid plan, costs can escalate rapidly, and the final product may fall short of its intended purpose. Allow me to partner with your team, guiding you through each phase of the project, to create a video that not only stands out but also achieves your objectives and fulfills the needs of your audience.</p>
 				</div>
 			</div>
-			{% include capabilities.html %}
+			<div id="capabilities" class="row whiteBox">
+    <div class="col-12">
+        <h3>My capabilities</h3>
+        <hr />
+    </div>
+    <div class="col-12">
+        <div id="capabilitiesLinks" class="container">
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./strategy" class="capabilityLink" id="#capability_1">Strategy &amp; Planning</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./editing" class="capabilityLink" id="#capability_2">Video Editing</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./motion" class="capabilityLink" id="#capability_3">Motion Graphics &amp; Animation</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./color" class="capabilityLink" id="#capability_4">Color Grading</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./interviewing" class="capabilityLink" id="#capability_5">Interviewing &amp; Videography</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./design" class="capabilityLink" id="#capability_6">Graphic Design &amp; Illustration</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1">
+                    <a href="./digital" class="capabilityLink" id="#capability_7">Digital Design</a>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5">
+                    <a href="./web" class="capabilityLink" id="#capability_8">Front-end web</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5 offset-xl-1"></div>
+                <div class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0 col-xl-5"></div>
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </section><!-- End Academic Community content -->
+		</div>
+	</div>
+</div>
+:ET
