@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="js">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>planwithease overview</title>
+		
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+		<link href="./css/layout.css" rel="stylesheet" type="text/css">
+		<link href="./css/main.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+		<script src="scripts/respond.js"></script>
+
+	</head>
+	
+	<body>
+
+		<div id="preloader">
+			<div class="loader-container">
+				<img src="./images/preloader.gif" />
+			</div>
+		</div>
+		<div id="hover-preload">
+			<img src="./images/vid-cntrl/back-over.png" />
+			<img src="./images/vid-cntrl/forward-over.png" />
+			<img src="./images/vid-cntrl/pause-over.png" />
+			<img src="./images/vid-cntrl/play-up.png" />
+			<img src="./images/vid-cntrl/play-over.png" />
+		</div>
+
+		<section class="header">
+			<div class="container-fluid">
+				<div class="row no-gutters">
+					<div class="col-lg-2 col-sm-1 xs-hidden"></div>
+					<div class="col-lg-8 col-sm-10 col-xs-12">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-6 hdr-left">
+									<a class="headlogo" href="#"></a>
+								</div>
+								<div class="col-xs-6 hdr-right"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-1 xs-hidden"></div>
+				</div>
+			</div>
+		</section><!--END HEADER-->
+
+		<section class="sec-nav">
+			<div class="container-fluid">
+				<div class="row no-gutters">
+					<div class="col-lg-2 col-sm-1 xs-hidden"></div>
+					<div class="col-lg-8 col-sm-10 col-xs-12">
+						<div class="container-fluid btn-container">
+							<div class="row thin-gutters">
+								<div class="col-sm-3 col-xs-12"><input class="changeIndex" id="index0" type="button" data-selectedIndex=0 value="Introduction" disabled /></div>
+								<div class="col-sm-3 col-xs-12"><input class="changeIndex" id="index1" type="button" data-selectedIndex=1 value="Simplify Plan Administration" /></div>
+								<div class="col-sm-3 col-xs-12"><input class="changeIndex" id="index2" type="button" data-selectedIndex=2 value="Plan Sponsor Benefits" /></div>
+								<div class="col-sm-3 col-xs-12"><input class="changeIndex" id="index3" type="button" data-selectedIndex=3 value="Participant Benefits" /></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-1 xs-hidden"></div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-content">
+		 	<div class="container-fluid">
+				<div class="row no-gutters eq-height">
+					<div class="col-lg-8 col-sm-10 col-xs-12 col-lg-push-2 col-sm-push-1 eq-col">
+						<!-- <button type="button" class="btn-unmute">
+					        <span class="modal-close-x" aria-hidden="true"><i class="fal  fa-volume-off"></i>&nbsp;&nbsp;UNMUTE</span>
+					    </button> -->
+						<div class="movie-container">
+							<div class="movie-push"></div>
+							<div class="movie-player" id="kaltura_player"></div>
+						</div>
+					</div>
+					<div class="col-lg-2 col-sm-1 col-xs-6 col-lg-pull-8 col-sm-pull-10 eq-col">
+						<!-- <input class="pager" id="previous" type="button" disabled /> -->
+					</div>
+					<div class="col-lg-2 col-sm-1 col-xs-6 eq-col">
+						<!-- <input class="pager" id="next" type="button" /> -->
+					</div>
+				</div>
+
+			</div><!-- END CONTAINTER -->
+		</section><!-- END MAIN-CONTENT -->
+
+		<section class="vid-controls">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-2 col-sm-1 xs-hidden"></div>
+					<div class="col-lg-8 col-sm-10 col-xs-12">
+						<div class="container-fluid btn-container">
+							<div class="row thin-gutters">
+								<div class="col-md-2 col-sm-3 col-xs-5"><span id="timer"></span></div>
+								<div class="col-md-10 col-sm-9 col-xs-7 vidControlBox"><input class="vidControl" id="back" type="button" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="vidControl play" id="playToggle" type="button" />&nbsp;&nbsp;&nbsp;&nbsp;<input class="vidControl" id="forward" type="button" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="vidControl showcc" id="ccToggle" type="button" />&nbsp;&nbsp;</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-8 col-sm-10 col-xs-12"></div>
+				</div>
+			</div><!-- END container-fluid -->
+		</section><!-- END vid-controls -->	
+
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 hidden-xs ftr-lft">
+						<a class="footlogo" href="https://planwithease.beready2retire.com/"></a>
+					</div>
+					<div class="col-sm-6 ftr-rt">
+						&copy; <script>document.write(new Date().getFullYear());</script> <br><strong></strong>
+					</div>
+				</div>
+			</div>
+		</footer><!--END FOOTER-->
+
+<!-- Bootstrap core JavaScript ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://cdnapisec.kaltura.com/p/1234081/sp/123408100/embedIframeJs/uiconf_id/37494541/partner_id/1234081"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/main.js"></script>
+
+	</body>
+</html>

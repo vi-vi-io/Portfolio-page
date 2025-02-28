@@ -1,0 +1,266 @@
+@charset "utf-8";
+
+html {
+  position: relative;
+  min-height: 100%;
+  background: #333;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px;
+  background: #333;
+}
+.clearer {
+	clear: both;
+}
+.spacer10 {
+	height: 10px;
+	margin: 0;
+	padding: 0;
+}
+.spacer20 {
+	height: 20px;
+	margin: 0;
+	padding: 0;
+}
+.spacer50 {
+	height: 50px;
+	margin: 0;
+	padding: 0;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"], .row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.row.thin-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.thin-gutters > [class^="col-"], .row.thin-gutters > [class*=" col-"] {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+
+/* ====	preloader ==== */
+.js div#preloader { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    background: #fff;
+}
+.js div#preloader .loader-container { 
+    position: inherit;
+    top: 40%;
+    left: 50%;
+    max-width: 100px;
+    margin-left: -50px;
+}
+.js div#preloader .loader-container img {
+    margin: 10px;
+}
+.js div#hover-preload { 
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -999;
+}
+.js div#hover-preload .sample-class {
+    background-image: url(../images/sample-img.png);
+}
+
+
+/* ====	movie player / kaltura frame ==== */
+.movie-container { /* Outer div defines maximum space the player can take */
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	-webkit-box-shadow: 0px 0px 7px 3px rgba(33,33,33,1);
+	-moz-box-shadow: 0px 0px 7px 3px rgba(33,33,33,1);
+	box-shadow: 0px 0px 7px 3px rgba(33,33,33,1);
+}
+.movie-push { /* inner pusher div defines aspect ratio: ex- 16:9 ~ 56.25% */
+	margin-top: 56.25%;
+}
+.movie-player { /* the player embed target, set to take up available absolute space */
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+
+/*UNMUTE BUTTON*/
+.btn-unmute {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-size: 1.2em;
+	max-width: 105px;
+	color: #491b73;
+	z-index: 998;
+	cursor: pointer;
+	background: transparent;
+	border: 1px solid #491b73;
+	border-radius: 3px;
+	background-color: rgba(255,255,255,1);
+	padding: 1px 5px;
+	font-weight: 700;
+}
+.btn-unmute:hover {
+	background-color: #814aa7;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* ====	chapter title buttons ==== */
+input.changeIndex {
+	border: none;
+	color: #fff;
+	background: #003988;
+	background: -moz-linear-gradient(top, #003988 0%, #0172b8 100%);
+	background: -webkit-linear-gradient(top, #003988 0%,#0172b8 100%);
+	background: linear-gradient(to bottom, #003988 0%,#0172b8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003988', endColorstr='#0172b8',GradientType=0 );
+	padding: 6px;
+	display: block;
+	width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	transition: .5s;
+}
+input.changeIndex:hover {
+	background: #491b73;
+	background: -moz-linear-gradient(top, #491b73 0%, #814aa7 100%);
+	background: -webkit-linear-gradient(top, #491b73 0%,#814aa7 100%);
+	background: linear-gradient(to bottom, #491b73 0%,#814aa7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#491b73', endColorstr='#814aa7',GradientType=0 );
+	transition: .5s;
+}
+input.changeIndex:disabled {
+	background-size: 0% 100%;
+	background: url('../images/prog-cover.jpg') no-repeat top left #491b73;
+	background: url('../images/prog-cover.jpg') no-repeat top left -moz-linear-gradient(top, #491b73 0%, #814aa7 100%);
+	background: url('../images/prog-cover.jpg') no-repeat top left -webkit-linear-gradient(top, #491b73 0%,#814aa7 100%);
+	background: url('../images/prog-cover.jpg') no-repeat top left linear-gradient(to bottom, #491b73 0%,#814aa7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#491b73', endColorstr='#814aa7',GradientType=0 );
+	transition: .5s;
+}
+
+/* ====	chapter next / previous buttons ==== */
+input.pager {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+input.pager:hover {}
+input.pager:disabled {}
+input#previous {
+	background-color: #eee;
+	background: url('../images/prev-arrow.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: right 0 top 50%;
+	transition: .5s;
+}
+input#previous:hover {
+	background-color: #fff;
+	background-size: 110% 100%;
+	background-position: right 0 top 50%;
+	transition: .5s;	
+}
+input#previous:disabled {
+	background-color: #eee;
+	background-size: 100% 100%;
+	background-position: right 0 top 50%;
+}
+input#next {
+	background-color: #eee;
+	background: url('../images/next-arrow.png') no-repeat;
+	background-size: 100% 100%;
+	background-position: left 0 top 50%;
+	transition: .5s;
+}
+input#next:hover {
+	background-color: #fff;
+	background-size: 110% 100%;
+	background-position: left 0 top 50%;
+	transition: .5s;	
+}
+input#next:disabled {
+	background-color: #eee;
+	background-size: 100% 100%;
+	background-position: left 0 top 50%;
+}
+
+
+/* ====	video control / interface buttons ==== */
+input.play {
+	background: url('../images/vid-cntrl/play-up.png') no-repeat;
+	background-size: contain;
+}
+input.play:hover {
+	background: url('../images/vid-cntrl/play-over.png') no-repeat;
+	background-size: contain;
+}
+input.pause {
+	background: url('../images/vid-cntrl/pause-up.png') no-repeat;
+	background-size: contain;
+}
+input.pause:hover {
+	background: url('../images/vid-cntrl/pause-over.png') no-repeat;
+	background-size: contain;
+}
+input#back {
+	background: url('../images/vid-cntrl/back-up.png') no-repeat;
+	background-size: contain;
+}
+input#back:hover {
+	background: url('../images/vid-cntrl/back-over.png') no-repeat;
+	background-size: contain;
+}
+input#forward {
+	background: url('../images/vid-cntrl/forward-up.png') no-repeat;
+	background-size: contain;
+}
+input#forward:hover {
+	background: url('../images/vid-cntrl/forward-over.png') no-repeat;
+	background-size: contain;
+}
+input.showcc {
+	background: url('../images/vid-cntrl/cc-off-up.png') no-repeat;
+	background-size: contain;
+}
+input.showcc:hover {
+	background: url('../images/vid-cntrl/cc-off-over.png') no-repeat;
+	background-size: contain;
+}
+input.hidecc {
+	background: url('../images/vid-cntrl/cc-on-up.png') no-repeat;
+	background-size: contain;
+}
+input.hidecc:hover {
+	background: url('../images/vid-cntrl/cc-on-over.png') no-repeat;
+	background-size: contain;
+}
+
+
+/* ====	video remaining/total timestamp ==== */
+#timer {
+	display: block;
+	color: #fff;
+	padding: 7px;
+}
