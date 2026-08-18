@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1995</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mxv8ljn.css"> <!-- Adobe Fonts: "avenir-next-lt-pro" 200, 400, 500, 700, 800 -->
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #014b54;
+            font-family: "avenir-next-lt-pro", sans-serif;
+            font-weight: 400;
+            font-size: 1em;
+            font-style: normal;
+        }
+        /* --- Map Wrapper Layer --- */
+        .map-viewport-container {
+            position: relative; /* CRITICAL: Confines absolute children inside this block */
+            width: 90%;
+            /* max-width: 1200px;  Feel free to scale this boundary width up or down */
+            margin: 60px 5%;
+            background-color: #121214;
+            border: 6px solid #f2611f;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+            /* overflow: hidden;   Prevents high-intensity blurs bleeding past corners */
+            /* border-radius: 12px; */
+        }
+        #titleBox {
+            position: absolute;
+            top: -35px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 101;
+            text-align: center;
+            color: #fff;
+            background: #f2611f;
+            border-radius: 50px;
+            padding: 10px 50px;
+        }
+        #titleBox h1 {
+            font-size: 2.5em;
+            margin: 0;
+            font-weight: 200;
+        }
+        #titleBox h1 strong {
+            font-weight: 800;
+        }
+        /* --- SVG Filter & Layout Styling --- */
+        svg {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        /* Enable universal pointer boundaries */
+        svg a.glowBtn {
+            pointer-events: bounding-box;
+            cursor: pointer;
+        }
+        /* Layer 1: The standard image with a clean, low-intensity steady glow */
+        svg a.glowBtn image.base-image {
+            filter: url(#hybrid-glow);
+            opacity: 0.85;
+            will-change: filter;
+        }
+        /* Layer 2: The duplicate layer that pulses smoothly using opacity */
+        svg a.glowBtn image.pulse-layer {
+            filter: url(#hybrid-glow);
+            position: relative;
+            mix-blend-mode: screen; /* Makes the glow look brighter and intense */
+            will-change: opacity;        
+            /* Hardware accelerated animation loop */
+            animation: smoothGlowPulse 4s ease-in-out infinite;
+        }
+        /* Smoothly scale the opacity up and down instead of the filter properties */
+        @keyframes smoothGlowPulse {
+            0%, 100% {
+                opacity: 0.2;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+        /* --- THE HOVER ACTION --- */
+        /* When hovered, instantly change filters on both layers to the yellow glow */
+        svg a.glowBtn:hover image.base-image,
+        svg a.glowBtn:hover image.pulse-layer {
+            filter: url(#hybrid-glow-hover);
+            opacity: 1; /* Maximizes vibrancy on hover */
+            transition: filter 0.7s ease, opacity 0.7s ease; /* Smoothly transition to hover state */
+        }
+        /* --- Confined Pop-up Modal System Styling --- */
+        .modal-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.75);
+            z-index: 100;
+            justify-content: center;
+            align-items: center;
+            /* 1. Use display: flex constantly, but keep it invisible and unclickable */
+            display: flex; 
+            opacity: 0;
+            pointer-events: none; /* Prevents clicking background when hidden */
+            /* Smooth backdrop fade-in */
+            transition: opacity 0.3s ease; 
+        }
+        /* Revealed state controlled via Javascript toggles */
+        .modal-overlay.is-open {
+            opacity: 1;
+            pointer-events: auto; /* Restores mouse interactions when open */ 
+        }
+        .modal-box {
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 5%;
+            /* border-radius: 12px; */
+            /* max-width: 500px; */
+            width: 60%;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 6px solid #014b54;
+            color: #333333;
+            /* Default hidden position: shrunk down slightly */
+            transform: scale(0.9) translateY(10px);
+            /* Smooth scale and shift transition */
+            transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); 
+        }
+        .modal-overlay.is-open .modal-box {
+            transform: scale(1) translateY(0);
+        }
+        .modal-box h2 {
+            margin: 0 0 25px 0;
+            font-size: 2em;
+            font-weight: 800;
+            text-align: center;
+            color: #014b54;
+        }
+        .modal-box p {
+            font-size: 1.5em;
+            line-height: 1.25;
+            margin: 0 0 25px 0;
+        }
+        .modal-close-x {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            background: #014b54;
+            padding: 0px 12px 2px;
+            border-radius: 60px;
+            border: none;
+            font-family: "avenir-next-lt-pro", sans-serif;
+            font-size: 2.5em;
+            font-weight: 200;
+            cursor: pointer;
+            color: #fff;
+            transition: background 0.3s ease;
+        }
+        .modal-close-x:hover {
+            background: #017281;
+            transition: background 0.3s ease;
+        }
+        .btn-learnMore {
+            position: absolute;
+            bottom: -27px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0 auto;
+            padding: 10px 50px;
+            background-color: #014b54;
+            color: white;
+            font-size: 1.5em;
+            font-weight: 800;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .btn-learnMore:hover {
+            background-color: #017281;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- CONTAINER BLOCK ENCLOSING ENTIRE MAP MATRIX -->
+    <div class="map-viewport-container">
+
+        <!-- MODAL WINDOW a (Linked via data-modal-id="discPlayer") -->
+        <div id="modal-discPlayer" class="modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-x" data-action="close">&times;</button>
+                <h2>Disc Player</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros metus, tempus id vulputate eu, fringilla in felis. In hac habitasse platea dictumst. Curabitur tristique odio quis arcu egestas, tempus consequat sem laoreet. Suspendisse pellentesque turpis nec urna vehicula sodales.</p>
+                <p>Integer efficitur vitae ex non consequat. Maecenas dignissim ornare tempus. Nullam tellus justo, porttitor vitae euismod et, hendrerit vel turpis. In nulla eros, porttitor vel feugiat ac, consequat vel lacus. Etiam in ornare orci. In hac habitasse platea dictumst.</p>
+                <button class="btn-learnMore" data-action="close">Learn More</button>
+            </div>
+        </div>
+
+        <!-- MODAL WINDOW B (Linked via data-modal-id="chips") -->
+        <div id="modal-chips" class="modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-x" data-action="close">&times;</button>
+                <h2>Chips</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros metus, tempus id vulputate eu, fringilla in felis. In hac habitasse platea dictumst. Curabitur tristique odio quis arcu egestas, tempus consequat sem laoreet. Suspendisse pellentesque turpis nec urna vehicula sodales.</p>
+                <p>Integer efficitur vitae ex non consequat. Maecenas dignissim ornare tempus. Nullam tellus justo, porttitor vitae euismod et, hendrerit vel turpis. In nulla eros, porttitor vel feugiat ac, consequat vel lacus. Etiam in ornare orci. In hac habitasse platea dictumst.</p>
+                <button class="btn-learnMore" data-action="close">Learn More</button>
+            </div>
+        </div>
+
+        <!-- MODAL WINDOW C (Linked via data-modal-id="lamp") -->
+        <div id="modal-lamp" class="modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-x" data-action="close">&times;</button>
+                <h2>Lamp</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros metus, tempus id vulputate eu, fringilla in felis. In hac habitasse platea dictumst. Curabitur tristique odio quis arcu egestas, tempus consequat sem laoreet. Suspendisse pellentesque turpis nec urna vehicula sodales.</p>
+                <p>Integer efficitur vitae ex non consequat. Maecenas dignissim ornare tempus. Nullam tellus justo, porttitor vitae euismod et, hendrerit vel turpis. In nulla eros, porttitor vel feugiat ac, consequat vel lacus. Etiam in ornare orci. In hac habitasse platea dictumst.</p>
+                <button class="btn-learnMore" data-action="close">Learn More</button>
+            </div>
+        </div>
+        
+        <!-- MODAL WINDOW D (Linked via data-modal-id="gameConsoleTV") -->
+        <div id="modal-gameConsoleTV" class="modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-x" data-action="close">&times;</button>
+                <h2>Game Console</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros metus, tempus id vulputate eu, fringilla in felis. In hac habitasse platea dictumst. Curabitur tristique odio quis arcu egestas, tempus consequat sem laoreet. Suspendisse pellentesque turpis nec urna vehicula sodales.</p>
+                <p>Integer efficitur vitae ex non consequat. Maecenas dignissim ornare tempus. Nullam tellus justo, porttitor vitae euismod et, hendrerit vel turpis. In nulla eros, porttitor vel feugiat ac, consequat vel lacus. Etiam in ornare orci. In hac habitasse platea dictumst.</p>
+                <button class="btn-learnMore" data-action="close">Learn More</button>
+            </div>
+        </div>
+
+        <!-- MODAL WINDOW E (Linked via data-modal-id="spikeBall") -->
+        <div id="modal-spikeBall" class="modal-overlay">
+            <div class="modal-box">
+                <button class="modal-close-x" data-action="close">&times;</button>
+                <h2>Spike Ball</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros metus, tempus id vulputate eu, fringilla in felis. In hac habitasse platea dictumst. Curabitur tristique odio quis arcu egestas, tempus consequat sem laoreet. Suspendisse pellentesque turpis nec urna vehicula sodales.</p>
+                <p>Integer efficitur vitae ex non consequat. Maecenas dignissim ornare tempus. Nullam tellus justo, porttitor vitae euismod et, hendrerit vel turpis. In nulla eros, porttitor vel feugiat ac, consequat vel lacus. Etiam in ornare orci. In hac habitasse platea dictumst.</p>
+                <button class="btn-learnMore" data-action="close">Learn More</button>
+            </div>
+        </div>
+
+        <div id="titleBox">
+            <h1><strong>1995</strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Remember this?</h1>
+        </div>
+        <!-- MAIN SVG GRAPHIC SYSTEM -->
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2752 1536">
+            <defs>
+                <!-- Static BASE GLOW -->
+                <filter id="hybrid-glow" x="-50%" y="-50%" width="200%" height="200%">
+                    <feMorphology operator="dilate" radius="3" in="SourceAlpha" result="expanded" />
+                    <feGaussianBlur stdDeviation="15" in="expanded" result="blurred" />
+                    <feFlood flood-color="#fef2d3" result="glowColor" />
+                    <feComposite in="glowColor" in2="blurred" operator="in" result="brightGlow" />
+                    <feMerge>
+                        <feMergeNode in="brightGlow" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+                <!-- HOVER GLOW  -->
+                <filter id="hybrid-glow-hover" x="-50%" y="-50%" width="200%" height="200%">
+                    <feMorphology operator="dilate" radius="3" in="SourceAlpha" result="expanded" />
+                    <feGaussianBlur stdDeviation="15" in="expanded" result="blurred" />
+                    <feFlood flood-color="#039bbb" result="glowColor" />
+                    <feComposite in="glowColor" in2="blurred" operator="in" result="brightGlow" />
+                    <feMerge>
+                        <feMergeNode in="brightGlow" />
+                        <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                </filter>
+            </defs>
+            <g id="Layer_1" data-name="Layer 1">
+                <image width="2752" height="1536" xlink:href="./images/bkgd_1995.webp"/>
+            </g>
+            <a class="glowBtn" id="discPlayer" data-modal-id="discPlayer">
+                <image class="base-image" width="298" height="187" transform="translate(1049.9018 912.1714)" xlink:href="./images/discPlayer.webp"/>
+                <image class="pulse-layer" width="298" height="187" transform="translate(1049.9018 912.1714)" xlink:href="./images/discPlayer.webp"/>
+            </a>
+            <a class="glowBtn" id="chips" data-modal-id="chips">
+                <image class="base-image" width="201" height="113" transform="translate(1619.5595 1323.8412)" xlink:href="./images/chips.webp"/>
+                <image class="pulse-layer" width="201" height="113" transform="translate(1619.5595 1323.8412)" xlink:href="./images/chips.webp"/>
+            </a>
+            <a class="glowBtn" id="lamp" data-modal-id="lamp">
+                <image class="base-image" width="203" height="261" transform="translate(1942.1941 630.1955)" xlink:href="./images/lamp.webp"/>
+                <image class="pulse-layer" width="203" height="261" transform="translate(1942.1941 630.1955)" xlink:href="./images/lamp.webp"/>
+            </a>
+            <a class="glowBtn" id="gameConsoleTV" data-modal-id="gameConsoleTV">
+                <image class="base-image" width="330" height="455" transform="translate(486.2 665.4)" xlink:href="./images/gameConsoleTV.webp"/>
+                <image class="pulse-layer" width="330" height="455" transform="translate(486.2 665.4)" xlink:href="./images/gameConsoleTV.webp"/>
+            </a>
+            <a class="glowBtn" id="spikeBall" data-modal-id="spikeBall">
+                <image class="base-image" width="124" height="103" transform="translate(327.95 366.1)" xlink:href="./images/spikeBall.webp"/>
+                <image class="pulse-layer" width="124" height="103" transform="translate(327.95 366.1)" xlink:href="./images/spikeBall.webp"/>
+            </a>
+        </svg>
+    </div>
+<!-- DYNAMIC EVENT HANDLING SYSTEM -->
+    <script>
+        // 1. Gather all elements into node list iteration matrices
+        const dynamicButtons = document.querySelectorAll('.glowBtn');
+        const modalOverlays = document.querySelectorAll('.modal-overlay');
+        const genericCloseButtons = document.querySelectorAll('[data-action="close"]');
+        // 2. Global clean routine for layout resets
+        function closeAllModals() {
+            modalOverlays.forEach(overlay => overlay.classList.remove('is-open'));
+        }
+        // 3. Dynamic Loop binding opening triggers to vector instances
+        dynamicButtons.forEach(button => {
+            button.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+                // Read the link value pointing directly to target panel structures
+                const targetsModalId = button.getAttribute('data-modal-id');
+                const matchingModalElement = document.getElementById(`modal-${targetsModalId}`);
+                
+                if (matchingModalElement) {
+                    closeAllModals(); // Wipe any existing frames first
+                    matchingModalElement.classList.add('is-open');
+                }
+            });
+        });
+        // 4. Bind listeners to all elements tracking data-action="close"
+        genericCloseButtons.forEach(closeBtn => {
+            closeBtn.addEventListener('click', closeModal);
+        });
+        function closeModal(e) {
+            // Find closest containing modal matrix structural root node
+            const openContainer = e.target.closest('.modal-overlay');
+            if (openContainer) openContainer.classList.remove('is-open');
+        }
+        // 5. Click outside bounding-box mask routine
+        modalOverlays.forEach(overlay => {
+            overlay.addEventListener('click', (e) => {
+                if (e.target === overlay) {
+                    overlay.classList.remove('is-open');
+                }
+            });
+        });
+        // 6. Native clean keystroke escape loop
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeAllModals();
+            }
+        });
+    </script>
+</body>
+</html>
