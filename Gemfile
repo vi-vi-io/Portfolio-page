@@ -28,6 +28,3 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.1", :install_if => Gem.win_platform?
-
-# FIX > Ruby 3.4, csv was removed from Ruby's default core
-gem "csv"
