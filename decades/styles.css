@@ -131,7 +131,7 @@ svg a.glowBtn:hover image.pulse-layer {
     padding: 5%;
     width: 60%;
     position: relative;
-    left: 12.5px;
+    left: 24px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     border: 6px solid #f2611f;
     color: #333333;
