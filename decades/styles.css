@@ -140,8 +140,18 @@ svg a.glowBtn:hover image.pulse-layer {
     /* Smooth scale and shift transition */
     transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); 
 }
+.modal-thumbnail {
+    float: right;
+    width: 35%;
+    max-width: 220px;
+    max-height: 180px;
+    height: auto;
+    object-fit: contain;
+    object-position: top right;
+    margin: 0 0 18px 24px;
+}
 .modal-overlay[open] .modal-box {
-    transform: scale(1) translateY(-4vh);
+    transform: scale(1) translateY(-10vh);
 }
 .modal-box h2 {
     margin: 0 0 25px 0;
@@ -219,6 +229,11 @@ svg a.glowBtn:hover image.pulse-layer {
     .modal-box {
         width: 72%;
     }
+    .modal-thumbnail {
+        width: 38%;
+        max-height: 150px;
+        margin-left: 18px;
+    }
     .modal-box h2 {
         font-size: 1.75em;
     }
@@ -252,6 +267,11 @@ svg a.glowBtn:hover image.pulse-layer {
         max-width: none;
         left: 9px;
         padding: 8%;
+    }
+    .modal-thumbnail {
+        width: 42%;
+        max-height: 120px;
+        margin-left: 14px;
     }
     .modal-box h2 {
         font-size: 1.5em;
