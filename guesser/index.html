@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remember this?</title>
+    <link rel="stylesheet" href="https://use.typekit.net/mxv8ljn.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        html,
+        body {
+            min-height: 100%;
+        }
+        body {
+            display: grid;
+            min-height: 100vh;
+            margin: 0;
+            place-items: center;
+            background-color: #014b54;
+        }
+        .question-box {
+            width: min(90vw, 760px);
+            color: #fff;
+            text-align: center;
+        }
+        .question-box h1 {
+            margin: 0;
+            font-size: clamp(1.5em, 4vw, 2.25em);
+            font-weight: 200;
+            line-height: 1.35;
+        }
+        .choice-link {
+            color: inherit;
+            font: inherit;
+            font-weight: 400;
+            text-decoration: none;
+            animation: choiceGlow 2.8s ease-in-out infinite;
+            transition: text-shadow 0.35s ease;
+            cursor: pointer;
+        }
+        .choice-link:hover,
+        .choice-link:focus-visible {
+            animation: none;
+            text-shadow: 0 0 6px #f2611f, 0 0 18px #f2611f, 0 0 32px rgba(242, 97, 31, 0.85);
+        }
+        @keyframes choiceGlow {
+            0%,
+            100% {
+                text-shadow: 0 0 4px rgba(255, 255, 255, 0.75), 0 0 14px rgba(255, 255, 255, 0.45), 0 0 26px rgba(255, 255, 255, 0.25);
+            }
+            50% {
+                text-shadow: 0 0 8px #fff, 0 0 22px rgba(255, 255, 255, 0.95), 0 0 42px rgba(255, 255, 255, 0.75);
+            }
+        }
+        .neither-link {
+            color: #fff;
+            font-weight: inherit;
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            transition: color 0.35s ease;
+        }
+        .neither-link:hover,
+        .neither-link:focus-visible {
+            color: #f2611f;
+        }
+        .neither-link:focus-visible {
+            outline: 3px solid #f2611f;
+            outline-offset: 4px;
+        }
+        .neither-link {
+            display: inline-block;
+            margin-top: 2rem;
+            font-size: 1.1em;
+        }
+        .question-count {
+            margin: 0 0 1.5rem;
+            font-size: 0.9em;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <main class="question-box" aria-live="polite">
+        <p class="question-count" id="question-count"></p>
+        <h1 id="question"></h1>
+        <a class="neither-link" id="neither" href="#">Neither</a>
+    </main>
+
+    <script type="application/json" id="question-database">
+        [
+            {
+                "question": "Did you have a",
+                "choiceA": "Walkman",
+                "choiceB": "Discman",
+                "scores": { "choiceA": { "1985": 2 }, "choiceB": { "1995": 2 } }
+            },
+            {
+                "question": "Which would you rather play on a Saturday morning:",
+                "choiceA": "an arcade game",
+                "choiceB": "a game console",
+                "scores": { "choiceA": { "1985": 2 }, "choiceB": { "1995": 1, "2005": 1 } }
+            },
+            {
+                "question": "Would you collect",
+                "choiceA": "Beanie Babies",
+                "choiceB": "Tamagotchis",
+                "scores": { "choiceA": { "1995": 2 }, "choiceB": { "2005": 2 } }
+            },
+            {
+                "question": "Which would you rather find in a closet:",
+                "choiceA": "an 8-track tape",
+                "choiceB": "a cassette tape",
+                "scores": { "choiceA": { "1975": 2 }, "choiceB": { "1985": 2 } }
+            }
+        ]
+    </script>
+    <script>
+        const questions = JSON.parse(document.querySelector('#question-database').textContent);
+        const years = ['1975', '1985', '1995', '2005'];
+        const scores = Object.fromEntries(years.map((year) => [year, 0]));
+        const questionElement = document.querySelector('#question');
+        const neitherLink = document.querySelector('#neither');
+        const questionCount = document.querySelector('#question-count');
+        let questionIndex = 0;
+
+        function showQuestion() {
+            const currentQuestion = questions[questionIndex];
+            questionCount.textContent = `Question ${questionIndex + 1} of ${questions.length}`;
+            questionElement.replaceChildren(
+                document.createTextNode(`${currentQuestion.question} `),
+                createChoice(currentQuestion, 'choiceA'),
+                document.createTextNode(' or '),
+                createChoice(currentQuestion, 'choiceB'),
+                document.createTextNode('?')
+            );
+        }
+
+        function createChoice(question, choiceKey) {
+            const choice = document.createElement('a');
+            choice.className = 'choice-link';
+            choice.href = '#';
+            choice.textContent = question[choiceKey];
+            choice.addEventListener('click', (event) => {
+                event.preventDefault();
+                Object.entries(question.scores[choiceKey]).forEach(([year, score]) => {
+                    scores[year] += score;
+                });
+                advance();
+            });
+            return choice;
+        }
+
+        function advance() {
+            questionIndex += 1;
+            if (questionIndex < questions.length) {
+                showQuestion();
+                return;
+            }
+
+            const preferredYear = years.reduce((bestYear, year) => (
+                scores[year] > scores[bestYear] ? year : bestYear
+            ), years[0]);
+            window.location.href = `${preferredYear}.html`;
+        }
+
+        neitherLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            advance();
+        });
+
+        showQuestion();
+    </script>
+</body>
+</html>

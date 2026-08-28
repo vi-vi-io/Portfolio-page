@@ -1,0 +1,307 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #014b54;
+    font-family: "avenir-next-lt-pro", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --- Map Wrapper Layer --- */
+.map-viewport-container {
+    position: relative; /* CRITICAL: Confines absolute children inside this block */
+    width: 80%;
+    margin: 0;
+    background-color: #121214;
+    border: 6px solid #f2611f;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    /* overflow: hidden;   Prevents high-intensity blurs bleeding past corners */
+    /* border-radius: 12px; */
+}
+.titleBox {
+    position: absolute;
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+    text-align: center;
+    color: #fff;
+    background: #f2611f;
+    border-radius: 50px;
+    padding: 10px 50px;
+    min-width: 285px;
+}
+.titleBox h1 {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: 200;
+}
+.titleBox h1 strong {
+    font-weight: 800;
+}
+/* --- SVG Filter & Layout Styling --- */
+svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Enable universal pointer boundaries */
+svg a.glowBtn {
+    pointer-events: bounding-box;
+    cursor: pointer;
+}
+svg a.glowBtn:focus {
+    outline: none;
+}
+svg a.glowBtn:focus-visible {
+    outline: 3px solid #fef2d3;
+    outline-offset: 6px;
+}
+@media (forced-colors: active) {
+    svg a.glowBtn:focus-visible {
+        outline-color: CanvasText;
+    }
+}
+/* Layer 1: The standard image with a clean, low-intensity steady glow */
+svg a.glowBtn image.base-image {
+    filter: url(#hybrid-glow);
+    opacity: 0.85;
+    will-change: filter;
+}
+/* Layer 2: The duplicate layer that pulses smoothly using opacity */
+svg a.glowBtn image.pulse-layer {
+    filter: url(#hybrid-glow);
+    position: relative;
+    mix-blend-mode: screen; /* Makes the glow look brighter and intense */
+    will-change: opacity;        
+    /* Hardware accelerated animation loop */
+    animation: smoothGlowPulse 4s ease-in-out infinite;
+}
+/* Smoothly scale the opacity up and down instead of the filter properties */
+@keyframes smoothGlowPulse {
+    0%, 100% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+/* --- THE HOVER ACTION --- */
+/* When hovered, instantly change filters on both layers to the blue glow */
+svg a.glowBtn:hover image.base-image,
+svg a.glowBtn:hover image.pulse-layer {
+    filter: url(#hybrid-glow-hover);
+    opacity: 1; /* Maximizes vibrancy on hover */
+    transition: filter 0.7s ease, opacity 0.7s ease; /* Smoothly transition to hover state */
+}
+/* --- Confined Pop-up Modal System Styling --- */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: transparent;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    /* 1. Use display: flex constantly, but keep it invisible and unclickable */
+    display: flex; 
+    opacity: 0;
+    /* Smooth backdrop fade-in */
+    transition: opacity 0.3s ease; 
+}
+/* Revealed state controlled via Javascript toggles */
+.modal-overlay.is-open {
+    opacity: 1;
+}
+.modal-overlay:not([open]) {
+    display: none;
+}
+.modal-overlay::backdrop {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-box {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5%;
+    width: 60%;
+    position: relative;
+    left: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 6px solid #f2611f;
+    color: #333333;
+    /* Default hidden position: shrunk down slightly */
+    transform: scale(0.9) translateY(10px);
+    /* Smooth scale and shift transition */
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1); 
+}
+.modal-overlay[open] .modal-box {
+    transform: scale(1) translateY(-10vh);
+}
+.modal-box h2 {
+    margin: 0 0 25px 0;
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    color: #014b54;
+}
+.modal-box p {
+    font-size: 1.5em;
+    line-height: 1.25;
+    margin: 0 0 25px 0;
+}
+.modal-box a.textLink {
+    color: #f2611f;
+    transition: color 0.3s ease;
+}
+.modal-box a.textLink:hover {
+    color: #017281;
+    transition: color 0.3s ease;
+}
+.modal-close-x {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background: #017281;
+    padding: 0px 12px 2px;
+    border-radius: 60px;
+    border: none;
+    font-family: "avenir-next-lt-pro", sans-serif;
+    font-size: 2.5em;
+    font-weight: 200;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+.modal-close-x:hover {
+    background: #014b54;
+    transition: background 0.3s ease;
+}
+.btn-learnMore {
+    position: absolute;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    padding: 10px 50px;
+    background-color: #017281;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.btn-learnMore:hover {
+    background-color: #014b54;
+    transition: background 0.3s ease;
+}
+@media (max-width: 768px) {
+    html {
+        font-size: 0.875em;
+    }
+    #titleBox {
+        top: -25px;
+        padding: 8px 30px;
+        min-width: 250px;
+    }
+    #titleBox h1 {
+        font-size: 1.5em;
+    }
+    .modal-box {
+        width: 72%;
+    }
+    .modal-box h2 {
+        font-size: 1.75em;
+    }
+    .modal-box p {
+        font-size: 1.25em;
+    }
+    .modal-close-x {
+        /* font-size: 2em; */
+    }
+    .btn-learnMore {
+        font-size: 1.25em;
+        padding: 8px 32px;
+    }
+}
+@media (max-width: 480px) {
+    html {
+        font-size: 0.75em;
+    }
+    #titleBox {
+        top: -20px;
+        padding: 6px 18px;
+        min-width: 185px;
+    }
+    #titleBox h1 {
+        font-size: 1.25em;
+        white-space: nowrap;
+    }
+    .modal-box {
+        box-sizing: border-box;
+        width: calc(100% - 36px);
+        max-width: none;
+        left: 9px;
+        padding: 8%;
+    }
+    .modal-box h2 {
+        font-size: 1.5em;
+        margin-bottom: 18px;
+    }
+    .modal-box p {
+        font-size: 1.1em;
+        margin-bottom: 18px;
+    }
+    .modal-close-x {
+        top: -18px;
+        right: -15px;
+        overflow: visible;
+        padding: 0px 8px 2px;
+        /* font-size: 1.75em; */
+    }
+    .btn-learnMore {
+        bottom: -22px;
+        font-size: 1.1em;
+        padding: 7px 24px;
+    }
+}
+@media (min-width: 1440px) {
+    html {
+        font-size: 1.125em;
+    }
+    #titleBox {
+        top: -37px;
+        padding: 12px 60px;
+        min-width: 300px;
+    }
+    #titleBox h1 {
+        font-size: 2em;
+    }
+    .modal-box h2 {
+        font-size: 2.15em;
+    }
+    .modal-box p {
+        font-size: 1.6em;
+    }
+    .modal-close-x {
+        font-size: 2.75em;
+    }
+    .btn-learnMore {
+        font-size: 1.6em;
+        padding: 11px 56px;
+    }
+}
