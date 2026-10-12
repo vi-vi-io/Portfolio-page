@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - My Videography gear kit
-description: desc.
+description:
 url: kit
 image:
   path: /assets/images/meta/kit.png

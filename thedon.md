@@ -1,7 +1,8 @@
 ---
 layout: worksub
+noindex: true # placeholder content; remove when the page is finished
 title: R. Scott Vivilecchia - Branding - Don Marijuan
-description: description
+description:
 url: thedon
 image:
   path: /assets/images/meta/home.png

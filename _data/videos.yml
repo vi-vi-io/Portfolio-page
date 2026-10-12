@@ -1,0 +1,61 @@
+# Vimeo videos embedded on the site, keyed by Vimeo ID. Used to generate
+# VideoObject structured data so videos can appear in Google video results.
+# thumbnail/upload_date/duration come from Vimeo's oEmbed API; duration is
+# ISO 8601 (PT1M20S = 1 min 20 s). Private videos (gov-psa, quest) are left
+# out because Vimeo doesn't expose their metadata.
+
+"549096543":
+  name: Demo Reel - R. Scott Vivilecchia
+  description: Highlights of filming, editing and motion graphics work across a broad range of production types.
+  thumbnail: https://i.vimeocdn.com/video/1136832784-3d19869f59d98a673b0f515c16bc2e2efaf0889d5220be046c2481b277c8c14d-d_1280x720
+  upload_date: 2021-05-13
+  duration: PT1M20S
+
+"552036007":
+  name: BeFi Conversations - Digital Fiduciaries
+  description: Behavioral finance interview from the BeFi Conversations series on digital fiduciaries.
+  thumbnail: https://i.vimeocdn.com/video/1140558362-8d01e6b1db18c919bf00908560834e3354f35b67df3a0b85bf9810a8ec6942ff-d_1280x720
+  upload_date: 2021-05-18
+  duration: PT5M50S
+
+"806794717":
+  name: Bus Map Concept - Motion Graphics Package
+  description: Motion graphics package for a public transportation provider's busing safety piece, inspired by bus route maps.
+  thumbnail: https://i.vimeocdn.com/video/1634626391-2035823e5105e30faa75526047d2d01b4ddd207009c7ebc3e66fad586a40843d-d_1280x720
+  upload_date: 2023-03-10
+  duration: PT38S
+
+"811459668":
+  name: The Register's Report - Public TV Series Graphics Package
+  description: Graphics package for a public television series produced with Plymouth Area Community Television (PACTV).
+  thumbnail: https://i.vimeocdn.com/video/1640155680-d7fdf5f91bf823670b43bccd1d0c5173eb90e54ec7a69007110010e5980530dd-d_1280x720
+  upload_date: 2023-03-24
+  duration: PT47S
+
+"552024634":
+  name: Saving for Retirement - Best Practice Series Pilot
+  description: Series pilot highlighting the importance of saving for retirement, in the voices of retirement plan participants.
+  thumbnail: https://i.vimeocdn.com/video/1140546838-e9306eaa6e0fb7afddeb589c8802d6a80eb11b24323bad23ed79b0e7a5d31826-d_1280x720
+  upload_date: 2021-05-18
+  duration: PT3M15S
+
+"552023370":
+  name: Saving for Retirement - Zack Vignette
+  description: A retirement plan participant shares a personal perspective on saving for retirement.
+  thumbnail: https://i.vimeocdn.com/video/1140548219-d8b9bf6767a726e8d8e2d47b4a8cf090829f8f51568db15d0da64452de3af344-d_1280x720
+  upload_date: 2021-05-18
+  duration: PT1M21S
+
+"552022858":
+  name: Saving for Retirement - Kari Ann Vignette
+  description: A retirement plan participant shares a personal perspective on saving for retirement.
+  thumbnail: https://i.vimeocdn.com/video/1140551073-de4e7d3b5207aa6287e16e75634fd534cdb2dc9644e78e47d56484f23ac11cfb-d_1280x720
+  upload_date: 2021-05-18
+  duration: PT1M8S
+
+"1054189780":
+  name: Road to Retirement - Motion Graphics Package
+  description: Flat line icon motion graphics for a financial education series that helps retirement plan participants understand complex investment topics.
+  thumbnail: https://i.vimeocdn.com/video/1979504157-36012ef165645ebc9585cf8212f040594e7cd25c85c2f391dcb2b16fe89ef5c2-d_1280x720
+  upload_date: 2025-02-06
+  duration: PT1M18S

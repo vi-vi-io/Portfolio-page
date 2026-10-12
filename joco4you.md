@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Digital Design - Plan Education Site
-description: description
+description:
 url: joco4you
 image:
   path: /assets/images/meta/joco4you.png

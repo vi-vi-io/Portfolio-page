@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Digital Design
-description: desc.
+description:
 url: digital
 image:
   path: /assets/images/meta/digital.png

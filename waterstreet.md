@@ -1,7 +1,8 @@
 ---
 layout: worksub
+noindex: true # placeholder content; remove when the page is finished
 title: R. Scott Vivilecchia - Branding - Water Street Insurance
-description: description
+description:
 url: waterstreet
 image:
   path: /assets/images/meta/home.png

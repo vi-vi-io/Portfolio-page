@@ -29,7 +29,7 @@
 @media only screen and (min-width: 576px) {}
 // BOOTSTRAP MEDIUM
 @media only screen and (min-width: 768px) {
-    #about {h1 {font-size: 1.5em;}}
+    #about {h1, .pull-quote {font-size: 1.5em;}}
 }
 // BOOTSTRAP LARGE
 @media only screen and (min-width: 922px) {}

@@ -1,0 +1,123 @@
+{%- comment -%}
+Search engine and social sharing metadata. Settings live under `seo:` in
+_config.yml; per page, use `description:`, `image:` and `noindex: true`
+in the front matter.
+{%- endcomment -%}
+{%- assign canonical_path = page.url | remove: '.html' -%}
+{%- if canonical_path == '/index' -%}{%- assign canonical_path = '/' -%}{%- endif -%}
+{%- assign canonical = canonical_path | prepend: site.url -%}
+
+{%- if page.description and page.description != '' -%}
+  {%- assign description = page.description | strip_html | normalize_whitespace -%}
+{%- elsif page.url == '/' -%}
+  {%- assign description = site.description -%}
+{%- else -%}
+  {%- comment -%} No description yet: summarise the page's own opening text {%- endcomment -%}
+  {%- assign description = content | strip_html | normalize_whitespace | truncate: 155 -%}
+  {%- if description == '' -%}{%- assign description = site.description -%}{%- endif -%}
+{%- endif -%}
+
+{%- if page.image -%}
+  {%- assign share_image = page.image.path | prepend: site.url -%}
+{%- else -%}
+  {%- assign share_image = site.seo.default_image | prepend: site.url -%}
+{%- endif -%}
+  <meta name="description" content="{{ description | escape }}">
+{%- if page.noindex or page.name == '404.md' %}
+  <meta name="robots" content="noindex, follow">
+{%- else %}
+  <link rel="canonical" href="{{ canonical }}">
+{%- endif %}
+{%- if site.google_site_verification %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+{%- endif %}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ site.seo.business_name | escape }}">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="{{ page.title | escape }}">
+  <meta property="og:description" content="{{ description | escape }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ share_image }}">
+{%- if page.image %}
+  <meta property="og:image:width" content="{{ page.image.width }}">
+  <meta property="og:image:height" content="{{ page.image.height }}">
+{%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.title | escape }}">
+  <meta name="twitter:description" content="{{ description | escape }}">
+  <meta name="twitter:image" content="{{ share_image }}">
+
+{%- capture person_id %}{{ site.url }}/#person{% endcapture %}
+{%- capture business_id %}{{ site.url }}/#business{% endcapture %}
+{%- if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": {{ person_id | jsonify }},
+        "name": {{ site.seo.name | jsonify }},
+        "jobTitle": {{ site.seo.job_title | jsonify }},
+        "url": {{ site.url | append: '/' | jsonify }},
+        "image": {{ site.seo.person_image | prepend: site.url | jsonify }},
+        "worksFor": { "@id": {{ business_id | jsonify }} },
+        "knowsAbout": {{ site.seo.services | jsonify }},
+        "sameAs": {{ site.seo.profiles | jsonify }}
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": {{ business_id | jsonify }},
+        "name": {{ site.seo.business_name | jsonify }},
+        "url": {{ site.url | append: '/' | jsonify }},
+        "image": {{ share_image | jsonify }},
+        "description": {{ site.description | jsonify }},
+        "founder": { "@id": {{ person_id | jsonify }} },
+        "address": {
+          "@type": "PostalAddress",
+          "addressRegion": {{ site.seo.address_region | jsonify }},
+          "addressCountry": {{ site.seo.address_country | jsonify }}
+        },
+        "areaServed": [
+          {%- for area in site.seo.area_served %}
+          { "@type": {{ area.type | jsonify }}, "name": {{ area.name | jsonify }} }{% unless forloop.last %},{% endunless %}
+          {%- endfor %}
+        ],
+        "knowsAbout": {{ site.seo.services | jsonify }},
+        "sameAs": {{ site.seo.profiles | jsonify }}
+      }
+    ]
+  }
+  </script>
+{%- endif %}
+
+{%- comment -%} VideoObject for every Vimeo video embedded on this page that has an entry in _data/videos.yml {%- endcomment -%}
+{%- unless page.noindex %}
+{%- assign video_chunks = content | split: 'player.vimeo.com/video/' -%}
+{%- assign seen = '' -%}
+{%- for chunk in video_chunks offset: 1 -%}
+  {%- assign video_id = chunk | split: '?' | first | split: '"' | first -%}
+  {%- assign video = site.data.videos[video_id] -%}
+  {%- capture marker %},{{ video_id }},{% endcapture -%}
+  {%- if video and video.thumbnail -%}{%- unless seen contains marker -%}
+  {%- assign seen = seen | append: marker -%}
+  {%- assign embed_query = chunk | split: '"' | first | split: '?' | last | replace: '&amp;', '&' -%}
+  {%- assign video_hash = embed_query | split: 'h=' | last | split: '&' | first -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": {{ video.name | jsonify }},
+    "description": {{ video.description | jsonify }},
+    "thumbnailUrl": {{ video.thumbnail | jsonify }},
+    "uploadDate": {{ video.upload_date | date: '%Y-%m-%d' | jsonify }},
+    "duration": {{ video.duration | jsonify }},
+    "embedUrl": {% if embed_query contains 'h=' %}{{ 'https://player.vimeo.com/video/' | append: video_id | append: '?h=' | append: video_hash | jsonify }}{% else %}{{ 'https://player.vimeo.com/video/' | append: video_id | jsonify }}{% endif %},
+    "url": {{ canonical | jsonify }},
+    "creator": { "@id": {{ person_id | jsonify }} }
+  }
+  </script>
+  {%- endunless -%}{%- endif -%}
+{%- endfor %}
+{%- endunless %}

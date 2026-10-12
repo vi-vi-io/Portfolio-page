@@ -1,7 +1,8 @@
 ---
 layout: worksub
+noindex: true # placeholder content; remove when the page is finished
 title: R. Scott Vivilecchia - Branding - NJH Medical
-description: description
+description:
 url: njhmed
 image:
   path: /assets/images/meta/home.png

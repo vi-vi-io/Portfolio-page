@@ -1,5 +1,6 @@
 ---
 layout: worksub
+noindex: true # placeholder content; remove when the page is finished
 title: R. Scott Vivilecchia - Behavioral Finance interview
 description: 
 url: befi

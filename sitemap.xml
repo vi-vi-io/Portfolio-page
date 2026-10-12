@@ -1,0 +1,15 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign pages = site.pages | where_exp: "p", "p.layout == 'default' or p.layout == 'worksub'" %}
+{%- for p in pages %}
+  {%- unless p.noindex or p.name == '404.md' or p.sitemap == false %}
+  {%- assign path = p.url | remove: '.html' %}
+  <url><loc>{{ path | absolute_url }}</loc></url>
+  {%- endunless %}
+{%- endfor %}
+  <url><loc>{{ '/scroll/' | absolute_url }}</loc></url>
+</urlset>

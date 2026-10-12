@@ -13,6 +13,11 @@ html {
 			border-radius: 4px;
 			margin-top: -90px;
 			padding-top: 90px;
+			// Pull quotes are blockquotes; match the heading box model they replaced
+			.pull-quote {
+				margin: 0 0 .5rem;
+				line-height: 1.2;
+			}
 			.content-block:not(:first-child) {border-top: 1px solid rgba($color-1, .5);}
 			.content-block {
 				display: block;
@@ -22,7 +27,7 @@ html {
 				// min-height: calc(100vh - 310px);
 				// & > .valign {min-height: calc(100vh - 310px);}
 				.image.primary {display: none;}
-				h2 {
+				h2, h1.page-title {
 					font-weight: 700;
 					font-size: 2em;
 					color: rgba($color-1, .5);
@@ -82,7 +87,7 @@ html {
 					margin-top: 10px;
 					margin-bottom: 25px;
 					a {color: $color-6;}
-					h1 {
+					h1, .pull-quote {
 						font-weight: 300;
 						font-style: italic;
 						color: $color-2;

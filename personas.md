@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Illustration - Personas
-description: description
+description:
 url: personas
 image:
   path: /assets/images/meta/home.png

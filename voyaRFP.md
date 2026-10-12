@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Digital Design - Secure B2B Sales Portal
-description: description
+description:
 url: voyaRFP
 image:
   path: /assets/images/meta/voyaRFP.png

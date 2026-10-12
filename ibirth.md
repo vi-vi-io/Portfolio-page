@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Branding - Instinctive Birth
-description: description
+description:
 url: ibirth
 image:
   path: /assets/images/meta/home.png

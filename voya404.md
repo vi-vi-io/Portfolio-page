@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Digital Design - Disruptive 404 page
-description: description
+description:
 url: voya404
 image:
   path: /assets/images/meta/home.png

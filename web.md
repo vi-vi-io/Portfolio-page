@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: R. Scott Vivilecchia - Front-end Web
-description: desc.
+description:
 url: web
 image:
   path: /assets/images/meta/web.png
