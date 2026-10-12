@@ -5,6 +5,7 @@ $(document).ready(function () {
 	// ===  INITIALIZE home background video VIMEO PLAYER ======== >
 	var home_player_options = {
 		id: 613191318,
+		dnt: true,
 		loop: true,
 		autoplay: true,
 		muted: true,

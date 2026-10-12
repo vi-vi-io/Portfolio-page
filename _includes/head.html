@@ -41,8 +41,8 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  {% if jekyll.environment == 'production' and site.google_analytics %}
+  <!-- Analytics (GoatCounter) -->
+  {% if jekyll.environment == 'production' and site.goatcounter %}
   {% include analytics.html %}
   {% endif %}
 </head>
