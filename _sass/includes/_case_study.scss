@@ -1,0 +1,81 @@
+//CASE STUDY
+// Breathing room between the video caption, the copy and each section heading
+.dark-content-box .content-block .case-study {
+	margin-top: 30px;
+	h3 { margin: 40px auto 15px; }
+}
+
+//IMAGE SLIDER
+.image-slider {
+	position: relative;
+	margin: 40px 0 30px;
+	.image-slider-track {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+		border-radius: 4px;
+		&::-webkit-scrollbar { display: none; }
+		&:focus-visible { outline: 2px solid $color-3; outline-offset: 4px; }
+	}
+	.image-slider-slide {
+		flex: 0 0 100%;
+		margin: 0;
+		scroll-snap-align: start;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			border-radius: 4px;
+		}
+		figcaption {
+			color: $color-1;
+			font-size: .7em;
+			line-height: 1.6;
+			padding: 12px 4px 0;
+		}
+	}
+	.image-slider-arrow {
+		position: absolute;
+		top: calc(50% - 40px);
+		width: 44px;
+		height: 44px;
+		border: none;
+		border-radius: 50%;
+		background-color: rgba($color-3, .9);
+		color: $color-2;
+		font-size: 32px;
+		line-height: 40px;
+		cursor: pointer;
+		-webkit-transition: .3s ease-in-out;
+		transition: .3s ease-in-out;
+		&:hover { background-color: $color-4; }
+		&:disabled { opacity: 0; pointer-events: none; }
+		&.prev { left: -22px; }
+		&.next { right: -22px; }
+	}
+	.image-slider-dots {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		margin-top: 12px;
+		button {
+			width: 10px;
+			height: 10px;
+			padding: 0;
+			border: 1px solid $color-3;
+			border-radius: 50%;
+			background: transparent;
+			cursor: pointer;
+			&.active { background-color: $color-3; }
+		}
+	}
+}
+
+// Arrows sit inside the frame on small screens where there's no gutter
+@media only screen and (max-width: 575.98px) {
+	.image-slider .image-slider-arrow {
+		&.prev { left: 8px; }
+		&.next { right: 8px; }
+	}
+}

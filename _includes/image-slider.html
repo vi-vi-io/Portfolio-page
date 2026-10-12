@@ -1,0 +1,26 @@
+{%- comment -%}
+Horizontal image slider. Usage:
+  {% include image-slider.html slides=page.storyboard label="Storyboard frames" %}
+where each slide has `src`, `alt` and an optional `caption`.
+{%- endcomment -%}
+{%- if include.slides and include.slides.size > 0 -%}
+<div class="image-slider" role="region" aria-roledescription="carousel" aria-label="{{ include.label | default: 'Image slider' | escape }}">
+	<div class="image-slider-track" tabindex="0">
+		{%- for slide in include.slides %}
+		<figure class="image-slider-slide" role="group" aria-roledescription="slide" aria-label="{{ forloop.index }} of {{ forloop.length }}">
+			<img src="{{ slide.src | relative_url }}" alt="{{ slide.alt | escape }}" loading="lazy">
+			{%- if slide.caption %}
+			<figcaption>{{ slide.caption }}</figcaption>
+			{%- endif %}
+		</figure>
+		{%- endfor %}
+	</div>
+	<button type="button" class="image-slider-arrow prev" aria-label="Previous slide">&#8249;</button>
+	<button type="button" class="image-slider-arrow next" aria-label="Next slide">&#8250;</button>
+	<div class="image-slider-dots">
+		{%- for slide in include.slides %}
+		<button type="button" aria-label="Go to slide {{ forloop.index }}"></button>
+		{%- endfor %}
+	</div>
+</div>
+{%- endif -%}

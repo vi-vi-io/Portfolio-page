@@ -17,7 +17,12 @@ in the front matter.
   {%- if description == '' -%}{%- assign description = site.description -%}{%- endif -%}
 {%- endif -%}
 
+{%- assign page_image_found = false -%}
 {%- if page.image -%}
+  {%- assign page_image_files = site.static_files | where: 'path', page.image.path -%}
+  {%- if page_image_files.size > 0 -%}{%- assign page_image_found = true -%}{%- endif -%}
+{%- endif -%}
+{%- if page_image_found -%}
   {%- assign share_image = page.image.path | prepend: site.url -%}
 {%- else -%}
   {%- assign share_image = site.seo.default_image | prepend: site.url -%}
@@ -39,7 +44,7 @@ in the front matter.
   <meta property="og:description" content="{{ description | escape }}">
   <meta property="og:url" content="{{ canonical }}">
   <meta property="og:image" content="{{ share_image }}">
-{%- if page.image %}
+{%- if page_image_found %}
   <meta property="og:image:width" content="{{ page.image.width }}">
   <meta property="og:image:height" content="{{ page.image.height }}">
 {%- endif %}

@@ -24,6 +24,7 @@ $(document).ready(function () {
 	function scrollHandler() {
 		var scrollContainer = document.getElementById('banner')
 		var element = document.getElementById('bannerTitle');
+		if (!scrollContainer || !element) return; // banner only exists on the home page
 		
 		var distanceToTop = window.scrollY + scrollContainer.getBoundingClientRect().top;
 		var elementHeight = scrollContainer.offsetHeight;
@@ -56,6 +57,7 @@ var	$window = $(window),
 function scrollHandler() {
 	var scrollContainer = document.getElementById('banner')
 	var element = document.getElementById('bannerTitle');
+	if (!scrollContainer || !element) return; // banner only exists on the home page
 	
 	var distanceToTop = window.scrollY + scrollContainer.getBoundingClientRect().top;
 	var elementHeight = scrollContainer.offsetHeight;
