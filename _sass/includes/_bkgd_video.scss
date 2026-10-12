@@ -12,10 +12,11 @@
 		min-width: 100%;
 		min-height: 100%;
 		position: absolute;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		top: 0;
+		transform: translateX(-50%);
 		overflow: hidden;
 		background: radial-gradient(circle at bottom, $color-5 0%, $color-2 100%);
+    .movie-player > div {padding-top:56.25% !important;}
 	}
 }
 .video-overlay {

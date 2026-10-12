@@ -12,6 +12,7 @@ $(document).ready(function () {
 		responsive: true
 	};
 	var home_vimeo_player = new Vimeo.Player('home_vimeo_player', home_player_options);
+  home_vimeo_player.ready().then(resizeMovie);
 
 	
 
