@@ -40,7 +40,6 @@ $(document).ready(function () {
 	
 	window.addEventListener('scroll', scrollHandler);
 	
-	$('#gsc-i-id1').attr('placeholder', 'Search...');
 
 });  // END document.ready
 
@@ -206,7 +205,7 @@ $(function(){
 			$(formError).animate({height: "200px"});
 		})
 	}
-	const conForm = document.querySelector("form") !== null; //If form exists on page, conForm = true
+	const conForm = document.querySelector("#contactForm") !== null; //If form exists on page, conForm = true
 	if (conForm) {
-		document.querySelector("form").addEventListener("submit", handleSubmit);
+		document.querySelector("#contactForm").addEventListener("submit", handleSubmit);
 	}

@@ -1,0 +1,38 @@
+---
+layout: null
+sitemap: false
+---
+{%- comment -%}
+Site search index, built by Jekyll. Each page's text comes from its
+rendered content; if the page hasn't been rendered yet, its main
+_content include is rendered here instead. The shared "My capabilities"
+link list is removed so it doesn't match every page.
+{%- endcomment -%}
+{%- capture capabilities -%}{% include capabilities.html %}{%- endcapture -%}
+{%- assign capabilities = capabilities | strip_html | normalize_whitespace -%}
+{%- assign capabilities_escaped = capabilities | replace: '&', '&amp;' -%}
+[
+{%- assign searchable = site.pages | where_exp: "p", "p.layout == 'worksub' or p.layout == 'default'" | where_exp: "p", "p.name != '404.md'" -%}
+{%- for p in searchable -%}
+  {%- if p.content contains '{% include' -%}
+    {%- assign inc = p.content | split: '{% include ' | last | split: ' ' | first -%}
+    {%- capture body -%}{% include {{ inc }} %}{%- endcapture -%}
+  {%- else -%}
+    {%- assign body = p.content -%}
+  {%- endif -%}
+  {%- if p.url == '/' -%}
+    {%- assign title = 'Home' -%}
+    {%- capture body -%}{% include about.html %}{% include work.html %}{% include contact.html %}{%- endcapture -%}
+  {%- elsif body contains '</h2>' -%}
+    {%- assign title = body | split: '</h2>' | first | split: '>' | last | strip -%}
+  {%- else -%}
+    {%- assign title = p.title | split: ' - ' | last -%}
+  {%- endif -%}
+  {
+    "title": {{ title | jsonify }},
+    "url": {{ p.url | remove: '.html' | relative_url | jsonify }},
+    "description": {{ p.description | default: '' | jsonify }},
+    "text": {{ body | strip_html | normalize_whitespace | remove: capabilities | remove: capabilities_escaped | jsonify }}
+  }{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+]
