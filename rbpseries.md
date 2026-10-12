@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Saving for Retirement Best Practice video series
-description: This video series is highlights the importance of saving for retirement, in the voices and from the perspective of plan participants.
+title: "Retirement Saving Video Series | R. Scott Vivilecchia"
+description: "A participant-voiced video series encouraging retirement saving: a series pilot plus personal vignettes from retirement plan members."
 url: rbpseries
 image:
   path: /assets/images/meta/rbpseries.png

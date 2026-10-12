@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Color Grading
-description: Great color sets the mood, enhances the story, and adds a professional touch.
+title: "Color Grading & Correction | R. Scott Vivilecchia"
+description: "Color grading and shot matching in DaVinci Resolve for a consistent, polished look, with special expertise in Blackmagic BRAW footage."
 url: color
 image:
   path: /assets/images/meta/color.png

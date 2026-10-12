@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: Government PSA - VIVI Productions
-description: This piece was produced to inform and educate town residents about the need to invest in a new Department of Public Works facility.
+title: "Town Government PSA Video | R. Scott Vivilecchia"
+description: "A PSA and social campaign that helped Duxbury, MA residents understand the case for a new Public Works facility ahead of a successful town meeting vote."
 url: govpsa
 image:
   path: /assets/images/meta/townPSA.png

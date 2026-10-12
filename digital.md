@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Digital Design
-description:
+title: "Interactive Video & Digital Design | R. Scott Vivilecchia"
+description: "Video-centric websites and interactive experiences that blend code, motion and storytelling, from plan education sites to secure B2B sales portals."
 url: digital
 image:
   path: /assets/images/meta/digital.png

@@ -1,7 +1,8 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Financial Literacy Quest banner
-description:
+noindex: true # placeholder content; remove when the page is finished
+title: "Financial Literacy Banner Animation | R. Scott Vivilecchia"
+description: "An animated web banner for a financial literacy program, from storyboard and illustration through animation."
 url: quest
 image:
   path: /assets/images/meta/quest_gfx.png

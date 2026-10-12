@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Front-end Web
-description:
+title: "Front-End Development for Video Apps | R. Scott Vivilecchia"
+description: "Custom-coded front-end development for interactive video apps and video-centric websites, with JavaScript, SVG animation and continuous deployment."
 url: web
 image:
   path: /assets/images/meta/web.png

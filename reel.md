@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Demo Reel
-description: This piece showcases my passion and skill as a filmmaker. The selected clips in the reel highlight some of my best work.
+title: "Demo Reel | R. Scott Vivilecchia"
+description: "Highlights of my filming, editing and motion graphics work across corporate, financial services, government and educational productions."
 url: reel
 image:
   path: /assets/images/meta/demoReel.png

@@ -1,6 +1,7 @@
 ---
 layout: default
-title: R. Scott Vivilecchia - Visual Storyteller
+title: "Motion Graphics & Video Production | R. Scott Vivilecchia"
+description: "Motion graphics, interactive video and end-to-end video production for financial services, government and other regulated industries. Boston, NYC and remote."
 url:
 image:
   path: /assets/images/meta/home.png

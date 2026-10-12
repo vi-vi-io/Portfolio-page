@@ -23,10 +23,10 @@ link list is removed so it doesn't match every page.
   {%- if p.url == '/' -%}
     {%- assign title = 'Home' -%}
     {%- capture body -%}{% include about.html %}{% include work.html %}{% include contact.html %}{%- endcapture -%}
-  {%- elsif body contains '</h2>' -%}
-    {%- assign title = body | split: '</h2>' | first | split: '>' | last | strip -%}
+  {%- elsif body contains '</h1>' -%}
+    {%- assign title = body | split: '</h1>' | first | split: '>' | last | strip -%}
   {%- else -%}
-    {%- assign title = p.title | split: ' - ' | last -%}
+    {%- assign title = p.title | split: ' | ' | first -%}
   {%- endif -%}
   {
     "title": {{ title | jsonify }},

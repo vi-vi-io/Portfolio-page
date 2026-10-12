@@ -1,7 +1,8 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Digital Design - Secure B2B Sales Portal
-description:
+noindex: true # placeholder content; remove when the page is finished
+title: "Secure B2B Sales Portal Design | R. Scott Vivilecchia"
+description: "A secure, branded portal giving prospects exclusive access to sensitive proposal materials for large B2B financial services opportunities."
 url: voyaRFP
 image:
   path: /assets/images/meta/voyaRFP.png

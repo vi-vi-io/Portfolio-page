@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Strategy & Planning
-description: At the heart of any successful project is a great idea and a deliberate strategy.
+title: "Video Strategy & Storyboarding | R. Scott Vivilecchia"
+description: "Strategy, scripting and storyboards that align your video with business goals and move smoothly through stakeholder, legal and leadership review."
 url: strategy
 image:
   path: /assets/images/meta/strategy.png

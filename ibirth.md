@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Branding - Instinctive Birth
-description:
+title: "Instinctive Birth Brand Identity | R. Scott Vivilecchia"
+description: "Brand identity and guidelines for a natural childbirth education company: logo, typography, color palette and website design."
 url: ibirth
 image:
   path: /assets/images/meta/home.png

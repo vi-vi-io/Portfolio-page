@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Bus Map Concept GFX
-description: This package was developed for a public transportation provider, for a piece focused on busing safety.
+title: "Transit Safety Motion Graphics Concept | R. Scott Vivilecchia"
+description: "Title and lower-third graphics for a public transit safety video, built on the visual language of bus route maps."
 url: busmap
 image:
   path: /assets/images/meta/busmap.png

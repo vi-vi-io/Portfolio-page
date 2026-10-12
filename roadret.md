@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Road to Retirement GFX package
-description:
+title: "Road to Retirement Explainer Animation | R. Scott Vivilecchia"
+description: "Flat line icon explainer animation for a retirement plan education series, making complex investment topics clear for plan participants."
 url: roadret
 image:
   path: /assets/images/meta/roadret_gfx.png

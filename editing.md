@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Video Editing
-description: A Visual Storyteller with demonstrated experience delivering poignant, strategy-driven video content.
+title: "Video Editing & Post-Production | R. Scott Vivilecchia"
+description: "Story-driven editing for documentary, corporate and educational video, shaping interviews and b-roll into clear, compelling narratives that hold attention."
 url: editing
 image:
   path: /assets/images/meta/editing.png

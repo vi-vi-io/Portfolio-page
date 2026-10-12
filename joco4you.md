@@ -1,7 +1,8 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Digital Design - Plan Education Site
-description:
+noindex: true # placeholder content; remove when the page is finished
+title: "Retirement Plan Education Website | R. Scott Vivilecchia"
+description: "A plan education website that helps county employees, many new to retirement planning, understand their benefits and enroll."
 url: joco4you
 image:
   path: /assets/images/meta/joco4you.png

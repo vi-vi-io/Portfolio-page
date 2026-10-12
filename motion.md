@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Motion Graphics & Animation
-description: Animation that will elevate your video and web content.
+title: "Motion Graphics & Animation | R. Scott Vivilecchia"
+description: "2D motion graphics, explainer animation, lower thirds and infographics that make complex financial and technical topics clear, for video and the web."
 url: motion
 image:
   path: /assets/images/meta/motion.png

@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Academic Community
-description: A Visual Storyteller with demonstrated experience delivering poignant, strategy-driven video content.
+title: "Academic Video Production | R. Scott Vivilecchia"
+description: "Research-driven video production for academic teams, working with subject matter experts from creative brief and script through delivery and KPIs."
 url: academics
 image:
   path: /assets/images/meta/academics.png

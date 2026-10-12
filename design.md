@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Graphic Design & Illustration
-description: At the heart of any successful project is a great idea and a deliberate strategy.
+title: "Graphic Design & Illustration | R. Scott Vivilecchia"
+description: "Brand identity, illustration and print design rooted in classical graphic design training, the foundation of all my motion and digital work."
 url: design
 image:
   path: /assets/images/meta/design.png

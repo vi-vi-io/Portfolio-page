@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Illustration - Personas
-description:
+title: "Persona Illustrations | R. Scott Vivilecchia"
+description: "A diverse series of vector persona illustrations representing retirement plan participants of different ages, backgrounds and professions."
 url: personas
 image:
   path: /assets/images/meta/home.png

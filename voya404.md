@@ -1,7 +1,8 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Digital Design - Disruptive 404 page
-description:
+noindex: true # placeholder content; remove when the page is finished
+title: "Branded 404 Page Design | R. Scott Vivilecchia"
+description: "An on-brand 404 page for a financial services company that keeps lost visitors engaged and guides them back on track."
 url: voya404
 image:
   path: /assets/images/meta/home.png

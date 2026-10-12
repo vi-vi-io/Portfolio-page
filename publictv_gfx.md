@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Public TV Series GFX package
-description: Project planning is about accurately assessing your available resources, and efficiently leveraging them for the best possible end result.
+title: "Public TV Series Graphics Package | R. Scott Vivilecchia"
+description: "A new motion graphics package for The Register's Report, a monthly county registry series produced with Plymouth Area Community Television (PACTV)."
 url: publictv_gfx
 image:
   path: /assets/images/meta/publicTV_gfx.png

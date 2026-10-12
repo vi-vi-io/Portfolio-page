@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - Interviewing & Videography
-description: A Visual Storyteller with demonstrated experience delivering poignant, strategy-driven video content.
+title: "Interviewing & Videography | R. Scott Vivilecchia"
+description: "In-studio and on-location interviews that put executives, officials and everyday people at ease, captured with professional camera, light and sound."
 url: interviewing
 image:
   path: /assets/images/meta/interviewing.png

@@ -1,7 +1,7 @@
 ---
 layout: worksub
-title: R. Scott Vivilecchia - My Videography gear kit
-description:
+title: "Videography Gear Kit | R. Scott Vivilecchia"
+description: "The camera, lens, lighting and audio kit I use for nimble one-person shoots, scaling up with extra crew and equipment for larger productions."
 url: kit
 image:
   path: /assets/images/meta/kit.png
