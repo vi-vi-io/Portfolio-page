@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "Retirement Saving Video Series | R. Scott Vivilecchia"
-description: "A participant-voiced video series encouraging retirement saving: a series pilot plus personal vignettes from retirement plan members."
+description: "Participant-voiced retirement saving video series for Johnson County, Kansas employees, part of a campaign that raised plan participation 18%."
 url: rbpseries
 image:
   path: /assets/images/meta/rbpseries.png
