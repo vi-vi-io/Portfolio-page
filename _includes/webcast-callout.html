@@ -1,0 +1,31 @@
+{%- comment -%}
+Featured video callout with its own link target. Usage:
+  {% include webcast-callout.html video=page.webcast %}
+Front matter fields (title and vimeo_id are required):
+  webcast:
+    anchor: webcast            # link to it as /page#webcast
+    label: Webcast             # small heading above the title
+    title: ...
+    vimeo_id: "123456789"
+    vimeo_hash: abc123         # for unlisted videos (the h= value)
+    duration: "45:00"
+    description: Markdown text
+Renders nothing until title and vimeo_id are both set.
+{%- endcomment -%}
+{%- assign w = include.video -%}
+{%- if w and w.title and w.vimeo_id -%}
+{%- assign anchor = w.anchor | default: 'webcast' -%}
+<aside id="{{ anchor }}" class="webcast-callout" aria-labelledby="{{ anchor }}-title">
+	<div class="webcast-label">{{ w.label | default: 'Webcast' }}</div>
+	<h2 id="{{ anchor }}-title" class="webcast-title"><a href="#{{ anchor }}">{{ w.title }}</a></h2>
+	<div class="modal-player-box embed-responsive embed-responsive-16by9">
+		<iframe class="embed-responsive-item" src="https://player.vimeo.com/video/{{ w.vimeo_id }}?dnt=1{% if w.vimeo_hash %}&amp;h={{ w.vimeo_hash }}{% endif %}&amp;title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0" frameborder="0" allow="autoplay; fullscreen" allowfullscreen style="width:100%;height:100%;" title="{{ w.title | escape }}" loading="lazy"></iframe>
+	</div>
+	{%- if w.duration %}
+	<div class="player-caption">{{ w.title }} ({{ w.duration }})</div>
+	{%- endif %}
+	{%- if w.description %}
+	<div class="webcast-description">{{ w.description | markdownify }}</div>
+	{%- endif %}
+</aside>
+{%- endif -%}

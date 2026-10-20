@@ -79,3 +79,39 @@
 		&.next { right: 8px; }
 	}
 }
+
+//WEBCAST CALLOUT
+.dark-content-box .content-block .webcast-callout, .webcast-callout {
+	margin: 50px 0 30px;
+	padding: 24px 24px 10px;
+	border: 1px solid rgba($color-3, .6);
+	border-left: 4px solid $color-3;
+	border-radius: 4px;
+	background-color: rgba($color-5, .25);
+	scroll-margin-top: 100px; // clear the fixed header when linked to directly
+	.webcast-label {
+		color: $color-3;
+		font-size: .7em;
+		font-weight: 700;
+		letter-spacing: .12em;
+		text-transform: uppercase;
+	}
+	.webcast-title {
+		font-size: 1.25em;
+		font-style: normal;
+		color: $color-4;
+		text-transform: none;
+		overflow-wrap: break-word;
+		margin: 6px 0 18px;
+		text-align: left;
+		a { color: inherit; font-style: normal; text-decoration: none; }
+		a:hover { color: $color-3; }
+	}
+	.webcast-description { margin-top: 18px; }
+}
+
+.webcast-teaser a { font-weight: 700; }
+
+@media only screen and (max-width: 575.98px) {
+	.webcast-callout { padding: 18px 14px 4px; border-left-width: 3px; }
+}

@@ -1,8 +1,7 @@
 ---
 layout: worksub
-noindex: true # placeholder content; remove when the page is finished
-title: R. Scott Vivilecchia - Behavioral Finance interview
-description: 
+title: "BeFi Conversations Interview Series | R. Scott Vivilecchia"
+description: "Multi-camera thought leadership interview series for Voya Financial: three-camera 4K shoot, four-mic sound, lighting, edit and graphics."
 url: befi
 image:
   path: /assets/images/meta/befi.png
