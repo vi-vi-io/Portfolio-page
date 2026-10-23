@@ -1,7 +1,7 @@
 url: https://www.vi-vi.io # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: # the subpath of your site, e.g. /blog
 title: R. Scott Vivilecchia - VIVI Productions # the name of your site, e.g. ACME Corp.
-description: A portfolio of recent video post-production work, including editing, motion graphics, color grading and sound design.
+description: Motion graphics, animation, interactive video and full-process video production that make complex topics clear, for financial services, government, education, nonprofits and other regulated industries.
 goatcounter: vivi-portfolio # your GoatCounter site code, e.g. vivi for vivi.goatcounter.com
 # sass:
 #     load_paths:
@@ -37,6 +37,9 @@ seo:
     - Financial services video
     - Video production for regulated industries
     - Government and public sector video
+    - Educational video
+    - Explainer animation
+    - Nonprofit and community video
     - Executive communications video
   profiles:
     - https://vimeo.com/user113004102
