@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "Video Editing & Post-Production | R. Scott Vivilecchia"
-description: "Story-driven editing for documentary, corporate and educational video, shaping interviews and b-roll into clear, compelling narratives that hold attention."
+description: "Story-driven editing for interview series, documentary, educational and short-form video, cut in DaVinci Resolve and Premiere Pro with the Blackmagic Speed Editor."
 url: editing
 image:
   path: /assets/images/meta/editing.png
