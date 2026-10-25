@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "Motion Graphics & Animation | R. Scott Vivilecchia"
-description: "2D motion graphics, explainer animation, lower thirds and infographics that make complex financial and technical topics clear, for video and the web."
+description: "Graphics packages, show opens, explainer animation and interactive SVG web animation that make complex topics clear, built in After Effects, Fusion, Blender and GSAP."
 url: motion
 image:
   path: /assets/images/meta/motion.png
