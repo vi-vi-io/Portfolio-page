@@ -240,6 +240,20 @@ strong, em {font-weight: 700;}
 	border: 1px solid rgba($color-5, .75);
 	border-radius: 4px;
 }
+// Vertical (9:16) video, e.g. social posts
+.portrait-player {
+	width: 100%;
+	max-width: 320px;
+	margin: 0 auto;
+	aspect-ratio: 9 / 16;
+	overflow: hidden;
+	iframe {
+		position: absolute;
+		inset: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
 .devicesImg {
 	width: calc(100% + 60px);
 	margin-left: -30px;
