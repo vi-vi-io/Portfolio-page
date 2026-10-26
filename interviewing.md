@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "Interviewing & Videography | R. Scott Vivilecchia"
-description: "In-studio and on-location interviews that put executives, officials and everyday people at ease, captured with professional camera, light and sound."
+description: "Directing talent and cameras for in-studio and on-location interviews that put executives, officials and everyday people at ease, often as a one-person crew."
 url: interviewing
 image:
   path: /assets/images/meta/interviewing.png
