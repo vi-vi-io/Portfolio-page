@@ -123,3 +123,45 @@
 	font-size: .75em;
 	line-height: 2em;
 }
+
+.ux-figure {
+	margin: 20px 0 25px;
+	img {
+		width: 100%;
+		height: auto;
+		border: 1px solid rgba($color-5, .75);
+		border-radius: 4px;
+	}
+	figcaption {
+		font-size: .7em;
+		text-align: center;
+		margin-top: 6px;
+		opacity: .8;
+	}
+}
+.ux-figure--phone {
+	max-width: 270px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ux-tools {
+	font-size: .75em;
+}
+.dark-content-box .content-block h2.ux-case-title {
+	font-size: 1.6em;
+	font-weight: 300;
+	text-transform: none;
+	text-align: center;
+	color: rgba($color-1, .5);
+	margin: 40px auto 15px;
+}
+.ux-figure--persona {
+	max-width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.ux-figure .ux-phone-row {
+	display: flex;
+	gap: 10px;
+	img { flex: 1 1 0; min-width: 0; }
+}
