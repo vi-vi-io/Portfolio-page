@@ -1,6 +1,5 @@
 ---
 layout: worksub
-noindex: true # placeholder content; remove when the page is finished
 title: "Retirement Plan Education Website | R. Scott Vivilecchia"
 description: "A plan education website that helps county employees, many new to retirement planning, understand their benefits and enroll."
 url: joco4you

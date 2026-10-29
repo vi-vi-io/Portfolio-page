@@ -179,6 +179,13 @@
 		white-space: nowrap;
 		border: 1px solid $color-2;
 		border-radius: 25px;
+		// Long labels shrink, then wrap, on narrow phones instead of overflowing the pill
+		@media (max-width: 575.98px) {
+			font-size: .6em;
+			white-space: normal;
+			padding: 5px 6px;
+			line-height: 1.3;
+		}
 		&:hover {
 			border: 1px solid $color-3;
 			text-decoration: none;
