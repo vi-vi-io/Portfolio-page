@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "UX/UI Design | R. Scott Vivilecchia"
-description: "UX/UI design studies: user research and a redesign of the Grubhub ordering experience, then FinEd, a financial education app concept built on AI-driven interactive video."
+description: "FinEd, a financial education app concept built on AI-driven interactive video, plus the UX research behind it."
 url: ux
 sketches:
   - src: /assets/images/ux/fined_sketch_clipstyle.jpg
