@@ -1,7 +1,7 @@
 ---
 layout: worksub
 title: "UX/UI Design | R. Scott Vivilecchia"
-description: "FinEd, a financial education app concept built on AI-driven interactive video, plus the UX research behind it."
+description: "A financial education app concept built on AI-driven interactive video, plus the UX research behind it."
 url: ux
 sketches:
   - src: /assets/images/ux/fined_sketch_clipstyle.jpg

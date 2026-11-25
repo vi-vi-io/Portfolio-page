@@ -1,0 +1,68 @@
+<!-- Start Financial Education App content -->
+<section id="feapp" class="content-block">
+	<div class="valign"><span class="image fit primary"><img src="assets/images/pic04.jpg" alt="sound insulation texture" /></span>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h1 class="page-title">Financial Education App</h1>
+					</div>
+				</div>
+            </div>
+			<div class="row whiteBox">
+				<div class="col-12 col-sm-10 offset-sm-1">
+					<div class="text-center">
+						<h4>Learning about money through conversation, with animated characters and a live voice.</h4>
+					</div>
+				</div>
+            </div>
+			<div class="row">
+				<div class="case-study col-12 col-sm-10 offset-sm-1">
+					<h2 class="ux-case-title">The idea</h2>
+					<p>Most financial education asks people to read an article or sit through a lecture. This app lets them have a conversation instead. The user talks with two or three characters who share personal stories about real financial situations, then pause to ask what the user wants to know next.</p>
+					<p>The idea grew out of my retirement education work, where a story told by someone in a similar situation makes a more convincing case than a message from an employer or plan provider, as in the <a href="./rbpseries">Johnson County Series</a>.</p>
+					<h2 class="ux-case-title">How the conversation works</h2>
+					<p>At each turn, a character asks a question and waits. The user answers by choosing one of the top three questions or responses, or by tapping a voice button and asking in their own words. Each question branches into a topic: in a retirement module, &ldquo;When did she start to save?&rdquo; leads to saving early and compound interest. When a topic is hard to grasp from conversation alone, motion graphics take over.</p>
+					<p>The app adapts to the person. During setup it learns a little about the user and their financial knowledge, then shapes the characters and the story to fit. For a young government employee with a small 403(b), the retirement module might open with &ldquo;My mom is a school teacher and she's retiring next year&hellip;&rdquo;</p>
+					<figure class="ux-figure">
+						<a href="assets/images/ux/fined_journey_map.jpg"><img src="assets/images/ux/fined_journey_map.jpg" alt="User journey map for the financial education app, showing the new user account setup, learning home and example learning module journeys as connected nodes" loading="lazy"></a>
+						<figcaption>User journey map. Select it to view full size.</figcaption>
+					</figure>
+					{% include image-slider.html slides=page.sketches label="Financial education app lo-fi sketches" %}
+					<h2 class="ux-case-title">How the concept evolved</h2>
+					<p>I first designed the app around realistic, AI-generated actors on video, as a UX/UI study at Lesley University.</p>
+					<figure class="ux-figure ux-figure--phone">
+						<img src="assets/images/ux/fined_screen_conversation.jpg" alt="Early app screen showing a smiling woman in conversation, full screen, with a microphone button and navigation along the bottom" loading="lazy">
+						<figcaption>An early screen from the realistic-actor concept. The person pictured is AI-generated, and ACME Financial is a placeholder brand.</figcaption>
+					</figure>
+					<p>As I researched what it would take to build, I made my latest strategy decision: move to animated vector characters with a live, conversational voice. My reasons:</p>
+					<ul class="link-list">
+						<li><strong>The state of the technology.</strong> Generating video still takes far too long for a live conversation. Real-time video avatars exist, but they're limited to a talking head and need a lot of computing power.</li>
+						<li><strong>Speed of response.</strong> Current voice AI can begin answering in under a second, and vector characters animate instantly in the app, lip-synced to the voice as it speaks.</li>
+						<li><strong>Cost.</strong> Live voice costs cents per minute, a small fraction of streaming a realistic video avatar, which matters for an app meant to reach thousands of users.</li>
+						<li><strong>A closer fit for a broader audience.</strong> Illustrated characters can be designed for any age, background, setting or language, and adjusted as easily as the script, so more users meet a speaker they relate to.</li>
+						<li><strong>No uncanny AI look.</strong> Stylized characters avoid the slightly-off quality of synthetic faces, and the question of whether a real person is speaking. In financial education, trust is everything.</li>
+					</ul>
+					<h2 class="ux-case-title">Hosting</h2>
+					<p>I'm leaning toward a private cloud deployment: the AI models run inside the firm's own cloud account, on a platform it may already use, such as Microsoft Azure, Amazon Web Services or Google Cloud. Conversations stay on the firm's private network, under its own encryption, and the provider doesn't use them to train its models. Running open models on the firm's own servers is also an option if policy requires it, though it adds hardware and staff costs.</p>
+					<h2 class="ux-case-title">Layers of control</h2>
+					<p>Generated answers in a regulated field need firm limits. The design gives the firm's compliance team control at every layer:</p>
+					<ul class="link-list">
+						<li><strong>Pre-approved answers</strong> for the most common questions, reviewed before launch.</li>
+						<li><strong>An approved content library</strong> as the only source for live answers.</li>
+						<li><strong>Education, not advice:</strong> no personal investment recommendations, with required disclosures built in.</li>
+						<li><strong>A check on every reply</strong> before it's spoken.</li>
+						<li><strong>Every conversation recorded</strong> for supervision and review.</li>
+						<li><strong>Testing</strong> before launch and after every change.</li>
+						<li><strong>A hand-off to a person</strong> when a question needs a professional.</li>
+					</ul>
+					<h2 class="ux-case-title">The regulatory landscape</h2>
+					<p>FINRA has no rule written specifically for AI. Its existing rules for communications with the public apply whether a person or a technology tool writes the message, and firms remain responsible for both. Its 2026 oversight report sets out expectations for supervising chatbots and keeping their conversations, and in July 2026 FINRA proposed modernizing its communications rule, Rule 2210, partly with generative AI in mind. The app is designed to work within that framework.</p>
+					<h2 class="ux-case-title">Next steps</h2>
+					<p>These are my starting points, not final answers. The finer points of hosting, controls and regulation belong in a discovery session with the legal, compliance and executive leaders who own those decisions. From there, I'd build a working prototype: one character and one short module, with scripted answers first and live voice next.</p>
+				</div>
+			</div>
+			{% include capabilities.html %}
+        </div>
+    </div>
+</section><!-- End Financial Education App content -->
